@@ -2243,3 +2243,34 @@ header {
   height: 23px;
   vertical-align: middle;
 }
+
+.mobile-search-icon {
+  width: 14px;
+}
+
+.mobile-nav--icons {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+
+.mobile-nav--icons .btn-yellow {
+  border-radius: 50%;
+  padding: 22px 27px;
+  font-size: 20px;
+}
+
+.notification {
+  width: 65px;
+  height: 65px;
+}
+
+.notification img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+  padding: 15px;
+  border-radius: 50%;
+}
