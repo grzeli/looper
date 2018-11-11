@@ -6,17 +6,29 @@ $yellow: #f6af2f;
 $orange: #ff997a;
 $green: #7abcb7;
 //fonts
+@font-face{
+  font-family: 'Proxima Nova Bold';
+  src: local('Proxima Nova Bold'), url("fonts/Proxima Nova/Mark Simonson - Proxima Nova Bold.otf") format("opentype");
+}
+@font-face{
+  font-family: 'Proxima Nova Regular';
+  src: local('Proxima Nova Regular'), url("/fonts/Proxima Nova/Mark Simonson - Proxima Nova Regular.otf") format("opentype");
+}
+@font-face{
+  font-family: 'Tiempos Bold';
+  src: local('Tiempos Bold'), url("/fonts/Tiempos/TiemposTextWeb-Bold.woff") format("woff") ;
+}
 h1, h2, h3, h4, h5, h6, h7, p, p1, p2, p3 ,p4{
   color:$dark-gray;
 }
 h1, h2, h3, h4, h5{
-  font-family: Tiempos Bold;
+  font-family: 'Tiempos Bold';
 }
 h6, h7{
-  font-family: Proxima Nova Bold;
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 p1, p2, p3 ,p4{
-  font-family: Proxima Nova Regular;
+  font-family: 'Proxima Nova Regular', sans-serif;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;

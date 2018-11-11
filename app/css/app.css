@@ -1,17 +1,32 @@
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: local("Proxima Nova Bold"), url("fonts/Proxima Nova/Mark Simonson - Proxima Nova Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: local("Proxima Nova Regular"), url("/fonts/Proxima Nova/Mark Simonson - Proxima Nova Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Tiempos Bold';
+  src: local("Tiempos Bold"), url("/fonts/Tiempos/TiemposTextWeb-Bold.woff") format("woff");
+}
+
 h1, h2, h3, h4, h5, h6, h7, p, p1, p2, p3, p4 {
   color: #464952;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: Tiempos Bold;
+  font-family: 'Tiempos Bold';
 }
 
 h6, h7 {
-  font-family: Proxima Nova Bold;
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 
 p1, p2, p3, p4 {
-  font-family: Proxima Nova Regular;
+  font-family: 'Proxima Nova Regular', sans-serif;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -131,6 +146,10 @@ p1, p2, p3, p4 {
   cursor: pointer;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -138,21 +157,27 @@ p1, p2, p3, p4 {
   padding-right: 15px;
 }
 
+@media (min-width: 360px) {
+  .container {
+    width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 690px;
+    padding-right: 39px;
+    padding-left: 39px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .container {
-    width: 990px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+    width: 1160px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 
@@ -1161,4 +1186,43 @@ p1, p2, p3, p4 {
   .hidden-print {
     display: none !important;
   }
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: box-shadow 0.3s, -webkit-transform 0.3s;
+  position: relative;
+  font-size: 14px;
+  border-radius: 28px;
+  line-height: 1;
+  padding: 19px 28px;
+}
+
+.btn.btn-yellow {
+  background-color: #f6af2f;
+  color: #fff;
+}
+
+.btn-yellow:hover {
+  box-shadow: 0 5px 30px rgba(70, 70, 70, 0.35);
+}
+
+.btn.btn-yellow--border {
+  border: 1px solid #F6AF2F;
+  color: #F6AF2F;
+  background-color: #fff;
+}
+
+.btn-yellow--border:hover {
+  box-shadow: 0 5px 30px rgba(70, 70, 70, 0.35);
 }
