@@ -1,0 +1,19 @@
+header{
+  padding:20px 0;
+}
+.mobile-nav{
+  display:flex;
+  flex-direction: row;
+  position:relative;
+  justify-content: space-between;
+}
+.logo-top{
+  display:flex;
+  align-items: center;
+  height:100%;
+  img{
+    width:79px;
+    height:23px;
+    vertical-align: middle;
+  }
+}
