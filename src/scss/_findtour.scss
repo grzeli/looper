@@ -1,0 +1,136 @@
+.find-your-tour{
+  background:url('/img/backgrounds/bg-home-slider.jpg') no-repeat 50%;
+  height:800px;
+  background-size:auto;
+  @media only screen and (max-width:1200px){
+    background-position: 100%;
+    background-size:auto 100%;
+    height:520px;
+  }
+  @media only screen and (max-width:359px){
+    height:550px;
+  }
+  align-items: center;
+  display:flex;
+  h1, p1{
+    color:#fff;
+    margin-bottom:.5rem;
+    margin-top:0;
+  }
+  .input-white-search-icon{
+    width:20px;
+    height:15px;
+    margin-top:-7px;
+    position:relative;
+    top:2px;
+  }
+  .form-inline{
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+    color:#fff;
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+      outline: none;
+    }
+    padding-top:30px;
+  }
+  .sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip: rect(0, 0, 0, 0);
+    border:0;
+  }
+  .label{
+    display:block;
+    touch-action: manipulation;
+  }
+  input{
+    overflow: visible;
+  }
+  input[type="text"]{
+    border-radius:17px;
+    padding:11px 22px 9px;
+  }
+  .input-group-addon{
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    img{
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      border-style: none;
+    }
+  }
+  .where-inputs .input-group .form-control{
+    border:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    z-index: 2;
+    flex:1 1 auto;
+    width:1%;
+    margin-bottom:0;    
+  }
+  .where-inputs input{
+    background: transparent;
+    color: #474952;
+  }
+  .next-section{
+    position: relative;    
+    text-align: center;
+    top:70px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .next-section:after{
+    content: '';
+    display: block;
+    background: url(/img/icons_svg/arrow_banner.svg) no-repeat 100% ;
+    width: 25px;
+    height: 18px;
+    margin: 5px auto 30px;
+  }
+  @media only screen and (max-width:1279px){
+    .btn-yellow{
+      width:100%;
+    }
+    .where-inputs{
+      width:100%;
+      background: transparent;
+      border-radius: 0;
+      padding:0;
+      margin-right:0;
+    }
+    .input-group{
+      width:100%;
+      border:0;
+      padding:7px 0;
+      background:#fff;
+      margin-bottom:6px;
+      border-radius:28px;
+      position:relative;
+      display:flex;
+    }
+  }
+}

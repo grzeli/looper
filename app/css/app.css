@@ -2250,6 +2250,7 @@ header {
 
 .mobile-nav--icons {
   padding: 20px 15px;
+  padding-bottom: 0px;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -2258,19 +2259,223 @@ header {
 
 .mobile-nav--icons .btn-yellow {
   border-radius: 50%;
-  padding: 22px 27px;
+  padding: 25px 25px;
   font-size: 20px;
+  width: 12px;
+  height: 12px;
+  line-height: 0.75;
 }
 
-.notification {
-  width: 65px;
-  height: 65px;
-}
-
-.notification img {
+.mobile-nav--icons img {
   width: 30px;
   height: 30px;
   border: 1px solid lightgray;
   padding: 15px;
   border-radius: 50%;
+}
+
+.mobile-menu-notification {
+  width: 65px;
+  height: 65px;
+}
+
+.mobile-menu-messages {
+  width: 65px;
+  height: 65px;
+}
+
+.mobile-menu-user-avatar {
+  width: 65px;
+  height: 65px;
+}
+
+.mobile-menu-user-avatar img {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.find-your-tour {
+  background: url("/img/backgrounds/bg-home-slider.jpg") no-repeat 50%;
+  height: 800px;
+  background-size: auto;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  .find-your-tour {
+    background-position: 100%;
+    background-size: auto 100%;
+    height: 520px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .find-your-tour {
+    height: 550px;
+  }
+}
+
+.find-your-tour h1, .find-your-tour p1 {
+  color: #fff;
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+.find-your-tour .input-white-search-icon {
+  width: 20px;
+  height: 15px;
+  margin-top: -7px;
+  position: relative;
+  top: 2px;
+}
+
+.find-your-tour .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.find-your-tour .form-inline input:focus,
+.find-your-tour .form-inline select:focus,
+.find-your-tour .form-inline textarea:focus,
+.find-your-tour .form-inline button:focus {
+  outline: none;
+}
+
+.find-your-tour .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.find-your-tour .label {
+  display: block;
+  touch-action: manipulation;
+}
+
+.find-your-tour input {
+  overflow: visible;
+}
+
+.find-your-tour input[type="text"] {
+  border-radius: 17px;
+  padding: 11px 22px 9px;
+}
+
+.find-your-tour .input-group-addon {
+  padding: .5rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.find-your-tour .input-group-addon img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.find-your-tour .where-inputs .input-group .form-control {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.find-your-tour .where-inputs input {
+  background: transparent;
+  color: #474952;
+}
+
+.find-your-tour .next-section {
+  position: relative;
+  text-align: center;
+  top: 70px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.find-your-tour .next-section:after {
+  content: '';
+  display: block;
+  background: url(/img/icons_svg/arrow_banner.svg) no-repeat 100%;
+  width: 25px;
+  height: 18px;
+  margin: 5px auto 30px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .find-your-tour .btn-yellow {
+    width: 100%;
+  }
+  .find-your-tour .where-inputs {
+    width: 100%;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 0;
+  }
+  .find-your-tour .input-group {
+    width: 100%;
+    border: 0;
+    padding: 7px 0;
+    background: #fff;
+    margin-bottom: 6px;
+    border-radius: 28px;
+    position: relative;
+    display: flex;
+  }
+}
+
+.key-features {
+  background-color: #eee;
+  padding: 50px 0 35px;
+  text-align: center;
+}
+
+.key-features img {
+  height: 55px;
+  width: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.key-features .container {
+  position: relative;
+}
+
+.key-features .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-features .col-md-3 {
+  flex: 0 0 50%;
+  max-width: 40%;
 }

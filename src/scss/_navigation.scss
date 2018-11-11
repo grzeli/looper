@@ -22,24 +22,41 @@ header{
 }
 .mobile-nav--icons{
   padding:20px 15px;
+  padding-bottom:0px;
   display:flex;
   flex-direction: row;
   position:relative;
   justify-content: space-between;
   .btn-yellow{
     border-radius: 50%;
-    padding:22px 27px;
+    padding:25px 25px;
     font-size: 20px;
+    width:12px;
+    height:12px;
+    line-height:0.75;
   }
-}
-.notification{
-  width:65px;
-  height:65px;
-  img{
+   img{
     width:30px;
     height:30px;
     border:1px solid lightgray;
     padding:15px;
     border-radius: 50%;
+  }
+}
+.mobile-menu-notification{
+  width:65px;
+  height:65px;
+}
+.mobile-menu-messages{
+  width:65px;
+  height:65px; 
+}
+.mobile-menu-user-avatar{
+  width:65px;
+  height:65px; 
+  img{
+    padding:5px;
+    width:50px;
+    height:50px;
   }
 }
