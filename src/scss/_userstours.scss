@@ -1,0 +1,209 @@
+.users-tours{
+  padding-top:50px;
+  background-color: #f7f7f7;
+  .select{
+    width:100%;
+    position:relative;
+    display:inline-block;
+    margin-bottom: 20px;
+  }
+  .selected{
+    background-color: #fff;
+    border:1px solid #e5e7f0;
+    padding:11px 22px 9px;
+    border-radius: 17px;
+    cursor:pointer;
+    p2{
+      margin:0;
+    }
+    p2:after{
+      content:'';
+      display: inline-block;
+      position:absolute;
+      right:20px;
+      top:12px;
+      background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
+      width:15px;
+      height:15px;
+      
+    }
+  }
+  .container-fluid{
+    background-color:#fff;
+    margin-top:25px;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.05);
+    position:relative;
+    padding:0 5px;
+    .person{
+      margin-top:20px;
+      display:flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    .person-row{
+      padding-bottom:20px;
+      display:flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .person-avatar{
+      position:relative;
+      margin-right:10px;
+      img{
+        border-radius: 100%;
+        max-width:50px;
+        vertical-align: middle;        
+      }
+    }
+    .person-name{
+      p3{
+        margin-bottom:5px;
+        margin-top:5px;
+      }
+    }
+    .person-avatar:after{
+        content: '';
+        display: block;
+        width:41px;
+        height:41px;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        border-radius: 100%;
+        background-color: transparent;
+        border: 2px solid #fff;
+    }
+    .star{
+      background:url('/img/icons_svg/star_userinfo_2.svg');
+      display:inline-block;
+      width:15px;
+      height:15px;
+      float:left;       
+    }
+    .star.active{
+        background:url('/img/icons_svg/star_userinfo_1.svg');
+      }
+    .trip-time span{
+      background-color: #B3B6C1;
+      color: #fff;
+      width:30px;
+      font-size: 13px;
+      padding: 0 10px;
+      border-radius: 10px;
+      line-height: 26px;
+      display: inline-block;
+      margin-top:20px;
+    }
+    
+    .tour-dates-row{
+      text-align: center;
+      text-align: center;
+      p3{
+        margin:0;
+        text-align: center;
+        margin-bottom:10px;
+      }
+      span{
+        line-height: 1.5;
+        font-size: 12px;
+        font-family: 'Proxima Nova Regular', sans-serif;
+        font-weight: 100;
+        color: #464952;
+        letter-spacing: 0;
+      }
+      padding-bottom:20px;
+      display:flex;
+      justify-content: space-between;
+      flex-direction: row;
+      .tour-dates-row__date:first-of-type{
+        background: url(/img/icons_svg/arrow_right.svg) no-repeat 100% 0;
+        background-size: 28px auto;
+      }
+      .tour-dates-row__date{
+        width: 50%;
+        padding-right: 28px;
+      }
+      .tour-dates-row__date:last-of-type{
+        background: url(/img/icons_svg/elastic_date_active.svg) no-repeat 100% 0;
+        background-size: 24px auto;
+        padding-right:24px;
+      }
+    }
+    .tour-details{
+      padding-bottom:18px;
+      p2{
+        margin:0;
+      }
+      ul{
+        padding:0;
+        margin:0;
+        list-style: none;
+        li{
+          padding-left: 30px;
+          margin-bottom: 12px;
+        }
+        li:nth-of-type(1){
+          margin-top:25px;          
+          background: url(/img/icons_svg/destynacja.svg) no-repeat 0 50%;
+          background-size: 20px;
+        }
+        li:nth-of-type(2){
+          background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0 50%;
+          background-size: 22px auto;
+        }
+        li:nth-of-type(3){
+          background: url(/img/icons_svg/transport.svg) no-repeat 0 50%;
+          background-size: 22px auto;
+        }
+      }
+    }
+    .col-sm-12:nth-of-type(2){
+      border-top: 1px solid #EFF1F6;
+      text-align: center;
+      padding-bottom: 30px;
+      p2{
+        margin-top:30px;
+        margin-bottom: 20px;
+      }
+    }
+    .person-list{
+      padding:0;
+      margin:0;
+      list-style:none;
+      display:flex;
+      .participer{
+        margin:0 0 30px;
+        width:40px;
+        height:40px;
+        display:inline-block;
+        float:left;
+        margin-left:-10px;
+        img{
+          width:100%;
+          height:auto;
+          border-radius: 100%;
+          border:2px solid #eff1f6;
+          vertical-align: middle;
+        }
+      }
+      .participer:first-of-type{
+        margin-left:0;
+      }
+      .join{
+        width:40px;
+        height:40px;
+        display:inline-block;
+        float:left;
+        margin-left:15px;
+        border-radius: 100%;
+        border:2px solid #eff1f6;
+        img{
+          width:20px;
+          height:20px;
+          margin:10px 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
