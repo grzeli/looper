@@ -2492,12 +2492,74 @@ header {
   margin-bottom: 20px;
 }
 
+.users-tours .select .container-footer-nav {
+  display: block;
+  padding: 15px 0 0 10px;
+  margin: 0;
+  list-style: none;
+  float: left;
+  margin-top: 25px;
+}
+
+.users-tours .select .container-footer-nav .active {
+  opacity: 1;
+}
+
+.users-tours .select .container-footer-nav li {
+  display: inline-block;
+  margin-left: 8px;
+  opacity: 0.75;
+}
+
+.users-tours .select .container-footer-nav li span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background: #c8cbd6;
+}
+
+.users-tours .select .btn.more {
+  margin-top: 25px;
+  color: #2f2f2f;
+  padding: 19px 48px 19px 28px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: normal;
+  float: right;
+}
+
+.users-tours .select .more:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 21px;
+  height: 100%;
+  background: url(/img/icons_svg/arrow_right.svg) no-repeat 0 50%;
+  background-size: 21px auto;
+  transition: right 0.3s;
+}
+
+.users-tours .select .btn.more:hover,
+.users-tours .select .btn.more:focus,
+.users-tours .select .btn.more.focus {
+  box-shadow: none !important;
+}
+
+.users-tours .select .btn.more:hover:after,
+.users-tours .select .btn.more:focus:after,
+.users-tours .select .btn.more.focus:after {
+  right: 0;
+}
+
 .users-tours .selected {
   background-color: #fff;
   border: 1px solid #e5e7f0;
   padding: 11px 22px 9px;
   border-radius: 17px;
   cursor: pointer;
+  margin-bottom: 25px;
 }
 
 .users-tours .selected p2 {
@@ -2517,7 +2579,6 @@ header {
 
 .users-tours .container-fluid {
   background-color: #fff;
-  margin-top: 25px;
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
   position: relative;
   padding: 0 5px;
