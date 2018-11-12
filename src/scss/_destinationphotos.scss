@@ -51,4 +51,67 @@
       margin-bottom: 165px;
     }
   }
+  .testimonials{
+    text-align: center;
+    margin:50px 0 40px;
+    img{
+      border-radius: 100%;
+      width:100px;
+      height:100px;
+    }
+    .testimonials-image{
+      position:relative;
+      max-width: 100px;
+      margin: 0 auto 10px;
+    }
+    .testimonials-image:after{
+      content: '';
+      display: block;
+      width: 92px;
+      height: 92px;;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      border-radius: 100%;
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+    p2:nth-of-type(1){
+      margin:20px 0 25px;
+      line-height: 1.48;
+    }
+    p2:nth-of-type(2){
+      position:relative;
+    }
+    p2:nth-of-type(2):before{
+      content: '"';
+      color: #BEBEC9;
+      font-size: 48px;
+      font-family: "Proxima Nova Bold";
+      position: absolute;
+      left: 0px;
+      top: -25px;
+    }
+    p2:nth-of-type(2):after{
+      content: '"';
+      color: #BEBEC9;
+      font-size: 48px;
+      font-family: "Proxima Nova Bold";
+      position: absolute;
+      right: 0px;
+      bottom: -28px;
+    }
+    .rating{
+      margin:6px 0 45px;
+    }
+    .star{
+      background:url('/img/icons_svg/star_userinfo_2.svg');
+      display:inline-block;
+      width:20px;
+      height:20px;
+    }
+    .star.active{
+      background:url('/img/icons_svg/star_userinfo_1.svg');
+    }
+  }
 }

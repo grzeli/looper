@@ -2847,3 +2847,77 @@ header {
 .destination-photos .container-fluid.how-it-works .btn-yellow {
   margin-bottom: 165px;
 }
+
+.destination-photos .testimonials {
+  text-align: center;
+  margin: 50px 0 40px;
+}
+
+.destination-photos .testimonials img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.destination-photos .testimonials .testimonials-image {
+  position: relative;
+  max-width: 100px;
+  margin: 0 auto 10px;
+}
+
+.destination-photos .testimonials .testimonials-image:after {
+  content: '';
+  display: block;
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.destination-photos .testimonials p2:nth-of-type(1) {
+  margin: 20px 0 25px;
+  line-height: 1.48;
+}
+
+.destination-photos .testimonials p2:nth-of-type(2) {
+  position: relative;
+}
+
+.destination-photos .testimonials p2:nth-of-type(2):before {
+  content: '"';
+  color: #BEBEC9;
+  font-size: 48px;
+  font-family: "Proxima Nova Bold";
+  position: absolute;
+  left: 0px;
+  top: -25px;
+}
+
+.destination-photos .testimonials p2:nth-of-type(2):after {
+  content: '"';
+  color: #BEBEC9;
+  font-size: 48px;
+  font-family: "Proxima Nova Bold";
+  position: absolute;
+  right: 0px;
+  bottom: -28px;
+}
+
+.destination-photos .testimonials .rating {
+  margin: 6px 0 45px;
+}
+
+.destination-photos .testimonials .star {
+  background: url("/img/icons_svg/star_userinfo_2.svg");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.destination-photos .testimonials .star.active {
+  background: url("/img/icons_svg/star_userinfo_1.svg");
+}
