@@ -2850,7 +2850,7 @@ header {
 
 .destination-photos .testimonials {
   text-align: center;
-  margin: 50px 0 40px;
+  margin-top: 50px;
 }
 
 .destination-photos .testimonials img {
@@ -2920,4 +2920,46 @@ header {
 
 .destination-photos .testimonials .star.active {
   background: url("/img/icons_svg/star_userinfo_1.svg");
+}
+
+.blog-and-tips {
+  background-color: #f7f7f7;
+}
+
+.blog-and-tips h2:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.blog-and-tips .container-fluid {
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.blog-and-tips .container-fluid img {
+  max-width: 100%;
+}
+
+.blog-and-tips .container-fluid p2:nth-of-type(1) {
+  color: #F6AF2F;
+  text-transform: uppercase;
+  margin: 30px 0 20px;
+}
+
+.blog-and-tips .container-fluid p1:nth-of-type(1) {
+  margin: 0 0 15px;
+}
+
+.blog-and-tips .container-fluid p1:nth-of-type(2) {
+  margin: 0 0 35px;
+}
+
+.blog-and-tips .container-fluid .more {
+  margin: 0;
+  float: none;
+}
+
+.blog-and-tips .container-fluid .more:after {
+  width: 25px;
 }
