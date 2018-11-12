@@ -31,3 +31,31 @@ a{
 .btn-yellow--border:hover{
   box-shadow:0 5px 30px rgba(70, 70, 70, 0.35);
 }
+.more{
+  margin-top:25px;
+  color: #2f2f2f;
+  padding:19px 48px 19px 28px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: normal;
+  float:right;
+}
+.more:after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 21px;
+  height: 100%;
+  background: url(/img/icons_svg/arrow_right.svg) no-repeat 0 50%;
+  background-size: 21px auto;
+  transition: right 0.3s;
+}
+.btn.more:hover,
+.btn.more:focus,
+.btn.more.focus {
+  box-shadow: none !important;
+  &:after {
+    right: 0;
+  }
+}

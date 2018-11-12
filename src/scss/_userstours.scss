@@ -1,3 +1,26 @@
+.container-footer-nav{
+  display:block;
+  padding:15px 0 0 10px;
+  margin:0;
+  list-style: none;
+  float:left;
+  margin-top:25px;
+  .active{
+    opacity:1;
+  }
+  li{
+    display:inline-block;
+    margin-left:8px;
+    opacity:0.75;
+    span{
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      background: #c8cbd6;
+    }
+  }
+}
 .users-tours{
   padding-top:50px;
   background-color: #f7f7f7;
@@ -6,57 +29,6 @@
     position:relative;
     display:inline-block;
     margin-bottom: 20px;
-    .container-footer-nav{
-      display:block;
-      padding:15px 0 0 10px;
-      margin:0;
-      list-style: none;
-      float:left;
-      margin-top:25px;
-      .active{
-        opacity:1;
-      }
-      li{
-        display:inline-block;
-        margin-left:8px;
-        opacity:0.75;
-        span{
-          display: inline-block;
-          width: 7px;
-          height: 7px;
-          border-radius: 100%;
-          background: #c8cbd6;
-        }
-      }
-    }
-    .btn.more{
-      margin-top:25px;
-      color: #2f2f2f;
-      padding:19px 48px 19px 28px;
-      font-family: 'Proxima Nova Regular', sans-serif;
-      font-weight: normal;
-      float:right;
-    }
-    .more:after{
-      content: '';
-      display: inline-block;
-      position: absolute;
-      right: 10px;
-      top: 0;
-      width: 21px;
-      height: 100%;
-      background: url(/img/icons_svg/arrow_right.svg) no-repeat 0 50%;
-      background-size: 21px auto;
-      transition: right 0.3s;
-    }
-    .btn.more:hover,
-    .btn.more:focus,
-    .btn.more.focus {
-      box-shadow: none !important;
-      &:after {
-        right: 0;
-      }
-    }
   }
   .selected{
     background-color: #fff;
@@ -77,7 +49,7 @@
       background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
       width:15px;
       height:15px;
-      
+
     }
   }
   .container-fluid{
@@ -113,16 +85,16 @@
       }
     }
     .person-avatar:after{
-        content: '';
-        display: block;
-        width:41px;
-        height:41px;
-        position: absolute;
-        left: 2px;
-        top: 2px;
-        border-radius: 100%;
-        background-color: transparent;
-        border: 2px solid #fff;
+      content: '';
+      display: block;
+      width:41px;
+      height:41px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      border-radius: 100%;
+      background-color: transparent;
+      border: 2px solid #fff;
     }
     .star{
       background:url('/img/icons_svg/star_userinfo_2.svg');
@@ -132,8 +104,8 @@
       float:left;       
     }
     .star.active{
-        background:url('/img/icons_svg/star_userinfo_1.svg');
-      }
+      background:url('/img/icons_svg/star_userinfo_1.svg');
+    }
     .trip-time span{
       background-color: #B3B6C1;
       color: #fff;
@@ -145,7 +117,7 @@
       display: inline-block;
       margin-top:20px;
     }
-    
+
     .tour-dates-row{
       text-align: center;
       text-align: center;
