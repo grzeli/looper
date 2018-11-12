@@ -1,5 +1,6 @@
 .blog-and-tips{
   background-color: #f7f7f7;
+  padding-bottom: 55px;
   h2:nth-of-type(1){
     margin-bottom: 30px;
   }
@@ -29,5 +30,22 @@
     .more:after{
       width:25px;
     }
+  }
+  .btn.more{
+    margin-top:11px;
+  }
+}
+
+//baner dolacz do nas
+.join-us{
+  background: url(/img/backgrounds/bg-join-us.jpg) no-repeat 50%;
+  background-position: 80%;
+  background-size: auto 100%;
+  h2{
+    color:#fff;
+    margin:215px 0 50px;
+  }
+  .btn.btn-yellow{
+    margin:0 0 170px;
   }
 }

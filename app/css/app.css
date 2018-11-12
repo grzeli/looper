@@ -2924,6 +2924,7 @@ header {
 
 .blog-and-tips {
   background-color: #f7f7f7;
+  padding-bottom: 55px;
 }
 
 .blog-and-tips h2:nth-of-type(1) {
@@ -2962,4 +2963,23 @@ header {
 
 .blog-and-tips .container-fluid .more:after {
   width: 25px;
+}
+
+.blog-and-tips .btn.more {
+  margin-top: 11px;
+}
+
+.join-us {
+  background: url(/img/backgrounds/bg-join-us.jpg) no-repeat 50%;
+  background-position: 80%;
+  background-size: auto 100%;
+}
+
+.join-us h2 {
+  color: #fff;
+  margin: 215px 0 50px;
+}
+
+.join-us .btn.btn-yellow {
+  margin: 0 0 170px;
 }
