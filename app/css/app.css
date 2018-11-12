@@ -2820,3 +2820,30 @@ header {
   margin-bottom: 5px;
   margin: 0;
 }
+
+.destination-photos .container-fluid.how-it-works {
+  background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 50%;
+  margin-top: 50px;
+}
+
+.destination-photos .container-fluid.how-it-works p2, .destination-photos .container-fluid.how-it-works p1, .destination-photos .container-fluid.how-it-works h2 {
+  color: #fff;
+}
+
+.destination-photos .container-fluid.how-it-works p2 {
+  margin-top: 90px;
+  margin-bottom: 35px;
+}
+
+.destination-photos .container-fluid.how-it-works h2 {
+  margin: 0;
+}
+
+.destination-photos .container-fluid.how-it-works p1 {
+  margin: 15px 0 45px;
+  font-weight: normal;
+}
+
+.destination-photos .container-fluid.how-it-works .btn-yellow {
+  margin-bottom: 165px;
+}
