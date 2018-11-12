@@ -2971,7 +2971,7 @@ header {
 
 .join-us {
   background: url(/img/backgrounds/bg-join-us.jpg) no-repeat 50%;
-  background-position: 80%;
+  background-position: 72.5%;
   background-size: auto 100%;
 }
 
@@ -2982,4 +2982,119 @@ header {
 
 .join-us .btn.btn-yellow {
   margin: 0 0 170px;
+}
+
+footer {
+  display: block;
+  background: #2B2B31;
+  padding: 70px 0 80px;
+}
+
+footer .container {
+  position: relative;
+}
+
+footer p2, footer a {
+  color: #BEBEC9;
+  font-weight: normal;
+  margin: 0 0 35px;
+}
+
+footer .row {
+  margin: 0 -20px 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .row div:nth-of-type(1) {
+  width: 40%;
+}
+
+footer .row div:nth-of-type(2) {
+  width: 40%;
+}
+
+footer .row div:nth-of-type(3) p2 {
+  margin: 60px 0 35px;
+}
+
+footer .row div:nth-of-type(4) {
+  padding-top: 60px;
+}
+
+footer .row div:nth-of-type(4) img {
+  position: relative;
+  top: 8px;
+  margin: 0;
+  display: inline-block;
+  max-width: 69px;
+  height: auto;
+  align-items: center;
+}
+
+footer .row div:nth-of-type(4) p3 {
+  display: inline-block;
+}
+
+footer .footer-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .footer-menu li {
+  margin-bottom: 10px;
+}
+
+footer .footer-menu li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+footer .social-media li {
+  position: relative;
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5D5D6A;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+footer .social-media li img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 18px;
+  vertical-align: middle;
+}
+
+footer .social-media li:last-of-type {
+  margin-right: 0;
+}
+
+footer .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+footer input[type="text"] {
+  padding: 16px 25px;
+  border-radius: 28px;
+  margin-right: 12px;
+  background: transparent;
+  border: 2px solid #5D5D6A;
+  width: 69%;
 }
