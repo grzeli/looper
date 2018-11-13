@@ -133,7 +133,7 @@
       display:flex;
     }
   }
-  @media only screen and (min-width:768px) and (max-width:1279px){
+  @media only screen and (min-width:768px){
     height:570px;
     h1{
       margin-top:130px;
@@ -189,6 +189,36 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 0;
+    }
+  }
+  @media only screen and (min-width:1280px){
+    height:800px;
+     h1{
+      margin-top:50px;
+    }
+    .where-inputs{
+      width:74%;
+      .input-group{
+        .form-control{
+          padding:22.5px 0;
+        }
+      }
+    }
+    .btn.btn-yellow{
+      font-size:14px;
+      line-height:37.5px;
+      border-radius:37.5px;
+      float:left;
+    }
+    .input-white-search-icon{
+      top:10px;
+      margin-right:12px;
+    }
+    .form-inline{
+      justify-content:flex-start;
+    }
+    .next-section{
+      top:180px;
     }
   }
 }
