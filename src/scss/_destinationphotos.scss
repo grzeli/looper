@@ -31,18 +31,33 @@
     }
   }
   .container-fluid.how-it-works{
+    @media only screen and (min-width:1280px){
+      height:800px;
+      background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 100%;
+      p2{
+        margin-top:150px;
+        margin-bottom:35px;
+      }
+      h2{
+        margin:0 0 20px;
+
+      }
+    }
     background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 50%;
     margin-top:50px;
     p2, p1, h2{
       color:#fff;
     }
-    p2{
-      margin-top:90px;
-      margin-bottom:35px;
+    @media only screen and (max-width:1279px){
+      p2{
+        margin-top:90px;
+        margin-bottom:35px;
+      }
+      h2{
+        margin:0;
+      }
     }
-    h2{
-      margin:0;
-    }
+
     p1{
       margin:15px 0 45px;
       font-weight: normal;
@@ -54,6 +69,13 @@
   .testimonials{
     text-align: center;
     margin-top:50px;
+    @media only screen and (max-width:1279px){
+      margin-top:50px;
+    }
+    @media only screen and (min-width:1280px){
+      margin-top:100px;
+      padding-bottom:13.5px;
+    }
     img{
       border-radius: 100%;
       width:100px;
@@ -156,6 +178,21 @@
         width:100%;
         height:490px;
       }
+    }
+  }
+  @media only screen and (min-width:1280px){
+    .container{
+      position:relative;
+    }
+    .prev{
+      position:absolute;
+      bottom:50%;
+      left:30px;
+    }
+    .next{
+      position:absolute;
+      bottom:50%;
+      right:30px;
     }
   }
 }

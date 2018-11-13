@@ -106,8 +106,9 @@
     }
   }
   @media only screen and (min-width:1280px){
+    overflow: hidden;
     .container-fluid{
-      width:31.6%;
+      width:31.55%;
       .person-list{
         span{
           color: #9EA1AD;
@@ -127,14 +128,18 @@
     .container-fluid:nth-of-type(3){
       margin:0 15px;
     }
+    .container-fluid:last-of-type{
+      float:left;
+    }
     .prev{
       position:absolute;
       bottom:50%;
-      left:-35px;
+      left:-30px;
     }
     .next{
       position:absolute;
       bottom:50%;
+      right:-30;
     }
   }
   .select{

@@ -61,6 +61,20 @@
       margin-top:16px;
     }
   }
+  @media only screen and (min-width:1280px){
+    padding-bottom: 100px;
+    .container-fluid{
+      max-width:31.5%;
+      min-height:625px;
+    }
+    .container-fluid:nth-of-type(2){
+      float:left;
+      margin-right:15px;
+    }
+    .container-fluid:last-of-type{
+      margin-left:15px;
+    }
+  }
 }
 
 //baner dolacz do nas
@@ -74,5 +88,12 @@
   }
   .btn.btn-yellow{
     margin:0 0 170px;
+  }
+  @media only screen and (min-width:1280px){
+    height:650px;
+    h2{
+      margin-top:190px;
+      margin-bottom: 65px;
+    }
   }
 }

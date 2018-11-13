@@ -173,7 +173,6 @@ body {
 
 @media (min-width: 1280px) {
   .container {
-    width: 100%;
     max-width: 1160px;
     padding-right: 60px;
     padding-left: 60px;
@@ -2792,8 +2791,11 @@ header {
 }
 
 @media only screen and (min-width: 1280px) {
+  .users-tours {
+    overflow: hidden;
+  }
   .users-tours .container-fluid {
-    width: 31.6%;
+    width: 31.55%;
   }
   .users-tours .container-fluid .person-list span {
     color: #9EA1AD;
@@ -2811,14 +2813,18 @@ header {
   .users-tours .container-fluid:nth-of-type(3) {
     margin: 0 15px;
   }
+  .users-tours .container-fluid:last-of-type {
+    float: left;
+  }
   .users-tours .prev {
     position: absolute;
     bottom: 50%;
-    left: -35px;
+    left: -30px;
   }
   .users-tours .next {
     position: absolute;
     bottom: 50%;
+    right: -30;
   }
 }
 
@@ -3102,17 +3108,32 @@ header {
   margin-top: 50px;
 }
 
+@media only screen and (min-width: 1280px) {
+  .destination-photos .container-fluid.how-it-works {
+    height: 800px;
+    background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 100%;
+  }
+  .destination-photos .container-fluid.how-it-works p2 {
+    margin-top: 150px;
+    margin-bottom: 35px;
+  }
+  .destination-photos .container-fluid.how-it-works h2 {
+    margin: 0 0 20px;
+  }
+}
+
 .destination-photos .container-fluid.how-it-works p2, .destination-photos .container-fluid.how-it-works p1, .destination-photos .container-fluid.how-it-works h2 {
   color: #fff;
 }
 
-.destination-photos .container-fluid.how-it-works p2 {
-  margin-top: 90px;
-  margin-bottom: 35px;
-}
-
-.destination-photos .container-fluid.how-it-works h2 {
-  margin: 0;
+@media only screen and (max-width: 1279px) {
+  .destination-photos .container-fluid.how-it-works p2 {
+    margin-top: 90px;
+    margin-bottom: 35px;
+  }
+  .destination-photos .container-fluid.how-it-works h2 {
+    margin: 0;
+  }
 }
 
 .destination-photos .container-fluid.how-it-works p1 {
@@ -3127,6 +3148,19 @@ header {
 .destination-photos .testimonials {
   text-align: center;
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .destination-photos .testimonials {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .destination-photos .testimonials {
+    margin-top: 100px;
+    padding-bottom: 13.5px;
+  }
 }
 
 .destination-photos .testimonials img {
@@ -3243,6 +3277,22 @@ header {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .destination-photos .container {
+    position: relative;
+  }
+  .destination-photos .prev {
+    position: absolute;
+    bottom: 50%;
+    left: 30px;
+  }
+  .destination-photos .next {
+    position: absolute;
+    bottom: 50%;
+    right: 30px;
+  }
+}
+
 .blog-and-tips {
   background-color: #f7f7f7;
   padding-bottom: 55px;
@@ -3318,6 +3368,23 @@ header {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .blog-and-tips {
+    padding-bottom: 100px;
+  }
+  .blog-and-tips .container-fluid {
+    max-width: 31.5%;
+    min-height: 625px;
+  }
+  .blog-and-tips .container-fluid:nth-of-type(2) {
+    float: left;
+    margin-right: 15px;
+  }
+  .blog-and-tips .container-fluid:last-of-type {
+    margin-left: 15px;
+  }
+}
+
 .join-us {
   background: url(/img/backgrounds/bg-join-us.jpg) no-repeat 50%;
   background-position: 72.5%;
@@ -3331,6 +3398,16 @@ header {
 
 .join-us .btn.btn-yellow {
   margin: 0 0 170px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .join-us {
+    height: 650px;
+  }
+  .join-us h2 {
+    margin-top: 190px;
+    margin-bottom: 65px;
+  }
 }
 
 footer {
@@ -3474,5 +3551,30 @@ footer input[type="text"] {
   }
   footer .row div:last-of-type p3 {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  footer .row div:last-of-type {
+    text-align: left;
+    order: 1;
+    padding-top: 0;
+  }
+  footer .row div:last-of-type p3 {
+    color: #5d5d6a;
+  }
+  footer .row div:last-of-type img {
+    position: relative;
+    top: -5px;
+    padding-bottom: 25px;
+  }
+  footer .row div:nth-of-type(1) {
+    order: 2;
+  }
+  footer .row div:nth-of-type(2) {
+    order: 3;
+  }
+  footer .row div:nth-of-type(3) {
+    order: 4;
   }
 }
