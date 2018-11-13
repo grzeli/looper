@@ -35,7 +35,7 @@ p1, p2, p3 ,p4{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1280px){
   h1{
     font-size: 60px;
   }
@@ -70,7 +70,7 @@ p1, p2, p3 ,p4{
     font-size: 13px;
   }
 }
-@media only screen and (min-width:769px) and (max-width: 1199px){
+@media only screen and (min-width:768px) and (max-width: 1279px){
   h1{
     font-size: 44px;
   }
@@ -105,7 +105,7 @@ p1, p2, p3 ,p4{
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
   h1{
     font-size: 27px;
   }

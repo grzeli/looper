@@ -9,7 +9,7 @@
       <header>
         <div class="container">
           <div class="row">
-            <div class="col-md-12 mobile-nav hidden-sm hidden-md hidden-lg">
+            <div class="col-xs-12 mobile-nav hidden-sm hidden-md hidden-lg">
               <button class="hamburger hamburder--collapse is-active" type="button">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
@@ -29,6 +29,28 @@
               <a href="#" class="mobile-menu-notification" ><img src="/img/icons_svg/notification_topmenu.svg"></a>
               <a href="#" class="mobile-menu-messages" ><img src="/img/icons_svg/message_topmenu.svg"></a>
               <a href="#" class="mobile-menu-user-avatar" ><img src="/img/users_avatar/user_avatar.png"></a>
+            </div>
+            <div class="col-sm-2 hidden-xs">
+              <div class="logo-top">
+                <img src="/img/icons_svg/logo_top.svg" alt="Looper">
+              </div>
+            </div>
+            <div class="col-sm-4 hidden-xs">
+              <div class="tablet-menu">
+                <ul>
+                  <li><a href="#">Jak to działa?</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#" class="search"><img src="/img/icons_svg/search_topmenu.svg" class="tablet-search-icon" alt="search"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+              <div class="user-menu">
+                <ul>
+                  <li><a href="#" class="btn btn-yellow">Dodaj wyjazd</a></li>
+                  <li><a href="#" class="btn btn-yellow--border">Zaloguj się</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -71,22 +93,22 @@
       <section class="key-features">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-lg-6">
+            <div class="col-xs-6 col-sm-3">
               <img src="/img/icons_svg/kluczowa_cecha_1.svg" alt="czowiek">
               <p2><strong>Poznawaj ciekawych ludzi</strong></p2>
               <p2>Potrafimy szybko znaleźć dla Ciebie partnerów do wyprawy, wycieczki czy podróży górskiej.</p2>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col-xs-6 col-sm-3">
               <img src="/img/icons_svg/kluczowa_cecha_2.svg" alt="Namiot">
               <p2><strong>Wykorzystuj swój wolny czas</strong></p2>
               <p2>Aktywizujemy ludzi o podobnych pasjach do wykorzystywania aktywnie wolnego czasu.</p2>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col-xs-6 col-sm-3">
               <img src="/img/icons_svg/kluczowa_cecha_3.svg" alt="człowiek z kitką">
               <p2><strong>Podróżuj bezpiecznie</strong></p2>
               <p2>Posiadamy bazę zweryfikowanych kontaktów popartą ocenami innych użytkowników.</p2>
             </div>
-            <div class="col-md-3 col-lg-6">
+            <div class="col-xs-6 col-sm-3">
               <img src="/img/icons_svg/kluczowa_cecha_4.svg" alt="człowiek który się wspina">
               <p2><strong>Spersonalizowane propozycje</strong></p2>
               <p2>Dobieramy rodzaj aktywności partnerów do Twoich indywidualnych potrzeb.</p2>
@@ -97,8 +119,14 @@
       <section class="users-tours">
         <div class="container">
           <h2>Wyjazdy użytkowników</h2>
+          <ul class="users-tours-tablet-nav hidden-xs">
+            <li class="active"><a href="#">Najblizszy weekend</a></li>
+            <li><a href="#">Następny weekend</a></li>
+            <li><a href="#">Popularne destynacje</a></li>
+            <li><a href="#">Ostatnio dodane</a></li>
+          </ul>
           <div class="select">
-            <div class="selected">
+            <div class="selected hidden-sm hidden-md hidden-lg">
               <p2>Najbliższy weekend</p2>
             </div>     
             <div class="container-fluid">
@@ -114,7 +142,7 @@
                         <span class="star active"></span>
                         <span class="star active"></span>
                         <span class="star active"></span>
-                        <span class="star"></span>
+                        <span class="star active"></span>
                         <span class="star"></span>
                       </div>
                     </div>
@@ -163,7 +191,76 @@
                 <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
               </div>
             </div>
-            <ul class="container-footer-nav">
+            <div class="container-fluid hidden-xs">
+              <div class="col-sm-12">
+                <div class="person-row">
+                  <div class="person">
+                    <div class="person-avatar">
+                      <img src="/img/users_avatar/user1.jpg" alt="zdjęcie uzytkownika">
+                    </div>
+                    <div class="person-name">
+                      <p3><strong>Wojtek Jagielski</strong></p3>
+                      <div class="person-rating">
+                        <span class="star active"></span>
+                        <span class="star active"></span>
+                        <span class="star active"></span>
+                        <span class="star active"></span>
+                        <span class="star"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trip-time">
+                    <span>6 dni</span>
+                  </div>
+                </div>
+                <div class="tour-dates-row">
+                  <div class="tour-dates-row__date">
+                    <p3>Wyjazd: 14.11.2018</p3>
+                    <span>(Pon. godz. 16:00)</span>
+                  </div>
+                  <div class="tour-dates-row__date">
+                    <p3>Powrót: 21.11.2018</p3>
+                    <span>(niedz. godz. 15:00)</span>
+                  </div>
+                </div>
+                <div class="tour-details">
+                  <h7>Zimowe przejście głównej grani Tatr Zachodnich.</h7>
+                  <ul>
+                    <li><p2><strong>Destynacja:</strong> Tatry, Słowacja</p2></li>
+                    <li><p2><strong>Miasto startowe:</strong> Wrocław</p2></li>
+                    <li><p2><strong>Preferowany transport: </strong>własny samochód</p2></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <p2><strong>Dołączyli już do wyjazdu (4 z 10 osób):</strong></p2>
+                <ul class="person-list">
+                  <li class="person-list participer">
+                    <img src="/img/users_avatar/user1.jpg" alt="użytkownik nr.1">
+                  </li>
+                  <li class="person-list participer">
+                    <img src="/img/users_avatar/user2.jpg" alt="użytkownik nr.2">
+                  </li>
+                  <li class="person-list participer">
+                    <img src="/img/users_avatar/user3.jpg" alt="użytkownik nr.3">
+                  </li>
+                  <li class="person-list participer">
+                    <img src="/img/users_avatar/user_avatar.png" alt="użytkownik nr.4">
+                  </li>
+                  <li class="person-list join">
+                    <a href="#">
+                      <img src="/img/icons_svg/dolacz_btn.svg" alt="+">
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
+              </div>
+            </div>
+            <ul class="container-footer-nav hidden-xs">
+              <li><a href="#" class="btn prev"></a></li>
+              <li><a href="#" class="btn next"></a></li>
+            </ul>
+            <ul class="container-footer-nav hidden-sm hidden-md hidden-lg">
               <li class="active"><span></span></li>
               <li><span></span></li>
               <li><span></span></li>
