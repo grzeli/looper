@@ -95,4 +95,34 @@ footer{
     border: 2px solid #5D5D6A;
     width:69%;
   }
+  @media only screen and (min-width:768px){
+    box-sizing: border-box;
+    .row{
+      div{
+         box-sizing: border-box;
+      }
+      div:nth-of-type(1){
+        width:25%;
+      }
+      div:nth-of-type(2){
+        width:25%;
+      }
+      div:nth-of-type(3){
+        p2{
+          margin:0 0 35px;
+        }
+      }
+      .form-inline{
+        flex-wrap: nowrap;
+      }
+      div:last-of-type{
+        float:right;
+        text-align: right;
+        padding-top:30px;
+        p3{
+          margin:0;
+        }
+      }
+    }
+  }
 }

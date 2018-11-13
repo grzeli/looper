@@ -34,6 +34,33 @@
   .btn.more{
     margin-top:11px;
   }
+  @media only screen and (min-width:768px){
+    .container-fluid{
+      max-width:47.5%;
+      box-sizing: border-box;
+      float:left;
+      min-height:500px;
+      img{
+        width:100%;
+      }
+      .col-sm-12{
+        box-sizing: border-box;
+      }
+      .btn.more{
+        margin-top:11px;
+      }
+    }
+    .container-fluid:nth-of-type(1){
+      margin-right:15px;
+    }
+    .container-fluid:nth-of-type(2){
+      margin-left:15px;
+      float:right;
+    }
+   .btn.more{
+      margin-top:16px;
+    }
+  }
 }
 
 //baner dolacz do nas

@@ -2731,6 +2731,7 @@ header {
   .users-tours .container-footer-nav {
     padding: 0;
     margin-top: 40px;
+    width: 45%;
   }
   .users-tours .container-footer-nav .btn {
     padding: 0;
@@ -3135,6 +3136,51 @@ header {
   background: url("/img/icons_svg/star_userinfo_1.svg");
 }
 
+@media only screen and (min-width: 768px) {
+  .destination-photos .container-footer-nav {
+    padding: 0;
+    margin-top: 40px;
+  }
+  .destination-photos .container-footer-nav .btn {
+    padding: 0;
+  }
+  .destination-photos .container-footer-nav li {
+    margin: 0;
+  }
+  .destination-photos .prev {
+    position: relative;
+    bottom: 0;
+    border: 0;
+    background: transparent url(/img/icons_svg/slider_arrow_left.svg) no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .destination-photos .next {
+    position: relative;
+    right: -37px;
+    bottom: 0;
+    border: 0;
+    background: transparent url(/img/icons_svg/slider_arrow_right.svg) no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .destination-photos .col-sm-4:nth-of-type(2) {
+    padding-left: 0;
+  }
+  .destination-photos .col-sm-4:nth-of-type(4) {
+    padding-right: 0;
+  }
+  .destination-photos .col-sm-4 {
+    box-sizing: border-box;
+  }
+  .destination-photos .col-sm-4 img {
+    width: 100%;
+    height: 490px;
+  }
+}
+
 .blog-and-tips {
   background-color: #f7f7f7;
   padding-bottom: 55px;
@@ -3180,6 +3226,34 @@ header {
 
 .blog-and-tips .btn.more {
   margin-top: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+  .blog-and-tips .container-fluid {
+    max-width: 47.5%;
+    box-sizing: border-box;
+    float: left;
+    min-height: 500px;
+  }
+  .blog-and-tips .container-fluid img {
+    width: 100%;
+  }
+  .blog-and-tips .container-fluid .col-sm-12 {
+    box-sizing: border-box;
+  }
+  .blog-and-tips .container-fluid .btn.more {
+    margin-top: 11px;
+  }
+  .blog-and-tips .container-fluid:nth-of-type(1) {
+    margin-right: 15px;
+  }
+  .blog-and-tips .container-fluid:nth-of-type(2) {
+    margin-left: 15px;
+    float: right;
+  }
+  .blog-and-tips .btn.more {
+    margin-top: 16px;
+  }
 }
 
 .join-us {
@@ -3310,4 +3384,33 @@ footer input[type="text"] {
   background: transparent;
   border: 2px solid #5D5D6A;
   width: 69%;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    box-sizing: border-box;
+  }
+  footer .row div {
+    box-sizing: border-box;
+  }
+  footer .row div:nth-of-type(1) {
+    width: 25%;
+  }
+  footer .row div:nth-of-type(2) {
+    width: 25%;
+  }
+  footer .row div:nth-of-type(3) p2 {
+    margin: 0 0 35px;
+  }
+  footer .row .form-inline {
+    flex-wrap: nowrap;
+  }
+  footer .row div:last-of-type {
+    float: right;
+    text-align: right;
+    padding-top: 30px;
+  }
+  footer .row div:last-of-type p3 {
+    margin: 0;
+  }
 }
