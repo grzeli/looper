@@ -1268,10 +1268,13 @@ header {
   box-sizing: border-box;
 }
 
+header .mobile-menu-user-menu {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   header .mobile-menu-user-menu {
     width: 100%;
-    display: none;
     border: 1px solid #e5e7f0;
     margin-top: 11px;
     position: absolute;
@@ -1360,14 +1363,14 @@ header {
   header .mobile-menu {
     display: none;
     overflow: hidden;
-    width: 100%;
+    width: calc(100% + 10px);
     height: 9999px;
     background-color: #f6af2f;
     z-index: 3;
     position: absolute;
     padding: 0;
     top: -20px;
-    left: 0;
+    left: -5px;
     color: #fff;
   }
   header .mobile-menu a {
@@ -1652,6 +1655,196 @@ header {
   display: flex;
 }
 
+.find-your-tour .container {
+  position: relative;
+}
+
+.find-your-tour .calender {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0 11px 11px 11px;
+  position: absolute;
+  z-index: 5;
+  top: 85px;
+  float: left;
+  width: max-content;
+  color: #333;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-family: 'Proxima Nova Regular';
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 350px) {
+  .find-your-tour .calender th, .find-your-tour .calender td {
+    min-width: 35px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .find-your-tour .calender {
+    top: 95px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .find-your-tour .calender {
+    top: 120px;
+  }
+}
+
+.find-your-tour .calender th {
+  min-width: 40px;
+  padding: 11px 9px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.find-your-tour .calender th img {
+  width: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.find-your-tour .calender td {
+  border-bottom: 1px solid #fff;
+  min-width: 40px;
+  padding: 11px 9px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.find-your-tour .calender tbody {
+  font-size: 12px;
+}
+
+.find-your-tour .calender tbody tr td:first-of-type {
+  border-radius: 20px 0 0 20px;
+}
+
+.find-your-tour .calender tbody tr td:last-of-type {
+  border-radius: 0 20px 20px 0;
+}
+
+.find-your-tour .calender table {
+  border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.find-your-tour .calender .month {
+  font-weight: normal;
+  min-width: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.find-your-tour .calender thead {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.find-your-tour .calender .off {
+  color: #b3b6c1;
+}
+
+.find-your-tour .calender .on {
+  color: #333;
+}
+
+.find-your-tour .calender .start {
+  background-color: #F6AF2F;
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.find-your-tour .calender .start:after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fce4b8;
+  z-index: -10;
+}
+
+.find-your-tour .calender .end {
+  background-color: #F6AF2F;
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.find-your-tour .calender .end:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fce4b8;
+  z-index: -10;
+}
+
+.find-your-tour .calender .in-range {
+  background: #fce4b8;
+}
+
+.find-your-tour .calender .left {
+  float: left;
+  padding-bottom: 11px;
+}
+
+.find-your-tour .calender .left:before {
+  content: '';
+  background: #f5f4f4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  z-index: -1;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.find-your-tour .calender .right {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .find-your-tour .calender .right {
+    float: left;
+  }
+}
+
+.find-your-tour .calender .right:before {
+  content: '';
+  background: #f5f4f4;
+  position: absolute;
+  left: 0;
+  top: calc(50% + 5px);
+  height: 40px;
+  width: 100%;
+  padding: 0 11px 0 11px;
+  margin-left: -11px;
+  z-index: -1;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
 @media only screen and (max-width: 767px) {
   .find-your-tour {
     height: 540px;
@@ -1682,6 +1875,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  position: relative;
   color: #fff;
   padding-top: 30px;
 }
@@ -1890,6 +2084,10 @@ header {
   .find-your-tour .next-section {
     top: 180px;
   }
+}
+
+.find-your-tour .calender {
+  display: none;
 }
 
 .key-features {
