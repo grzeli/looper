@@ -15,5 +15,9 @@
         $('nav > ul').toggle();
     });
 })(jQuery);
+  new webpack.ProvidePlugin({
+   $: "jquery",
+   jQuery: "jquery"
+  })
 
 },{}]},{},[1])
