@@ -10,11 +10,30 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 mobile-nav hidden-sm hidden-md hidden-lg">
-              <button class="hamburger hamburder--stand is-active" type="button">
+              <button class="hamburger hamburder--stand" id="nav-toggle" type="button">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
               </button>
+                <div class="mobile-menu">
+                  <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Jak to działa?</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">O nas</a></li>
+                  </ul>
+                  <ul class="social-media">
+                  <li>
+                    <a href="#"><img src="/img/icons_svg/ms_facebook_2.svg" alt="facebook"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="/img/icons_svg/ms_twitter_2.svg" alt="twitter"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="/img/icons_svg/ms_insta_2.svg" alt="instagram"></a>
+                  </li>
+                </ul>
+              </div>              
               <div class="logo-top">
                 <img src="/img/icons_svg/logo_top.svg" alt="Looper">
               </div>
@@ -29,6 +48,16 @@
               <a href="#" class="mobile-menu-notification" ><img src="/img/icons_svg/notification_topmenu.svg"></a>
               <a href="#" class="mobile-menu-messages" ><img src="/img/icons_svg/message_topmenu.svg"></a>
               <a href="#" class="mobile-menu-user-avatar" ><img src="/img/users_avatar/user_avatar.png"></a>
+            </div>
+            <div class="mobile-menu-user-menu">
+              <ul>
+                <li><a href="#">Twój profil</a></li>
+                <li><a href="#">Edytuj profil</a></li>
+                <li><a href="#">Moje wyjazdy</a></li>
+                <li><a href="#">Recenzje i opinie</a></li>
+                <li><a href="#">Ustawienia konta</a></li>
+                <li><a href="#">Wyloguj</a></li>
+              </ul>
             </div>
             <div class="col-sm-2 hidden-xs">
               <div class="logo-top">
@@ -506,17 +535,5 @@
       </footer>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-    var hamburgers = document.querySelectorAll(".hamburger");
-    if (hamburgers.length > 0) {
-      forEach(hamburgers, function(hamburger) {
-        hamburger.addEventListener("click", function() {
-          this.classList.toggle("is-active");
-        }, false);
-      });
-    }
-  </script>
-
   <script src="js/main.js"></script>
 </html>

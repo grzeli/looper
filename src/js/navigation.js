@@ -1,16 +1,17 @@
-(function($) {
-    $(function() {
-        $('nav ul li > a').click(function(e) {
-            $(this).siblings('#nav-dropdown').toggle();
-            $('#nav-dropdown').not($(this).siblings()).hide();
-            e.stopPropagation();
-        });
-        $('html').click(function() {
-            $('#nav-dropdown').hide();
-        });
-    });
-  
-    $('#nav-toggle').click(function() {
-        $('nav > ul').toggle();
-    });
+$(document).ready(function($) {  
+  $('#nav-toggle').click(function() {
+    $('.mobile-menu').toggle()
+  });
+  $('.mobile-menu-user-avatar').click(function(){
+    $('.mobile-menu-user-menu').toggle()
+  });
+  var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
 })(jQuery);
