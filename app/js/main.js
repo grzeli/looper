@@ -17,6 +17,12 @@ $(document).ready(function($) {
   $('.mobile-search').click(function(){
     $('.search-input-form').toggle()
   });
+  $('.tablet-search-icon').click(function(){
+    $('.search-input-form').toggle()
+  });
+  $('#close-button').click(function(){
+    $('.search-input-form').toggle()
+  });
   $('.mobile-menu-messages').click(function(){
     $('.more-messages').toggle()
   });

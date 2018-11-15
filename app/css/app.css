@@ -1282,11 +1282,25 @@ header .mobile-menu-user-menu {
   display: none;
 }
 
+header .col-sm-2.hidden-xs {
+  padding-right: 0;
+}
+
 header .btn.btn-yellow {
   z-index: 16;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+  header .col-sm-4.hidden-xs {
+    padding-left: 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  header .col-sm-4.hidden-xs .form-control {
+    width: 80%;
+    padding-right: 0;
+  }
   header .more-messages {
     width: 300px;
     right: 2.15rem;
@@ -1377,6 +1391,16 @@ header .search-input-form {
 
 header .search-input-form input:focus {
   outline: none;
+}
+
+header .search-input-form .input-group-addon.hidden-md img {
+  height: 20px;
+  width: 20px;
+  float: right;
+  position: relative;
+  top: 7.5px;
+  right: 20px;
+  cursor: pointer;
 }
 
 header .search-input-form .form-control {
@@ -1953,9 +1977,6 @@ header .more-notification:after {
     margin-top: 20px;
     width: 80px;
     height: 30px;
-  }
-  header .col-sm-4.hidden-xs {
-    width: max-content;
   }
   header .tablet-menu {
     position: relative;
