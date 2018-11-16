@@ -3579,3 +3579,407 @@ footer input[type="text"] {
     order: 4;
   }
 }
+
+.search-form {
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.search-form .container {
+  box-sizing: border-box;
+}
+
+.search-form .col-xs-12 {
+  box-sizing: border-box;
+}
+
+.search-form .col-xs-12 h2 {
+  margin: 20px 0 20px 0;
+}
+
+.search-form .calender {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0 11px 11px 11px;
+  position: absolute;
+  z-index: 5;
+  top: 60px;
+  float: left;
+  width: max-content;
+  color: #333;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-family: 'Proxima Nova Regular';
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 350px) {
+  .search-form .calender th, .search-form .calender td {
+    min-width: 35px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-form .calender {
+    top: 95px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .search-form .calender {
+    top: 120px;
+  }
+}
+
+.search-form .calender th {
+  min-width: 40px;
+  padding: 11px 9px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.search-form .calender th img {
+  width: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.search-form .calender td {
+  border-bottom: 1px solid #fff;
+  min-width: 40px;
+  padding: 11px 9px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.search-form .calender tbody {
+  font-size: 12px;
+}
+
+.search-form .calender tbody tr td:first-of-type {
+  border-radius: 20px 0 0 20px;
+}
+
+.search-form .calender tbody tr td:last-of-type {
+  border-radius: 0 20px 20px 0;
+}
+
+.search-form .calender table {
+  border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form .calender .month {
+  font-weight: normal;
+  min-width: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.search-form .calender thead {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.search-form .calender .off {
+  color: #b3b6c1;
+}
+
+.search-form .calender .on {
+  color: #333;
+}
+
+.search-form .calender .start {
+  background-color: #F6AF2F;
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.search-form .calender .start:after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fce4b8;
+  z-index: -10;
+}
+
+.search-form .calender .end {
+  background-color: #F6AF2F;
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.search-form .calender .end:before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fce4b8;
+  z-index: -10;
+}
+
+.search-form .calender .in-range {
+  background: #fce4b8;
+}
+
+.search-form .calender .left {
+  float: left;
+  padding-bottom: 11px;
+}
+
+.search-form .calender .left:before {
+  content: '';
+  background: #f5f4f4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  z-index: -1;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.search-form .calender .right {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-form .calender .right {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .right:before {
+    content: '';
+    background: #f5f4f4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    padding: 0 11px 0 11px;
+    margin-left: -11px;
+    z-index: -1;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+}
+
+.search-form h1, .search-form p1 {
+  color: #fff;
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+.search-form .input-white-search-icon {
+  width: 20px;
+  height: 15px;
+  margin-top: -7px;
+  position: relative;
+  top: 2px;
+}
+
+.search-form .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+.search-form .form-inline input:focus,
+.search-form .form-inline select:focus,
+.search-form .form-inline textarea:focus,
+.search-form .form-inline button:focus {
+  outline: none;
+}
+
+.search-form .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.search-form .label {
+  display: block;
+  touch-action: manipulation;
+}
+
+.search-form input {
+  overflow: visible;
+}
+
+.search-form input[type="text"] {
+  border-radius: 17px;
+  padding: 11px 22px 9px;
+}
+
+.search-form .input-group-addon {
+  padding: .5rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-form .input-group-addon img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.search-form .where-inputs .input-group .form-control {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.search-form .where-inputs input {
+  background: transparent;
+  color: #474952;
+}
+
+@media only screen and (max-width: 767px) {
+  .where-inputs {
+    width: 100%;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 0;
+  }
+  .input-group {
+    width: 100%;
+    border: 0;
+    padding: 7px 0;
+    background: #fff;
+    margin-bottom: 6px;
+    border-radius: 28px;
+    position: relative;
+    display: flex;
+    border: 2px solid #EFF1F6;
+  }
+  .search-form .btn-yellow {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-inline {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .form-inline .btn.btn-yellow {
+    font-size: 0;
+    float: right;
+  }
+  .form-inline .btn.btn-yellow .input-white-search-icon {
+    width: 25px;
+    height: 29px;
+  }
+  .where-inputs {
+    width: 80%;
+    border-radius: 35px;
+    margin-right: 20px;
+    background: #fff;
+    padding: 0 15px;
+  }
+  .where-inputs .input-group:first-of-type {
+    border-right: 1px solid #EFF1F6;
+    width: 48%;
+  }
+  .where-inputs .input-group:last-of-type {
+    margin-left: 10px;
+  }
+  .where-inputs .input-group {
+    width: 50%;
+    border: 0;
+    padding: 7.5px 0;
+    position: relative;
+    display: flex;
+  }
+  .where-inputs .input-group .form-control {
+    padding: 15px 0;
+  }
+  .where-inputs .input-group .form-control:last-of-type {
+    margin-left: 10px;
+  }
+  .where-inputs .input-group .input-group-addon {
+    margin-right: 10px;
+  }
+  .form-inline label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .where-inputs {
+    width: 74%;
+  }
+  .where-inputs .input-group .form-control {
+    padding: 22.5px 0;
+  }
+  .input-white-search-icon {
+    top: 10px;
+    margin-right: 12px;
+  }
+  .form-inline {
+    justify-content: flex-start;
+  }
+  .form-inline .btn.btn-yellow {
+    font-size: 14px;
+    line-height: 37.5px;
+    border-radius: 37.5px;
+    float: left;
+  }
+  .next-section {
+    top: 180px;
+  }
+}
+
+.calender {
+  display: none;
+}
