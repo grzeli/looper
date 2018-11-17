@@ -1,18 +1,148 @@
 .search-form{
   box-sizing: border-box;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   .container{
     box-sizing: border-box;
   }
   .col-xs-12{
     box-sizing: border-box;
+    padding:0;
     h2{
       margin:20px 0 20px 0;
     }
+    color:#474952;
+  }
+  .form-inline:last-of-type{
+    flex-flow:row;
+    flex-wrap:wrap; 
+  }
+  .content-left:first-of-type{
+    justify-content: flex-start;
+    margin-right: 7.5px;
+    max-width:calc(50% - 7.5px);
+  }
+  .content-right{
+    justify-content:flex-start; 
+    margin-left:7.5px;
+    max-width: calc(50% - 7.5px);
+    width:100%;
+    margin-bottom: 20px;
+    color: #474952;
+    .select{
+      margin-bottom: 0;
+      position:relative;
+      display:inline-block;
+      width:100%;
+      .select-input{
+        border: 1px solid #e5e7f0;
+        border-radius: 17px;
+        padding: 11px 22px 9px;
+        font-size: 13px;
+        cursor: pointer;
+        width:100%;
+        box-sizing: border-box;
+        position:relative;
+        span{
+          color: #7c7c85;
+          font-size: 14px;
+          position: absolute;
+          right: 30px;
+          top: 12px;
+        }
+      }
+      .select-input:after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
+        width: 15px;
+        height: 15px;
+      }
+      .select-list{
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+        width: 100%;
+        border: 1px solid #e5e7f0;
+        background: #fff;
+        border-bottom-right-radius: 17px;
+        border-bottom-left-radius: 17px;
+        display: none;
+      }
+    }
+  }
+  .autocomplete{
+    position:relative;
+    display:inline-block;
+    max-width:260px;
+    .autocomplete_input{
+      border: 1px solid #e5e7f0;
+      border-radius: 17px;
+      padding: 11px 22px 9px;
+      font-size: 13px;
+      width:100%;
+      input[type="text"]{
+        border:0;
+        margin:0;
+        padding:0;
+      }
+    }
+  }
+  .autocomplete-list{
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    border: 1px solid #e5e7f0;
+    background: #fff;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    display: none;
+    ul{
+      margin-top:0;
+      margin-bottom: 1rem;
+      list-style:none;
+    }
+  }
+  .radio-buttons{
+    display:flex;
+    flex-direction: row;
+    div{
+      margin:10px 0 10px 0;
+    }
+    input[type="radio"]{
+      display:none;
+      box-sizing: border-box;
+      padding:0;
+      &:checked + label{
+        background: url("/img/icons_svg/radio-checked.png") no-repeat 0 50%;
+      }
+    }
+  }
+  input[type="radio"]+label{
+    font-family: proxima_nova_rgregular;
+    padding-left: 28px;
+    background: url(/img/icons_svg/radio.png) no-repeat 0 50%;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  input[type="radio"] :checked{
+      background: url("/img/icons_svg/radio-checked.png") no-repeat 0 50%;
+  }
+  
+  label{
+    font-family: 'Proxima Nova Bold';
+    color:#474952;
+    display:block;
+    margin-bottom: 15px;
   }
   .calender{
     box-sizing: border-box;
-    display:flex;
+    display:none;
     flex-direction:column;
     border-radius:5px;
     padding:0 11px 11px 11px;
@@ -137,7 +267,7 @@
       background: #f5f4f4;
       position: absolute;
       left: 0;
-      top: 0;
+      top: 50%;
       height: 40px;
       width: 100%;
       z-index: -1;
@@ -192,6 +322,9 @@
     textarea:focus,
     button:focus {
       outline: none;
+    }
+    .btn.btn-yellow{
+      margin-bottom: 30px;
     }
   }
   .sr-only{
