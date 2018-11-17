@@ -414,7 +414,6 @@
   margin:0;
   list-style: none;
   float:left;
-  margin-top:25px;
   .active{
     opacity:1;
   }
@@ -435,7 +434,12 @@
   padding-top:50px;
   background-color: #f7f7f7;
   h2{
-    margin:0;
+    margin:0 0 15px 0;
+  }
+  @media only screen and (max-width:767px){
+    .container-fluid{
+        margin-bottom: 30px;
+    }
   }
   @media only screen and (min-width:768px){
     .users-tours-tablet-nav{
@@ -769,6 +773,9 @@
     img{
       width:100%;
       max-width:100%;
+    }
+    @media only screen and (max-width:767px){
+      margin-bottom: 25px;
     }
   }
   .destination-photos__descryption{

@@ -40,12 +40,14 @@ a{
   box-shadow:0 5px 30px rgba(70, 70, 70, 0.35);
 }
 .more{
-  margin-top:25px;
   color: #2f2f2f;
   padding:19px 48px 19px 28px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: normal;
   float:right;
+  @media only screen and (min-width:768px){
+    margin-top:25px;
+  }
 }
 .more:after{
   content: '';

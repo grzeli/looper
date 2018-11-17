@@ -1,6 +1,29 @@
 .search-form{
   box-sizing: border-box;
-  padding-bottom: 40px;
+  border-bottom: 1px solid #EFF1F6;
+  .filter-results{
+    text-decoration: none;
+    color:#464952;
+    text-transform: none;
+    margin-top:20px;
+    text-align: right;
+    float:right;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 25px
+  }
+  .filter-results:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left:-25px;
+    top: 0;
+    background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
+    width: 15px;
+    height: 15px;    
+  }
   .container{
     box-sizing: border-box;
   }
