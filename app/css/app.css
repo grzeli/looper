@@ -3598,6 +3598,10 @@ footer input[type="text"] {
   }
 }
 
+.end {
+  padding-bottom: 50px;
+}
+
 .users-tours .person-list li span {
   color: #9EA1AD;
   font-weight: 700;
@@ -4105,6 +4109,221 @@ footer input[type="text"] {
   color: #474952;
 }
 
+.search-form .search-results_filters {
+  box-sizing: border-box;
+  display: none;
+}
+
+.search-form .search-results_filters .search-results_filters-filter-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.search-form .search-results_filters .search-results_filters-filter-box span {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 24px;
+  background-color: #5f6069;
+  color: #c5c8d3;
+  display: inline-block;
+  border: 1px solid #e5e7f0;
+  border-radius: 17px;
+  padding: 9px 40px 9px 20px;
+  background: #EFF1F6 url(../img/icons/delete-grey-small.png) no-repeat;
+  background-position: calc(100% - 18px) 50%;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.search-form .search-results_filters .search-results_filters-box {
+  padding-top: 20px;
+}
+
+.search-form .search-results_filters .search-results_filters-box h4 {
+  font-family: 'Proxima Nova Bold';
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-price {
+  max-width: 200px;
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-price input[type="text"] {
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+  border: 1px solid #e5e7f0;
+  border-radius: 17px;
+  width: 100%;
+  padding: 11px 22px 9px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-price span {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  line-height: 40px;
+  color: #7c7c85;
+  font-size: 13px;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes div {
+  margin-bottom: 5px;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes .new-line {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes input[type="checkbox"]:checked + label {
+  background: url(/img/icons_svg/checkbox-checked.png) no-repeat 0 50%;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes input[type="checkbox"] + label {
+  padding-left: 29px;
+  font-family: "Proxima Nova Regular" !important;
+  background: url(/img/icons_svg/checkbox.png) no-repeat 0 50%;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes input[type="checkbox"] + label img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.search-form .search-results_filters .search-results_filters-box .select {
+  min-width: 200px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.search-form .search-results_filters .search-results_filters-box .select .select_input {
+  border: 1px solid #e5e7f0;
+  border-radius: 17px;
+  padding: 11px 22px 9px;
+  font-size: 13px;
+  background: url(/img/icons_svg/arrow_select.png) no-repeat;
+  background-position: calc(100% - 20px) 50%;
+  cursor: pointer;
+  font-family: 'Tiempos Bold', sans-serif;
+}
+
+.search-form .search-results_filters .search-results_filters-box .select .select__list {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  border: 1px solid #e5e7f0;
+  background: white;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  display: none;
+}
+
+.search-form .search-results_filters .search-results_filters-box .select .select__list ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.search-form .search-results_filters .search-results_filters-box .select .select__list ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider {
+  padding: 35px 0;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider .track-labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -35px;
+  padding-bottom: 15px;
+  font-size: 12px;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider .track {
+  background: #e7e9f1;
+  border-radius: 1px;
+  height: 3px;
+  width: 100%;
+  position: relative;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider .track .track_choosen {
+  background: #f6af2f;
+  width: 40%;
+  position: absolute;
+  height: 3px;
+  left: 0;
+  top: 0;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider .track .track_choosen:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #F6AF2F;
+  border-radius: 100%;
+  margin-top: -4px;
+  float: right;
+  margin-right: -19px;
+  cursor: pointer;
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider .track .track_choosen:before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  display: block;
+  border-radius: 100%;
+  margin-top: -14px;
+  margin-right: -10px;
+  float: right;
+  background: rgba(246, 175, 47, 0.3);
+}
+
+.search-form .search-results_filters .search-results_filters-box .input-slider .track span {
+  float: right;
+  margin-top: -33px;
+  margin-right: -32px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+
 @media only screen and (max-width: 767px) {
   .where-inputs {
     width: 100%;
@@ -4208,4 +4427,94 @@ footer input[type="text"] {
 
 .calender {
   display: none;
+}
+
+.meet-tour-participaitors .meet-participaitor-box {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.meet-tour-participaitors .meet-participaitor-box .btn-border img {
+  margin-right: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.meet-tour-participaitors .meet-participaitor-box .meet-participaitor-box_image {
+  max-width: 95px;
+  position: relative;
+  margin: 0 auto 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.meet-tour-participaitors .meet-participaitor-box .meet-participaitor-box_image img {
+  max-width: 100%;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+}
+
+.meet-tour-participaitors .meet-participaitor-box .meet-participaitor-box_image:after {
+  content: '';
+  display: block;
+  width: calc(80px - 4px);
+  height: calc(80px - 4px);
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+
+.meet-tour-participaitors .meet-participaitor-box p3 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.meet-tour-participaitors .meet-participaitor-box-rating {
+  clear: both;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.meet-tour-participaitors .meet-participaitor-box-rating .star-rating {
+  clear: both;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.meet-tour-participaitors .meet-participaitor-box-rating .star-rating .star {
+  display: inline-block;
+  widtH: 15px;
+  height: 15px;
+  float: left;
+  background: url("/img/icons_svg/star_userinfo_2.svg") no-repeat 0 0;
+  background-size: 15px;
+}
+
+.meet-tour-participaitors .meet-participaitor-box-rating .star-rating .active {
+  background: url("/img/icons_svg/star_userinfo_1.svg") no-repeat 0 0;
+}
+
+.meet-tour-participaitors .meet-participaitor-box-rating .btn.btn0border {
+  padding: 12px 15px 9px;
+}
+
+.meet-tour-participaitors .more_second {
+  color: #2f2f2f;
+  text-decoration: none;
+  padding: 19px 48px 19px 28px;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: normal;
+  float: right;
+  padding-right: 0;
 }

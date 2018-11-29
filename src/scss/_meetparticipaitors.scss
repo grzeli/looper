@@ -1,0 +1,82 @@
+.meet-tour-participaitors{
+  .meet-participaitor-box{
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin-bottom: 30px;
+    padding:30px 0;
+    text-align: center;
+    .btn-border{
+      img{
+        margin-right:5px;
+        top:3px;
+        position:relative;
+      }
+    }
+    .meet-participaitor-box_image{
+      max-width:95px;
+      position:relative;
+      margin: 0 auto 10px;
+      text-align: center;
+      box-sizing: border-box;
+      img{
+        max-width:100%;
+        border-radius: 100%;
+        width:80px;
+        height:80px;
+      }
+    }
+    .meet-participaitor-box_image:after{
+      content: '';
+      display: block;
+      width: calc(80px - 4px);
+      height: calc(80px - 4px);
+      position: absolute;
+      left: 10px;
+      top: 2px;
+      border-radius: 100%;
+      background-color: transparent;
+      border: 2px solid #fff;
+      box-sizing:border-box;
+    }
+    p3{
+      margin-bottom: 5px;
+      text-align: center;
+    }
+  }
+  .meet-participaitor-box-rating{
+    clear: both;
+    width:100%;
+    margin-bottom: 30px;
+    text-align: center;
+    .star-rating{
+      clear:both;
+      margin:0 auto;
+      display: inline-block;
+      .star{
+        display:inline-block;
+        widtH:15px;
+        height:15px;
+        float:left;
+        background:url('/img/icons_svg/star_userinfo_2.svg') no-repeat 0 0;
+        background-size: 15px;
+      }
+      .active{
+        background:url('/img/icons_svg/star_userinfo_1.svg') no-repeat 0 0;
+      }
+    }
+    .btn.btn0border{
+      padding:12px 15px 9px;
+    }
+  }
+  .more_second{
+    color: #2f2f2f;
+    text-decoration: none;
+    padding: 19px 48px 19px 28px;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-weight: normal;
+    float: right;
+    padding-right:0;
+  }
+}

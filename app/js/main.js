@@ -4,6 +4,11 @@ $(document).ready(function($) {
     $('.calender').toggle()
   });
 });
+$(document).ready(function($) {
+  $('.filter-results').click(function() {
+    $('.search-results_filters').toggle()
+  });
+});
 $(document).ready(function($) {  
   $('#nav-toggle').click(function() {
     $('.mobile-menu').toggle()
