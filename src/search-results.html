@@ -1,7 +1,7 @@
 <!-- partial:partial/_header.html -->
 <!-- partial -->
 <section class="search-form">
-  <div class="container">
+  <div class="container full">
     <div class="col-xs-12">
       <h2>Dostosuj swój wyjazd</h2>
       <form class="form-inline">
@@ -486,10 +486,13 @@
     </div>
   </div>  
 </section>
-<section class="users-tours">
+<section class="users-tours search-form-tours">
   <div class="container">
     <h2>Wyniki wyszukiwania(15)</h2>
-    <ul class="users-tours-tablet-nav hidden-xs">
+    <div class="selected hidden-xs">
+      <p2>Data wyjazdu</p2>
+    </div>
+    <ul class="users-tours-tablet-nav hidden-xs hidden-sm hidden-md">
       <li class="active"><a href="#">Data wyjazdu</a></li>
       <li><a href="#">Następny weekend</a></li>
       <li><a href="#">Popularne destynacje</a></li>
@@ -561,7 +564,69 @@
           <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
         </div>
       </div>
-      <div class="container-fluid  hidden-sm hidden-md">
+      <div class="container-fluid hidden-xs">
+        <div class="col-sm-12">
+          <div class="person-row">
+            <div class="person">
+              <div class="person-avatar">
+                <img src="/img/users_avatar/user1.jpg" alt="zdjęcie uzytkownika">
+              </div>
+              <div class="person-name">
+                <p3><strong>Wojtek Jagielski</strong></p3>
+                <div class="person-rating">
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="trip-time">
+              <span>6 dni</span>
+            </div>
+          </div>
+          <div class="tour-dates-row">
+            <div class="tour-dates-row__date">
+              <p3>Wyjazd: 14.11.2018</p3>
+              <span>(Pon. godz. 16:00)</span>
+            </div>
+            <div class="tour-dates-row__date">
+              <p3>Powrót: 21.11.2018</p3>
+              <span>(niedz. godz. 15:00)</span>
+            </div>
+          </div>
+          <div class="tour-details">
+            <h7>Zimowe przejście głównej grani Tatr Zachodnich.</h7>
+            <ul>
+              <li><p2><strong>Destynacja:</strong> Tatry, Słowacja</p2></li>
+              <li><p2><strong>Miasto startowe:</strong> Wrocław</p2></li>
+              <li><p2><strong>Preferowany transport: </strong>własny samochód</p2></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <p2><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p2>
+          <ul class="person-list">
+            <li class="person-list participer">
+              <img src="/img/users_avatar/user1.jpg" alt="użytkownik nr.1">
+            </li>
+            <li class="person-list participer">
+              <img src="/img/users_avatar/user2.jpg" alt="użytkownik nr.2">
+            </li>
+            <li class="person-list participer">
+              <img src="/img/users_avatar/user3.jpg" alt="użytkownik nr.3">
+            </li>
+            <li class="person-list join">
+              <a href="#">
+                <img src="/img/icons_svg/dolacz_btn.svg" alt="+">
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
+        </div>
+      </div>
+      <div class="container-fluid">
         <div class="col-sm-12">
           <div class="person-row">
             <div class="person">
@@ -697,7 +762,7 @@
           <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
         </div>
       </div>
-      <ul class="container-footer-nav hidden-xs">
+      <ul class="container-footer-nav hidden-xs hidden-sm gidden-md">
         <li><a href="#" class="btn prev"></a></li>
         <li><a href="#" class="btn next"></a></li>
       </ul>
@@ -772,7 +837,71 @@
           <img src="/img/icons_svg/contact.png" alt="umow sie">Umów się
         </a>
       </div>
-    </div> 
+    </div>  
+  </div>
+  <div class="container">
+    <div class="col-xs-12 hidden-xs">
+      <div class="meet-participaitor-box">
+        <div class="meet-participaitor-box_image">
+          <img src="/img/users_avatar/user3.jpg" alt="zdjecie uzytkownika">
+        </div>
+        <p3>Wojtek Jagielski</p3>
+        <div class="meet-participaitor-box-rating">
+          <div class="star-rating">
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star"></span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-border">
+          <img src="/img/icons_svg/contact.png" alt="umow sie">Umów się
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-12 hidden-xs">
+      <div class="meet-participaitor-box">
+        <div class="meet-participaitor-box_image">
+          <img src="/img/users_avatar/user1.jpg" alt="zdjecie uzytkownika">
+        </div>
+        <p3>Wojtek Jagielski</p3>
+        <div class="meet-participaitor-box-rating">
+          <div class="star-rating">
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star"></span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-border">
+          <img src="/img/icons_svg/contact.png" alt="umow sie">Umów się
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-12 hidden-xs">
+      <div class="meet-participaitor-box">
+        <div class="meet-participaitor-box_image">
+          <img src="/img/users_avatar/user2.jpg" alt="zdjecie uzytkownika">
+        </div>
+        <p3>Wojtek Jagielski</p3>
+        <div class="meet-participaitor-box-rating">
+          <div class="star-rating">
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star active"></span>
+            <span class="star"></span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-border">
+          <img src="/img/icons_svg/contact.png" alt="umow sie">Umów się
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <a href="#" class="btn more_second">Załaduj więcej</a>
   </div>
 </section>
@@ -841,7 +970,78 @@
         <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
       </div>
     </div>
-    <div class="container-fluid  hidden-sm hidden-md">
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="person-row">
+          <div class="person">
+            <div class="person-avatar">
+              <img src="/img/users_avatar/user1.jpg" alt="zdjęcie uzytkownika">
+            </div>
+            <div class="person-name">
+              <p3><strong>Wojtek Jagielski</strong></p3>
+              <div class="person-rating">
+                <span class="star active"></span>
+                <span class="star active"></span>
+                <span class="star active"></span>
+                <span class="star active"></span>
+                <span class="star"></span>
+              </div>
+            </div>
+          </div>
+          <div class="trip-time">
+            <span>6 dni</span>
+          </div>
+        </div>
+        <div class="tour-dates-row">
+          <div class="tour-dates-row__date">
+            <p3>Wyjazd: 14.11.2018</p3>
+            <span>(Pon. godz. 16:00)</span>
+          </div>
+          <div class="tour-dates-row__date">
+            <p3>Powrót: 21.11.2018</p3>
+            <span>(niedz. godz. 15:00)</span>
+          </div>
+        </div>
+        <div class="tour-details">
+          <h7>Zimowe przejście głównej grani Tatr Zachodnich.</h7>
+          <ul>
+            <li><p2><strong>Destynacja:</strong> Tatry, Słowacja</p2></li>
+            <li><p2><strong>Miasto startowe:</strong> Wrocław</p2></li>
+            <li><p2><strong>Preferowany transport: </strong>własny samochód</p2></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <p2><strong>Dołączyli już do wyjazdu (10 z 12 osób):</strong></p2>
+        <ul class="person-list">
+          <li class="person-list participer">
+            <img src="/img/users_avatar/user1.jpg" alt="użytkownik nr.1">
+          </li>
+          <li class="person-list participer">
+            <img src="/img/users_avatar/user2.jpg" alt="użytkownik nr.2">
+          </li>
+          <li class="person-list participer">
+            <img src="/img/users_avatar/user3.jpg" alt="użytkownik nr.3">
+          </li>
+          <li class="person-list participer">
+            <img src="/img/users_avatar/user_avatar.png" alt="użytkownik nr.4">
+          </li>
+          <li class="person-list participer">
+            <img src="/img/users_avatar/user2.jpg" alt="użytkownik nr.2">
+          </li>
+          <li class="person-list">
+            <span>+5</span>
+          </li>
+          <li class="person-list join">
+            <a href="#">
+              <img src="/img/icons_svg/dolacz_btn.svg" alt="+">
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
+      </div>
+    </div>    
+    <div class="container-fluid hidden-xs">
       <div class="col-sm-12">
         <div class="person-row">
           <div class="person">
@@ -977,7 +1177,7 @@
         <a href="#" class="btn btn-yellow">Więcej szczegołów</a>
       </div>
     </div>
-    <ul class="container-footer-nav hidden-xs">
+    <ul class="container-footer-nav hidden-xs hidden-sm hidden-md">
       <li><a href="#" class="btn prev"></a></li>
       <li><a href="#" class="btn next"></a></li>
     </ul>
