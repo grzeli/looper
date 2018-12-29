@@ -3633,19 +3633,6 @@ footer input[type="text"] {
   }
 }
 
-html, body, section {
-  min-height: 100%;
-  box-sizing: border-box;
-}
-
-.container {
-  min-height: 100%;
-}
-
-.row {
-  min-height: 100%;
-}
-
 .end {
   padding-bottom: 50px;
 }
@@ -3689,6 +3676,10 @@ html, body, section {
   .search-form .search-results_section {
     background-color: #f7f7f7;
     box-sizing: border-box;
+  }
+  .search-form .search-results_section .row {
+    display: flex;
+    flex-wrap: wrap;
   }
   .search-form .search-results_section .search-results-desktop {
     width: 75%;
