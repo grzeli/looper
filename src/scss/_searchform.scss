@@ -1,3 +1,13 @@
+html, body, section,{
+  min-height:100%;
+  box-sizing: border-box;
+}
+.container{
+  min-height:100%;
+}
+.row{
+  min-height: 100%;
+}
 .end{
   padding-bottom: 50px;
   @media only screen and (min-width:768px){
@@ -24,13 +34,37 @@
     }
   }
 }
+
 .search-form{
+  @media only screen and (max-width:1279px){
+    background-color: #f7f7f7;
+  }
+  box-sizing: border-box;
+  .search-results_section{
+    @media only screen and (min-width:1280px){
+      background-color: #f7f7f7;
+      box-sizing: border-box;
+      .search-results-desktop{
+        width:75%;
+        float:right;
+      }
+      .col-lg-3:nth-of-type(1){
+        padding-right:0;
+        width:25%;
+      }
+    }
+  }
   .white{
     background:white;
   }
   .borderTB{
-    border-top:1px solid #EFF1F6;
-    border-bottom: 1px solid #EFF1F6;
+    border-top:1px solid #e6e6eb;;
+    border-bottom: 1px solid #e6e6eb;
+  }
+  .white.borderTB{
+    @media only screen and (min-width:1280px){
+      padding-bottom: 40px;
+    }
   }
   box-sizing: border-box;
   .person-list{
@@ -493,6 +527,46 @@
         margin-top:20px;
       }
     }
+    .select{
+      .selected{
+        background-color: #fff;
+        border: 1px solid #e5e7f0;
+        padding: 11px 22px 9px;
+        border-radius: 17px;
+        cursor: pointer;
+        margin-bottom: 25px;
+        position:relative;
+        p2{
+          margin:0;
+          position:relative;
+        }
+        &:after{
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: 20px;
+          top: 12px;
+          background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    .searchbox-results{
+      float:left;
+      .white{
+        float:left;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        .box-btn-yellow{
+          margin:0 auto;
+          text-align: center;
+          &:hover{
+            box-shadow:none;
+          }
+        }
+      }
+    }
   }
   @media only screen and (min-width:768px){
     .form-inline{
@@ -531,6 +605,9 @@
     .form-inline:last-of-type{
       flex-wrap:nowrap;
       margin-top:30px;
+      label{
+        margin-bottom: 15px;
+      }
     }
     .where-inputs{
       width:100%;
@@ -585,12 +662,7 @@
   }
   @media only screen and (min-width:1280px){
     .where-inputs{
-      width:74%;
-      .input-group{
-        .form-control{
-          padding:22.5px 0;
-        }
-      }
+      width:calc(100% - 150px);
     }
     .input-white-search-icon{
       top:10px;
@@ -598,11 +670,45 @@
     }
     .form-inline{
       justify-content:flex-start;
+      &:last-of-type{
+        label{
+          text-align: left;
+          justify-content: flex-start;
+        }
+        .radio-buttons{
+          div{
+            margin:0;
+          }
+        }
+        margin-top:40px;
+        display:flex;
+        flex-direction: row;
+        .content-left:first-of-type{
+          margin-right: 50px;
+        }
+        .content-left:last-of-type{
+          width:360px;
+          margin-right: 40px;
+          .autocomplete{
+            width:100%;
+            max-width:100%;
+          }
+        }
+        .content-right{
+          width:200px;
+        }
+      }
       .btn.btn-yellow{
         font-size:14px;
         line-height:37.5px;
         border-radius:37.5px;
-        float:left;
+        float:right;
+        padding:6.5px 25.5px;
+        .input-white-search-icon{
+          width:20px;
+          height:20px;
+          top:5px;
+        }
       }
     }
     .next-section{
@@ -615,6 +721,11 @@
       display:inline-block;
       margin-bottom: 35px;
       margin-top:50px;
+    }
+    .select{
+      h2:first-of-type{
+        margin-top:40px;
+      }
     }
     .selected{
       width:140px;
@@ -643,12 +754,37 @@
       }
 
     }
+    .searchbox-results{
+      .btn.btn-yellow{
+        margin:0 auto;
+      }
+      width:100%;
+      margin-bottom: 35px;
+      .white{
+        display: flex;
+        flex-direction: row;
+        .btn.btn-yellow{
+          padding:16px 20px;
+          font-size: 14px;
+        }
+        .col-xs-12:nth-of-type(2){
+          border-left:1px solid #EFF1F6;
+        }
+        .person-list{
+          li.person-list:nth-of-type(n+4){
+            display:none;
+          }
+          .join{
+            display:block!important;
+          }
+        }
+      }
+    }
     .container-fluid{
       max-width:100%;
       margin-bottom: 35px;
       display:flex;
       flex-direction: row;
-      background:white;
       .col-sm-12:nth-of-type(2){
         border-top:0;
         border-left:1px solid #EFF1F6;
@@ -673,6 +809,18 @@
     background:white;
     box-sizing: border-box;
     display:none;
+    @media only screen and (min-width:1280px){
+      float:left;
+      width:20%;
+      display:block;
+      .search-filters-white-addon{
+        background: #fff;
+        padding: 0 15px 0 9999px;
+        margin: 0 -15px 0 -9999px;
+        border-right: 1px solid #e6e6eb;
+        height:100%;
+      }
+    }
     .search-results_filters-filter-box{
       display: flex;
       flex-direction: row;
@@ -858,8 +1006,6 @@
       }
     }
   }
-  background-color: #f7f7f7;
-  box-sizing: border-box;
   .col-xs-12{
     box-sizing: border-box;
   }
@@ -1063,6 +1209,35 @@
       }
     }
   }
+  .call-me{
+    box-sizing: border-box;
+    margin:0 auto;
+    .col-sm-4{
+      padding:0;      
+    }
+    @media only screen and (min-width:768px){
+      .col-sm-4:nth-of-type(1){
+        padding-right:20px;
+      }
+      .col-sm-4:nth-of-type(4){
+        padding-right:20px;
+      }
+      .col-sm-4:nth-of-type(3){
+        padding-left:20px;
+      }
+      .col-sm-4:nth-of-type(6){
+        padding-left:20px;
+      }
+      .col-sm-4:nth-of-type(2){
+        padding-left:10px;
+        padding-right: 10px;
+      }
+      .col-sm-4:nth-of-type(5){
+        padding-left:10px;
+        padding-right: 10px;
+      }
+    }
+  }
   .meet-participaitor-box{
     width:100%;
     background-color: #fff;
@@ -1141,6 +1316,22 @@
     font-family: 'Proxima Nova Bold', sans-serif;
     font-weight: normal;
     float: right;
-    padding-right:0;
+    padding-right:30px;
+    &:after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 20px;
+      background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .last-col{
+    margin-bottom: 70px;
+  }
+  .select{
+    margin-bottom: 50px;
   }
 }
