@@ -171,7 +171,7 @@
   }
   align-items: center;
   display:flex;
-  h1, p1{
+  h1, .p1{
     color:#fff;
     margin-bottom:.5rem;
     margin-top:0;
@@ -299,7 +299,7 @@
       margin-top:130px;
       margin-bottom: 20px;
     }
-    p1{
+    .p1{
       margin-bottom: 20px;
     }
     .btn.btn-yellow{
@@ -569,10 +569,10 @@
     border-radius: 17px;
     cursor:pointer;
     margin-bottom:25px;
-    p2{
+    .p2{
       margin:0;
     }
-    p2:after{
+    .p2:after{
       content:'';
       display: inline-block;
       position:absolute;
@@ -611,7 +611,7 @@
       }
     }
     .person-name{
-      p3{
+      .p3{
         margin-bottom:5px;
         margin-top:5px;
       }
@@ -653,7 +653,7 @@
     .tour-dates-row{
       text-align: center;
       text-align: center;
-      p3{
+      .p3{
         margin:0;
         text-align: center;
         margin-bottom:10px;
@@ -686,7 +686,7 @@
     }
     .tour-details{
       padding-bottom:18px;
-      p2{
+      .p2{
         margin:0;
       }
       ul{
@@ -716,7 +716,7 @@
       border-top: 1px solid #EFF1F6;
       text-align: center;
       padding-bottom: 30px;
-      p2{
+      .p2{
         margin-top:30px;
         margin-bottom: 20px;
       }
@@ -798,7 +798,7 @@
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 120px;
-    p2, h6{
+    .p2, h6{
       color:#fff;
       margin-bottom:5px;
       margin:0;
@@ -808,7 +808,7 @@
     @media only screen and (min-width:1280px){
       height:800px;
       background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 100%;
-      p2{
+      .p2{
         margin-top:150px;
         margin-bottom:35px;
       }
@@ -819,11 +819,11 @@
     }
     background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 50%;
     margin-top:50px;
-    p2, p1, h2{
+    .p2, .p1, h2{
       color:#fff;
     }
     @media only screen and (max-width:1279px){
-      p2{
+      .p2{
         margin-top:90px;
         margin-bottom:35px;
       }
@@ -832,7 +832,7 @@
       }
     }
 
-    p1{
+    .p1{
       margin:15px 0 45px;
       font-weight: normal;
     }
@@ -872,14 +872,14 @@
       background-color: transparent;
       border: 2px solid #fff;
     }
-    p2:nth-of-type(1){
+    .p2:nth-of-type(1){
       margin:20px 0 25px;
       line-height: 1.48;
     }
-    p2:nth-of-type(2){
+    .p2:nth-of-type(2){
       position:relative;
     }
-    p2:nth-of-type(2):before{
+    .p2:nth-of-type(2):before{
       content: '"';
       color: #BEBEC9;
       font-size: 48px;
@@ -888,7 +888,7 @@
       left: 0px;
       top: -27.5px;
     }
-    p2:nth-of-type(2):after{
+    .p2:nth-of-type(2):after{
       content: '"';
       color: #BEBEC9;
       font-size: 48px;
@@ -979,15 +979,15 @@
       max-width:100%;
     }
     text-align: center;
-    p2:nth-of-type(1){
+    .p2:nth-of-type(1){
       color: #F6AF2F;
       text-transform: uppercase;
       margin:30px 0 20px;
     }
-    p1:nth-of-type(1){
+    .p1:nth-of-type(1){
       margin:0 0 15px;
     }
-    p1:nth-of-type(2){
+    .p1:nth-of-type(2){
       margin:0 0 35px;
     }
     .more{
