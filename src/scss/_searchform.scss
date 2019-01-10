@@ -272,10 +272,10 @@
       }
     }
     @media only screen and (min-width:768px){
-      top:95px;
+      top:70px;
     }
     @media only screen and (min-width:1280px){
-      top:120px;
+      top:70px;
     }    
     float:left;
     width:max-content;
@@ -384,7 +384,12 @@
       background: #f5f4f4;
       position: absolute;
       left: 0;
-      top: 50%;
+      @media only screen and (max-width:767px){
+              top: 50%;
+      }
+      @media only screen and (min-width:768px){
+        top:0;
+      }
       height: 40px;
       width: 100%;
       z-index: -1;
@@ -618,7 +623,8 @@
       flex-wrap:nowrap;
       margin-top:30px;
       label{
-        margin-bottom: 15px;
+        margin-bottom: 11px;
+        padding-top:5px;
       }
     }
     .where-inputs{
