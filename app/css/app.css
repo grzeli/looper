@@ -14,7 +14,7 @@
   src: local("Tiempos Bold"), url("/fonts/Tiempos/TiemposTextWeb-Bold.eot") format("embedded-opentype"), url("TiemposTextWeb-Bold.woff") format("woff"), url("TiemposTextWeb-Bold.ttf") format("truetype");
 }
 
-h1, h2, h3, h4, h5, h6, h7, p, p1, p2, p3, p4 {
+h1, h2, h3, h4, h5, h6, .h7, p, .p1, .p2, .p3, .p4 {
   color: #464952;
 }
 
@@ -58,16 +58,16 @@ h6, .h7 {
   .h7 {
     font-size: 20px;
   }
-  p1 {
+  .p1 {
     font-size: 22px;
   }
-  p2 {
+  .p2 {
     font-size: 16px;
   }
-  p3 {
+  .p3 {
     font-size: 14px;
   }
-  p4 {
+  .p4 {
     font-size: 13px;
   }
 }
@@ -94,16 +94,16 @@ h6, .h7 {
   .h7 {
     font-size: 20px;
   }
-  p1 {
+  .p1 {
     font-size: 20px;
   }
-  p2 {
+  .p2 {
     font-size: 14px;
   }
-  p3 {
+  .p3 {
     font-size: 14px;
   }
-  p4 {
+  .p4 {
     font-size: 13px;
   }
 }
@@ -130,16 +130,16 @@ h6, .h7 {
   .h7 {
     font-size: 18px;
   }
-  p1 {
+  .p1 {
     font-size: 16px;
   }
-  p2 {
+  .p2 {
     font-size: 14px;
   }
-  p3 {
+  .p3 {
     font-size: 14px;
   }
-  p4 {
+  .p4 {
     font-size: 13px;
   }
 }
@@ -1254,6 +1254,7 @@ a {
   background-color: #f6af2f;
   color: #fff;
   border: none;
+  font-size: 14px;
 }
 
 .btn-yellow:hover {
@@ -1534,6 +1535,17 @@ a {
   color: #fff;
   margin-bottom: .5rem;
   margin-top: 0;
+  width: 74%;
+}
+
+.find-your-tour .p1 {
+  font-weight: 100;
+}
+
+@media only screen and (min-width: 1280px) {
+  .find-your-tour .p1 {
+    font-size: 26px;
+  }
 }
 
 .find-your-tour .input-white-search-icon {
@@ -1618,6 +1630,13 @@ a {
   margin-bottom: 0;
 }
 
+@media only screen and (min-width: 1280px) {
+  .find-your-tour .where-inputs .input-group .form-control:last-of-type {
+    font-size: 16px;
+    font-family: 'Proxima Nova Regular', sans-serif;
+  }
+}
+
 .find-your-tour .where-inputs input {
   background: transparent;
   color: #474952;
@@ -1628,7 +1647,8 @@ a {
   text-align: center;
   top: 70px;
   font-family: 'Proxima Nova Regular', sans-serif;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 100;
   width: 100%;
   display: block;
   color: #fff;
@@ -1776,6 +1796,11 @@ a {
   border-style: none;
 }
 
+.key-features strong {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: 600;
+}
+
 .key-features .container {
   position: relative;
 }
@@ -1876,6 +1901,7 @@ a {
   }
   .users-tours .container-fluid .col-sm-12 {
     box-sizing: border-box;
+    padding: 0 20px;
   }
   .users-tours .container-footer-nav {
     padding: 0;
@@ -1982,7 +2008,7 @@ a {
   background-color: #fff;
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
   position: relative;
-  padding: 0 5px;
+  padding: 0;
 }
 
 .users-tours .container-fluid .person {
@@ -2558,6 +2584,7 @@ header .mobile-menu-user-menu {
 
 header .btn.btn-yellow {
   z-index: 16;
+  font-size: 13px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 845px) {
@@ -3343,6 +3370,8 @@ header .more-notification:after {
     padding: 0 10px;
   }
   header .tablet-menu ul li a {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 14px;
     color: #474952;
     text-transform: none;
     text-decoration: none;
@@ -3503,6 +3532,11 @@ header .more-notification:after {
     color: #464952;
   }
   .mobile-menu-user-avatar span {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 14px;
+    color: #464850;
+    letter-spacing: .5px;
+    font-weight: 300;
     line-height: 40px;
     position: relative;
     left: 5px;
@@ -3513,7 +3547,17 @@ header .more-notification:after {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: -20px;
-    padding: 0 20px 0 25px;
+    padding: 0 30px 0 25px;
+  }
+  .mobile-menu-user-avatar span:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 11.5px;
+    background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
+    width: 10px;
+    height: 15px;
   }
   .mobile-menu-user-avatar img {
     border-top: 1px solid lightgray !important;

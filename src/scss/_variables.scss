@@ -22,7 +22,7 @@ $green: #7abcb7;
   url('TiemposTextWeb-Bold.ttf') format('truetype');
 
 }
-h1, h2, h3, h4, h5, h6, h7, p, p1, p2, p3 ,p4{
+h1, h2, h3, h4, h5, h6, .h7, p, .p1, .p2, .p3, .p4{
   color:$dark-gray;
 }
 h1, h2, h3, h4, h5{
@@ -62,16 +62,16 @@ h6, .h7{
   .h7{
     font-size: 20px;
   }
-  p1{
+  .p1{
     font-size: 22px;
   }
-  p2{
+  .p2{
     font-size: 16px;
   }
-  p3{
+  .p3{
     font-size: 14px;
   }
-  p4{
+  .p4{
     font-size: 13px;
   }
 }
@@ -97,16 +97,16 @@ h6, .h7{
   .h7{
     font-size: 20px;
   }
-  p1{
+  .p1{
     font-size: 20px;
   }
-  p2{
+  .p2{
     font-size: 14px;
   }
-  p3{
+  .p3{
     font-size: 14px;
   }
-  p4{
+  .p4{
     font-size: 13px;
   }
 }
@@ -132,16 +132,16 @@ h6, .h7{
   .h7{
     font-size: 18px;
   }
-  p1{
+  .p1{
     font-size: 16px;
   }
-  p2{
+  .p2{
     font-size: 14px;
   }
-  p3{
+  .p3{
     font-size: 14px;
   }
-  p4{
+  .p4{
     font-size: 13px;
   }
 }
