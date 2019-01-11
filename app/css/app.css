@@ -1535,7 +1535,12 @@ a {
   color: #fff;
   margin-bottom: .5rem;
   margin-top: 0;
-  width: 74%;
+}
+
+@media only screen and (min-width: 768px) {
+  .find-your-tour h1, .find-your-tour .p1 {
+    width: 74%;
+  }
 }
 
 .find-your-tour .p1 {
@@ -1545,6 +1550,12 @@ a {
 @media only screen and (min-width: 1280px) {
   .find-your-tour .p1 {
     font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .find-your-tour .p1 {
+    font-size: 22px;
   }
 }
 
@@ -1647,12 +1658,23 @@ a {
   text-align: center;
   top: 70px;
   font-family: 'Proxima Nova Regular', sans-serif;
-  font-size: 16px;
   font-weight: 100;
   width: 100%;
   display: block;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+  .find-your-tour .next-section {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .find-your-tour .next-section {
+    font-size: 16px;
+  }
 }
 
 .find-your-tour .next-section:after {
@@ -1801,6 +1823,30 @@ a {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 767px) {
+  .key-features strong {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .key-features strong {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .key-features .p3 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .key-features .p3 {
+    font-size: 12px;
+  }
+}
+
 .key-features .container {
   position: relative;
 }
@@ -1871,8 +1917,22 @@ a {
     color: #474952;
     font-weight: normal;
     box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1279px) {
+  .users-tours .users-tours-tablet-nav a {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1280px) {
+  .users-tours .users-tours-tablet-nav a {
     font-size: 14px;
   }
+}
+
+@media only screen and (min-width: 768px) {
   .users-tours .users-tours-tablet-nav .active a {
     background: #fff;
     border-color: #ddd;
@@ -1990,6 +2050,7 @@ a {
 }
 
 .users-tours .selected .p2 {
+  font-size: 13px;
   margin: 0;
 }
 
@@ -2016,6 +2077,10 @@ a {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+.users-tours .container-fluid .person .person-name p {
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 
 .users-tours .container-fluid .person-row {
@@ -2091,15 +2156,40 @@ a {
   margin: 0;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-dates-row .p3 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .users-tours .container-fluid .tour-dates-row .p3 {
+    font-size: 14px;
+  }
 }
 
 .users-tours .container-fluid .tour-dates-row span {
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 13px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 100;
   color: #464952;
   letter-spacing: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-dates-row span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .users-tours .container-fluid .tour-dates-row span {
+    font-size: 12px;
+  }
 }
 
 .users-tours .container-fluid .tour-dates-row .tour-dates-row__date:first-of-type {
@@ -2124,6 +2214,24 @@ a {
 
 .users-tours .container-fluid .tour-details .p2 {
   margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-details .p2 {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .users-tours .container-fluid .tour-details .p2 {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .users-tours .container-fluid .tour-details .p2 {
+    font-size: 14px;
+  }
 }
 
 .users-tours .container-fluid .tour-details ul {
@@ -2162,6 +2270,13 @@ a {
 .users-tours .container-fluid .col-sm-12:nth-of-type(2) .p2 {
   margin-top: 30px;
   margin-bottom: 20px;
+  font-family: 'Proxima Nova Bold',sans-serif;
+  font-size: 13px;
+}
+
+.users-tours .container-fluid .col-sm-12:nth-of-type(2) .btn.btn-yellow {
+  font-size: 13px;
+  font-family: 'Proxima Nova Bold',sans-serif;
 }
 
 .users-tours .container-fluid .person-list {
@@ -2222,7 +2337,34 @@ a {
 }
 
 .destination-photos .col-sm-4.col-lg-3 img {
-  object-fit: contain;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(2) {
+    padding-right: 20px;
+  }
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(3) {
+    padding: 0 10px 0 10px;
+  }
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(4) {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(2) {
+    padding-right: 30px !important;
+  }
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(3) {
+    padding: 0 20px 0 10px;
+  }
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(4) {
+    padding: 0 10px 0 20px;
+  }
+  .destination-photos .col-sm-4.col-lg-3:nth-of-type(5) {
+    padding-left: 30px !important;
+  }
 }
 
 .destination-photos .destination-photos__photo {
@@ -2237,6 +2379,9 @@ a {
 @media only screen and (max-width: 767px) {
   .destination-photos .destination-photos__photo {
     margin-bottom: 25px;
+  }
+  .destination-photos .destination-photos__photo img {
+    object-fit: cover;
   }
 }
 
@@ -2275,14 +2420,52 @@ a {
   .destination-photos .container-fluid.how-it-works .p2 {
     margin-top: 150px;
     margin-bottom: 35px;
+    font-size: 18px;
   }
+}
+
+@media only screen and (min-width: 1280px) and (min-width: 1280px) {
+  .destination-photos .container-fluid.how-it-works .p1 {
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
   .destination-photos .container-fluid.how-it-works h2 {
     margin: 0 0 20px;
   }
 }
 
+@media only screen and (min-width: 1280px) and (min-width: 1280px) {
+  .destination-photos .container-fluid.how-it-works h2, .destination-photos .container-fluid.how-it-works .p1 {
+    max-width: 740px;
+  }
+}
+
 .destination-photos .container-fluid.how-it-works .p2, .destination-photos .container-fluid.how-it-works .p1, .destination-photos .container-fluid.how-it-works h2 {
   color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .destination-photos .container-fluid.how-it-works .p2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .destination-photos .container-fluid.how-it-works .p2 {
+    font-size: 18px;
+  }
+  .destination-photos .container-fluid.how-it-works .p1 {
+    font-size: 22px;
+  }
+  .destination-photos .container-fluid.how-it-works .btn.btn-yellow {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
 }
 
 @media only screen and (max-width: 1279px) {
@@ -2350,10 +2533,36 @@ a {
 .destination-photos .testimonials .p2:nth-of-type(1) {
   margin: 20px 0 25px;
   line-height: 1.48;
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .destination-photos .testimonials .p2:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .destination-photos .testimonials .p2:nth-of-type(1) {
+    font-size: 16px;
+  }
 }
 
 .destination-photos .testimonials .p2:nth-of-type(2) {
   position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .destination-photos .testimonials .p2:nth-of-type(2) {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .destination-photos .testimonials .p2:nth-of-type(2) {
+    font-size: 15px;
+  }
 }
 
 .destination-photos .testimonials .p2:nth-of-type(2):before {
@@ -2362,8 +2571,27 @@ a {
   font-size: 48px;
   font-family: "Proxima Nova Bold";
   position: absolute;
-  left: 0px;
-  top: -27.5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .destination-photos .testimonials .p2:nth-of-type(2):before {
+    top: -20px;
+    left: -15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .destination-photos .testimonials .p2:nth-of-type(2):before {
+    top: -15px;
+    left: -25px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .destination-photos .testimonials .p2:nth-of-type(2):before {
+    left: -22px;
+    top: -17.5px;
+  }
 }
 
 .destination-photos .testimonials .p2:nth-of-type(2):after {
@@ -2372,8 +2600,27 @@ a {
   font-size: 48px;
   font-family: "Proxima Nova Bold";
   position: absolute;
-  right: 10px;
-  bottom: -35px;
+}
+
+@media only screen and (max-width: 767px) {
+  .destination-photos .testimonials .p2:nth-of-type(2):after {
+    bottom: -27px;
+    right: -10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .destination-photos .testimonials .p2:nth-of-type(2):after {
+    bottom: -23px;
+    right: -15px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .destination-photos .testimonials .p2:nth-of-type(2):after {
+    right: 180px;
+    bottom: -24.5px;
+  }
 }
 
 .destination-photos .testimonials .rating {
@@ -2472,6 +2719,24 @@ a {
   margin: 30px 0 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .blog-and-tips .container-fluid .p1 {
+    font-size: 14px;
+  }
+  .blog-and-tips .container-fluid .p1 strong {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .blog-and-tips .container-fluid .p1 {
+    font-size: 14px;
+  }
+  .blog-and-tips .container-fluid .p1 strong {
+    font-size: 18px;
+  }
+}
+
 .blog-and-tips .container-fluid .p1:nth-of-type(1) {
   margin: 0 0 15px;
 }
@@ -2529,12 +2794,33 @@ a {
     max-width: 31.5%;
     min-height: 625px;
   }
+  .blog-and-tips .container-fluid .p2 {
+    font-size: 14px;
+  }
+  .blog-and-tips .container-fluid .p1 {
+    font-size: 14px;
+  }
+  .blog-and-tips .container-fluid .p1 strong {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 18px;
+  }
+  .blog-and-tips .container-fluid .col-sm-12 {
+    padding: 0 30px;
+  }
+  .blog-and-tips .container-fluid:nth-of-type(1) {
+    margin-right: 26.5px;
+    width: calc(33.33333% - 26.5px);
+  }
   .blog-and-tips .container-fluid:nth-of-type(2) {
     float: left;
-    margin-right: 15px;
+    margin-right: 13.5px;
+    margin-left: 13.5px;
+    width: calc(33.3333% - 27px);
   }
   .blog-and-tips .container-fluid:last-of-type {
-    margin-left: 15px;
+    margin-left: 26.5px;
+    float: right;
+    width: calc(33.3333% - 26.5px);
   }
 }
 
@@ -2549,8 +2835,22 @@ a {
   margin: 215px 0 50px;
 }
 
+@media only screen and (min-width: 1280px) {
+  .join-us h2 {
+    width: 70%;
+  }
+}
+
 .join-us .btn.btn-yellow {
   margin: 0 0 170px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .join-us .btn.btn-yellow {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -3672,6 +3972,10 @@ footer {
   padding: 70px 0 80px;
 }
 
+footer input:focus {
+  outline: none;
+}
+
 footer .container {
   position: relative;
 }
@@ -3683,17 +3987,9 @@ footer .p2, footer a {
 }
 
 footer .row {
-  margin: 0 -20px 0 -20px;
   display: flex;
   flex-wrap: wrap;
-}
-
-footer .row div:nth-of-type(1) {
-  width: 40%;
-}
-
-footer .row div:nth-of-type(2) {
-  width: 40%;
+  box-sizing: border-box;
 }
 
 footer .row div:nth-of-type(3) .p2 {
@@ -3714,8 +4010,10 @@ footer .row div:nth-of-type(4) img {
   align-items: center;
 }
 
-footer .row div:nth-of-type(4) .p3 {
-  display: inline-block;
+@media only screen and (max-width: 1279px) {
+  footer .row div:nth-of-type(4) .p3 {
+    display: inline-block;
+  }
 }
 
 footer .footer-menu {
@@ -3778,7 +4076,12 @@ footer input[type="text"] {
   margin-right: 12px;
   background: transparent;
   border: 2px solid #5D5D6A;
-  width: 69%;
+}
+
+@media only screen and (min-width: 768px) {
+  footer input[type="text"] {
+    width: 69%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -3787,12 +4090,6 @@ footer input[type="text"] {
   }
   footer .row div {
     box-sizing: border-box;
-  }
-  footer .row div:nth-of-type(1) {
-    width: 25%;
-  }
-  footer .row div:nth-of-type(2) {
-    width: 25%;
   }
   footer .row div:nth-of-type(3) .p2 {
     margin: 0 0 35px;
@@ -3810,7 +4107,69 @@ footer input[type="text"] {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  footer .row div {
+    padding: 0;
+  }
+  footer .row div:nth-of-type(1) {
+    padding-left: 20px;
+    margin-right: -20px;
+  }
+  footer .row div:nth-of-type(2) {
+    padding-right: 20px;
+    margin-left: -20px;
+  }
+  footer .row div:nth-of-type(3) {
+    padding: 0 20px;
+    margin-bottom: 75px;
+  }
+  footer .row div:nth-of-type(3) .form-inline {
+    padding: 0;
+  }
+  footer .row div:nth-of-type(4) {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  footer .row div {
+    padding: 0;
+  }
+  footer .row div:nth-of-type(1) {
+    padding-left: 39px;
+    margin-right: 15px;
+  }
+  footer .row div:nth-of-type(3) {
+    padding-right: 39px;
+    margin-left: -15px;
+  }
+  footer .row div:nth-of-type(3) .form-inline {
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+  footer .row div:nth-of-type(3) .form-inline input {
+    width: 205px;
+  }
+  footer .row div:last-of-type {
+    padding: 0 39px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
+  footer .form-inline {
+    margin: 0;
+    float: left;
+  }
+  footer .form-inline input {
+    width: 226px;
+  }
+  footer .row div {
+    padding: 0;
+  }
+  footer .row div .p2 {
+    font-size: 14px;
+  }
   footer .row div:last-of-type {
     text-align: left;
     order: 1;
@@ -3818,6 +4177,7 @@ footer input[type="text"] {
   }
   footer .row div:last-of-type .p3 {
     color: #5d5d6a;
+    font-size: 12px;
   }
   footer .row div:last-of-type img {
     position: relative;
@@ -3826,12 +4186,19 @@ footer input[type="text"] {
   }
   footer .row div:nth-of-type(1) {
     order: 2;
+    margin-right: 30px;
   }
   footer .row div:nth-of-type(2) {
     order: 3;
   }
   footer .row div:nth-of-type(3) {
     order: 4;
+    padding-right: 60px;
+    margin-left: -45px;
+  }
+  footer .row div:nth-of-type(4) {
+    padding-left: 60px;
+    margin-right: 15px;
   }
 }
 
