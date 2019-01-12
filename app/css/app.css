@@ -4264,6 +4264,20 @@ footer input[type="text"] {
   background: white;
 }
 
+@media only screen and (max-width: 767px) {
+  .search-form .white .col-xs-12:nth-of-type(2) .p2 {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .search-form .white .col-xs-12:nth-of-type(2) .p2 br {
+    display: none;
+  }
+  .search-form .white .col-xs-12:nth-of-type(2) .p2 strong {
+    margin-right: 5px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .search-form .borderTB {
     border-top: 1px solid #e6e6eb;
@@ -4313,6 +4327,24 @@ footer input[type="text"] {
   font-family: "Proxima Nova Bold", sans-serif !important;
 }
 
+.search-form .form-inline label {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .form-inline label {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-form .form-inline label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
 .search-form .filter-results {
   text-decoration: none;
   color: #464952;
@@ -4321,10 +4353,17 @@ footer input[type="text"] {
   text-align: right;
   float: right;
   font-size: 16px;
+  font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: normal;
   position: relative;
   margin-bottom: 15px;
   margin-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .filter-results {
+    font-size: 14px;
+  }
 }
 
 .search-form .filter-results:before {
@@ -4383,8 +4422,8 @@ footer input[type="text"] {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 14px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-size: 13px;
   background: white;
 }
 
@@ -4458,6 +4497,24 @@ footer input[type="text"] {
 .search-form .radio-buttons {
   display: flex;
   flex-direction: row;
+}
+
+.search-form .radio-buttons label {
+  font-family: "Proxima Nova Regular", sans-serif !important;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .radio-buttons label {
+    padding-top: 3.5px !important;
+    padding-bottom: 3.5px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-form .radio-buttons label {
+    font-size: 13px;
+  }
 }
 
 .search-form .radio-buttons div {
@@ -4738,6 +4795,16 @@ footer input[type="text"] {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .search-form .form-inline .btn.btn-yellow {
+    font-size: 16px;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .search-form .sr-only {
   position: absolute;
   width: 1px;
@@ -4794,6 +4861,20 @@ footer input[type="text"] {
   flex: 1 1 auto;
   width: 1%;
   margin-bottom: 0;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  color: #464952;
+}
+
+@media only screen and (max-width: 1279px) {
+  .search-form .where-inputs .input-group .form-control {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .search-form .where-inputs .input-group .form-control {
+    font-size: 16px;
+  }
 }
 
 .search-form .where-inputs input {
@@ -4836,6 +4917,7 @@ footer input[type="text"] {
   .search-form .select .selected .p2 {
     margin: 0;
     position: relative;
+    font-size: 13px;
   }
   .search-form .select .selected:after {
     content: '';
@@ -4913,7 +4995,7 @@ footer input[type="text"] {
   }
   .search-form .form-inline:last-of-type label {
     margin-bottom: 11px;
-    padding-top: 5px;
+    padding-top: 8px;
   }
   .search-form .where-inputs {
     width: 100%;
@@ -5044,11 +5126,28 @@ footer input[type="text"] {
   }
 }
 
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1279px) {
+  .search-form .selected {
+    top: 22.5px;
+    right: 39px;
+    margin: 0;
+    position: absolute;
+  }
+  .search-form .selected .p2 {
+    font-size: 13px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (min-width: 1280px) {
   .search-form .selected {
-    top: 135px;
+    top: 0px;
+    margin-bottom: 0;
+    margin-top: 17.5px;
     width: 180px;
     padding: 2.5px 20px;
+  }
+  .search-form .selected .p2 {
+    font-size: 13px;
   }
   .search-form .selected .p2:after {
     right: 15px;
@@ -5083,7 +5182,7 @@ footer input[type="text"] {
   }
   .search-form .searchbox-results .white .btn.btn-yellow {
     padding: 16px 20px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -5102,6 +5201,25 @@ footer input[type="text"] {
 @media only screen and (min-width: 768px) {
   .search-form .searchbox-results .white .col-xs-12:nth-of-type(2) {
     border-left: 1px solid #EFF1F6;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .search-form .searchbox-results .white .col-xs-12:nth-of-type(2) .p2 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-form .searchbox-results .white .col-xs-12:nth-of-type(2) .p2 strong {
+    font-family: 'Proxima Nova Bold', sans-serif;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1280px) {
+  .search-form .searchbox-results .white .col-xs-12:nth-of-type(2) .p2 strong {
+    font-size: 13px;
   }
 }
 
@@ -5220,6 +5338,14 @@ footer input[type="text"] {
   font-family: 'Proxima Nova Bold';
   margin-bottom: .5rem;
   margin-top: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .search-form .search-results_filters .search-results_filters-box h4 {
+    font-size: 14px;
+  }
 }
 
 .search-form .search-results_filters .search-results_filters-box .input-price {
@@ -5238,6 +5364,8 @@ footer input[type="text"] {
   padding: 11px 22px 9px;
   margin-bottom: 20px;
   font-size: 13px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  color: #464952;
 }
 
 .search-form .search-results_filters .search-results_filters-box .input-price span {
@@ -5249,6 +5377,7 @@ footer input[type="text"] {
   line-height: 40px;
   color: #7c7c85;
   font-size: 13px;
+  font-family: "Proxima Nova Regular", sans-serif;
 }
 
 .search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes {
@@ -5277,9 +5406,11 @@ footer input[type="text"] {
 .search-form .search-results_filters .search-results_filters-box .search-results_filter-box_checkboxes input[type="checkbox"] + label {
   padding-left: 29px;
   font-family: "Proxima Nova Regular" !important;
+  font-size: 13px;
+  letter-spacing: .5px;
   background: url(/img/icons_svg/checkbox.png) no-repeat 0 50%;
-  padding-top: 2px;
-  padding-bottom: 1px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-right: 20px;
   cursor: pointer;
 }
@@ -5305,7 +5436,14 @@ footer input[type="text"] {
   background: url(/img/icons_svg/arrow_select.png) no-repeat;
   background-position: calc(100% - 20px) 50%;
   cursor: pointer;
-  font-family: 'Tiempos Bold', sans-serif;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  color: #474952;
+}
+
+@media only screen and (min-width: 1280px) {
+  .search-form .search-results_filters .search-results_filters-box .select .select_input {
+    font-size: 13px;
+  }
 }
 
 .search-form .search-results_filters .search-results_filters-box .select .select__list {
@@ -5342,6 +5480,10 @@ footer input[type="text"] {
   margin-top: -35px;
   padding-bottom: 15px;
   font-size: 12px;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-family: 10px;
+  letter-spacing: .5px;
+  color: #464952;
 }
 
 .search-form .search-results_filters .search-results_filters-box .input-slider .track {
@@ -5393,6 +5535,7 @@ footer input[type="text"] {
   display: inline-block;
   font-size: 12px;
   font-family: "Proxima Nova Regular", sans-serif;
+  color: #464952;
 }
 
 .search-form .col-xs-12 {
@@ -5433,6 +5576,10 @@ footer input[type="text"] {
   margin-top: 5px;
 }
 
+.search-form .person-name .p3 strong {
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
 .search-form .person-avatar:after {
   content: '';
   display: block;
@@ -5464,6 +5611,7 @@ footer input[type="text"] {
   color: #fff;
   width: 30px;
   font-size: 13px;
+  font-family: 'Proxima Nova Regular', sans-serif;
   padding: 0 10px;
   border-radius: 10px;
   line-height: 26px;
@@ -5526,6 +5674,12 @@ footer input[type="text"] {
   margin-bottom: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+  .search-form .tour-dates-row .p3 {
+    font-size: 15px;
+  }
+}
+
 .search-form .tour-dates-row span {
   line-height: 1.5;
   font-size: 12px;
@@ -5533,6 +5687,12 @@ footer input[type="text"] {
   font-weight: 100;
   color: #464952;
   letter-spacing: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-form .tour-dates-row span {
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 359px) {
@@ -5598,10 +5758,24 @@ footer input[type="text"] {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .search-form .tour-details .h7 {
+    font-size: 18px;
+  }
+}
+
 .search-form .tour-details ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.search-form .tour-details ul li .p2 {
+  font-size: 13px;
+}
+
+.search-form .tour-details ul li .p2 strong {
+  font-family: 'Proxima Nova Bold', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5798,6 +5972,12 @@ footer input[type="text"] {
   text-align: center;
 }
 
+.search-form .meet-participaitor-box .btn-border {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 .search-form .meet-participaitor-box .btn-border img {
   margin-right: 5px;
   top: 3px;
@@ -5836,6 +6016,8 @@ footer input[type="text"] {
 .search-form .meet-participaitor-box .p3 {
   margin-bottom: 5px;
   text-align: center;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: 600;
 }
 
 .search-form .meet-participaitor-box-rating {
@@ -5927,6 +6109,13 @@ footer input[type="text"] {
   margin-right: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+@media only screen and (min-width: 1280px) {
+  .search-form .select .search-results_filters-filter-box span {
+    font-size: 13px;
+  }
 }
 
 .search-form .select .search-results_filters-filter-box span:after {
