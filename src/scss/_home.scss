@@ -177,7 +177,7 @@
     margin-bottom:.5rem;
     margin-top:0;
     @media only screen and (min-width:768px){
-      width:74%;
+      width:92.5%;
     }
   }
   @media only screen and (max-width:767px){
@@ -332,7 +332,7 @@
   @media only screen and (min-width:768px){
     height:570px;
     h1{
-      margin-top:130px;
+      margin-top:150px;
       margin-bottom: 20px;
     }
     .p1{
@@ -390,7 +390,7 @@
   @media only screen and (min-width:1280px){
     height:800px;
     h1{
-      margin-top:50px;
+      margin-top:205px;
     }
     .where-inputs{
       width:74%;
@@ -425,6 +425,9 @@
 .key-features{
   background-color:#eee;
   padding:30px 0 35px;
+  @media only screen and (min-width:1280px){
+    padding:45px 0 50px;
+  }
   text-align: center;
   img{
     height:55px;
@@ -494,9 +497,15 @@
 }
 .users-tours{
   padding-top:50px;
+  @media only screen and (min-width:1280px){
+    padding-top:85px;
+  }
   background-color: #f7f7f7;
   h2{
     margin:0 0 20px 0;
+    @media only screen and (min-width:768px){
+      margin:0 0 10px 0;
+    }
   }
   @media only screen and (max-width:767px){
     .container-fluid{
@@ -504,6 +513,11 @@
     }
     .container-fluid:nth-of-type(2){
       margin-bottom: 0;
+    }
+  }
+  @media only screen and (min-width:1280px){
+    .users-tours-tablet-nav{
+      padding-bottom: 45px!important;
     }
   }
   @media only screen and (min-width:768px){
@@ -599,9 +613,9 @@
           color: #9EA1AD;
           font-weight: 700;
           display: inline-block;
-          width: 44px;
-          height: 44px;
-          line-height: 44px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
           background: #EFF1F6;
           text-align: center;
           border-radius: 100%;
@@ -769,6 +783,9 @@
         @media only screen and (max-width:767px){
           background-size: 18px auto;
         }
+        @media only screen and (min-width:768px){
+          background-size: 22px auto;
+        }
       }
       .tour-dates-row__date{
         max-width: 50%;
@@ -781,23 +798,31 @@
           padding-right: 22.5px
         }
       }
-      .tour-dates-row__date:last-of-type{
+      .tour-dates-row__date.free:last-of-type{
         background: url(/img/icons_svg/elastic_date_active.svg) no-repeat 100% 0;
         background-size: 24px auto;
+        padding-left:5px;
+        padding-right: 23px;
+      }
+      .tour-dates-row__date:last-of-type{
         padding-right:24px;
         @media only screen and (max-width:767px){
           background-size: 18px auto;
           padding-right: 18px;
           padding-left: 10px;
         }
+        @media only screen and (min-width:768px){
+          background-size: 18px auto!important;
+          padding-right: 18px;
+          padding-left: 10px;
+          background-position: calc(100% + 1px) 0px!important;
+        }
       }
     }
     .tour-details{
       padding-bottom:18px;
       .h7{
-        @media only screen and (max-width:767px){
-          margin:0 0 25px 0;
-        }
+        margin:0 0 25px 0;
       }
       .p2{
         margin:0;
@@ -818,21 +843,20 @@
         li{
           padding-left: 30px;
           margin-bottom: 12px;
+          @media only screen and (min-width:768px){
+            margin-bottom: 15px;
+          }
         }
         li:nth-of-type(1){
           margin-top:25px;          
           background: url(/img/icons_svg/destynacja.svg) no-repeat 0 50%;
           background-size: 20px;
-          @media only screen and (max-width:767px){
-            background-position: -3px 50%;
-          }
+          background-position: -3px 50%;
         }
         li:nth-of-type(2){
           background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0 50%;
           background-size: 22px auto;
-          @media only screen and (max-width:767px){
-            background-position: -4px 50%;
-          }
+          background-position: -4px 50%;
         }
         li:nth-of-type(3){
           background: url(/img/icons_svg/transport.svg) no-repeat 0 50%;
@@ -844,6 +868,9 @@
       border-top: 1px solid #EFF1F6;
       text-align: center;
       padding-bottom: 30px;
+      @media only screen and (min-width:1280px){
+        padding-bottom: 40px;
+      }
       .p2{
         margin-top:30px;
         margin-bottom: 20px;
@@ -901,6 +928,12 @@
   background-color: #f7f7f7;
   h2:nth-of-type(1){
     margin:15px 0 25px;
+    @media only screen and (min-width:768px){
+      margin:15px 0 40px;
+    }
+    @media only screen and (min-width:1280px){
+      margin:40px 0;
+    }
   }
   .col-sm-4.col-lg-3{
     padding:0px;
@@ -970,6 +1003,7 @@
     @media only screen and (min-width:1280px){
       height:800px;
       background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 100%;
+      background-size: cover;
       .p2{
         margin-top:150px;
         margin-bottom:35px;
@@ -994,6 +1028,9 @@
     }
     background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 50%;
     margin-top:50px;
+    @media only screen and (min-width:1280px){
+      margin-top: 80px;
+    }
     .p2, .p1, h2{
       color:#fff;
     }
@@ -1197,6 +1234,13 @@
   padding-bottom: 55px;
   h2:nth-of-type(1){
     margin-bottom: 30px;
+    @media only screen and (min-width:768px){
+      margin-top:15px;
+      margin-bottom: 40px;
+    }
+    @media only screen and (min-width:1280px){
+      margin-top: 42.5px
+    }
   }
   .container-fluid{
     padding:0;
@@ -1204,6 +1248,11 @@
     box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.05);
     img{
       max-width:100%;
+    }
+    @media only screen and (min-width:768px){
+      .col-sm-12{
+        padding:0 20px;
+      }
     }
     text-align: center;
     .p2:nth-of-type(1){
@@ -1232,6 +1281,9 @@
     }
     .p1:nth-of-type(2){
       margin:0 0 35px;
+      @media only screen and (min-width:1280px){
+        margin:0 0 15px;
+      }
     }
     .more{
       margin:0;
@@ -1272,10 +1324,10 @@
     }
   }
   @media only screen and (min-width:1280px){
-    padding-bottom: 100px;
+    padding-bottom: 81px;
     .container-fluid{
       max-width:31.5%;
-      min-height:625px;
+      min-height:525px;
       .p2{
         font-size: 14px;
       }

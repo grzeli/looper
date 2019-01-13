@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Tiempos Bold';
   src: local("Tiempos Bold"), url("/fonts/Tiempos/TiemposTextWeb-Bold.woff") format("woff");
-  src: local("Tiempos Bold"), url("/fonts/Tiempos/TiemposTextWeb-Bold.eot") format("embedded-opentype"), url("TiemposTextWeb-Bold.woff") format("woff"), url("TiemposTextWeb-Bold.ttf") format("truetype");
+  src: local("Tiempos Bold"), url("/fonts/Tiempos/TiemposTextWeb-Bold.eot") format("embedded-opentype"), url("/fonts/TiemposTextWeb-Bold.woff") format("woff"), url("/fonts/TiemposTextWeb-Bold.ttf") format("truetype");
 }
 
 h1, h2, h3, h4, h5, h6, .h7, p, .p1, .p2, .p3, .p4 {
@@ -19,11 +19,11 @@ h1, h2, h3, h4, h5, h6, .h7, p, .p1, .p2, .p3, .p4 {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Tiempos Bold', Fallback, sans-serif;
+  font-family: 'Tiempos Bold';
 }
 
 h6, .h7 {
-  font-family: 'Proxima Nova Bold', Fallback, sans-serif;
+  font-family: 'Proxima Nova Bold';
   font-weight: 600;
 }
 
@@ -1541,7 +1541,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .find-your-tour h1, .find-your-tour .p1 {
-    width: 74%;
+    width: 92.5%;
   }
 }
 
@@ -1733,7 +1733,7 @@ a {
     height: 570px;
   }
   .find-your-tour h1 {
-    margin-top: 130px;
+    margin-top: 150px;
     margin-bottom: 20px;
   }
   .find-your-tour .p1 {
@@ -1794,7 +1794,7 @@ a {
     height: 800px;
   }
   .find-your-tour h1 {
-    margin-top: 50px;
+    margin-top: 205px;
   }
   .find-your-tour .where-inputs {
     width: 74%;
@@ -1828,6 +1828,12 @@ a {
   background-color: #eee;
   padding: 30px 0 35px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  .key-features {
+    padding: 45px 0 50px;
+  }
 }
 
 .key-features img {
@@ -1919,8 +1925,20 @@ a {
   background-color: #f7f7f7;
 }
 
+@media only screen and (min-width: 1280px) {
+  .users-tours {
+    padding-top: 85px;
+  }
+}
+
 .users-tours h2 {
   margin: 0 0 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .users-tours h2 {
+    margin: 0 0 10px 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1929,6 +1947,12 @@ a {
   }
   .users-tours .container-fluid:nth-of-type(2) {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .users-tours .users-tours-tablet-nav {
+    padding-bottom: 45px !important;
   }
 }
 
@@ -2037,9 +2061,9 @@ a {
     color: #9EA1AD;
     font-weight: 700;
     display: inline-block;
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     background: #EFF1F6;
     text-align: center;
     border-radius: 100%;
@@ -2238,6 +2262,12 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .users-tours .container-fluid .tour-dates-row .tour-dates-row__date:first-of-type {
+    background-size: 22px auto;
+  }
+}
+
 .users-tours .container-fluid .tour-dates-row .tour-dates-row__date {
   max-width: 50%;
   box-sizing: border-box;
@@ -2256,9 +2286,14 @@ a {
   }
 }
 
-.users-tours .container-fluid .tour-dates-row .tour-dates-row__date:last-of-type {
+.users-tours .container-fluid .tour-dates-row .tour-dates-row__date.free:last-of-type {
   background: url(/img/icons_svg/elastic_date_active.svg) no-repeat 100% 0;
   background-size: 24px auto;
+  padding-left: 5px;
+  padding-right: 23px;
+}
+
+.users-tours .container-fluid .tour-dates-row .tour-dates-row__date:last-of-type {
   padding-right: 24px;
 }
 
@@ -2270,14 +2305,21 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .users-tours .container-fluid .tour-dates-row .tour-dates-row__date:last-of-type {
+    background-size: 18px auto !important;
+    padding-right: 18px;
+    padding-left: 10px;
+    background-position: calc(100% + 1px) 0px !important;
+  }
+}
+
 .users-tours .container-fluid .tour-details {
   padding-bottom: 18px;
 }
 
-@media only screen and (max-width: 767px) {
-  .users-tours .container-fluid .tour-details .h7 {
-    margin: 0 0 25px 0;
-  }
+.users-tours .container-fluid .tour-details .h7 {
+  margin: 0 0 25px 0;
 }
 
 .users-tours .container-fluid .tour-details .p2 {
@@ -2313,27 +2355,23 @@ a {
   margin-bottom: 12px;
 }
 
+@media only screen and (min-width: 768px) {
+  .users-tours .container-fluid .tour-details ul li {
+    margin-bottom: 15px;
+  }
+}
+
 .users-tours .container-fluid .tour-details ul li:nth-of-type(1) {
   margin-top: 25px;
   background: url(/img/icons_svg/destynacja.svg) no-repeat 0 50%;
   background-size: 20px;
-}
-
-@media only screen and (max-width: 767px) {
-  .users-tours .container-fluid .tour-details ul li:nth-of-type(1) {
-    background-position: -3px 50%;
-  }
+  background-position: -3px 50%;
 }
 
 .users-tours .container-fluid .tour-details ul li:nth-of-type(2) {
   background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0 50%;
   background-size: 22px auto;
-}
-
-@media only screen and (max-width: 767px) {
-  .users-tours .container-fluid .tour-details ul li:nth-of-type(2) {
-    background-position: -4px 50%;
-  }
+  background-position: -4px 50%;
 }
 
 .users-tours .container-fluid .tour-details ul li:nth-of-type(3) {
@@ -2345,6 +2383,12 @@ a {
   border-top: 1px solid #EFF1F6;
   text-align: center;
   padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .users-tours .container-fluid .col-sm-12:nth-of-type(2) {
+    padding-bottom: 40px;
+  }
 }
 
 .users-tours .container-fluid .col-sm-12:nth-of-type(2) .p2 {
@@ -2410,6 +2454,18 @@ a {
 
 .destination-photos h2:nth-of-type(1) {
   margin: 15px 0 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .destination-photos h2:nth-of-type(1) {
+    margin: 15px 0 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .destination-photos h2:nth-of-type(1) {
+    margin: 40px 0;
+  }
 }
 
 .destination-photos .col-sm-4.col-lg-3 {
@@ -2496,6 +2552,7 @@ a {
   .destination-photos .container-fluid.how-it-works {
     height: 800px;
     background: url(/img/backgrounds/bg-how-it-works.jpg) no-repeat 100%;
+    background-size: cover;
   }
   .destination-photos .container-fluid.how-it-works .p2 {
     margin-top: 150px;
@@ -2521,6 +2578,12 @@ a {
 @media only screen and (min-width: 1280px) and (min-width: 1280px) {
   .destination-photos .container-fluid.how-it-works h2, .destination-photos .container-fluid.how-it-works .p1 {
     max-width: 740px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .destination-photos .container-fluid.how-it-works {
+    margin-top: 80px;
   }
 }
 
@@ -2782,6 +2845,19 @@ a {
   margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 768px) {
+  .blog-and-tips h2:nth-of-type(1) {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .blog-and-tips h2:nth-of-type(1) {
+    margin-top: 42.5px;
+  }
+}
+
 .blog-and-tips .container-fluid {
   padding: 0;
   background-color: #fff;
@@ -2791,6 +2867,12 @@ a {
 
 .blog-and-tips .container-fluid img {
   max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .blog-and-tips .container-fluid .col-sm-12 {
+    padding: 0 20px;
+  }
 }
 
 .blog-and-tips .container-fluid .p2:nth-of-type(1) {
@@ -2823,6 +2905,12 @@ a {
 
 .blog-and-tips .container-fluid .p1:nth-of-type(2) {
   margin: 0 0 35px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .blog-and-tips .container-fluid .p1:nth-of-type(2) {
+    margin: 0 0 15px;
+  }
 }
 
 .blog-and-tips .container-fluid .more {
@@ -2868,11 +2956,11 @@ a {
 
 @media only screen and (min-width: 1280px) {
   .blog-and-tips {
-    padding-bottom: 100px;
+    padding-bottom: 81px;
   }
   .blog-and-tips .container-fluid {
     max-width: 31.5%;
-    min-height: 625px;
+    min-height: 525px;
   }
   .blog-and-tips .container-fluid .p2 {
     font-size: 14px;
@@ -4350,7 +4438,7 @@ footer input[type="text"] {
   footer .row div:nth-of-type(3) {
     order: 4;
     padding-right: 60px;
-    margin-left: -45px;
+    margin-left: -15px;
   }
   footer .row div:nth-of-type(4) {
     padding-left: 60px;
