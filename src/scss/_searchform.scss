@@ -91,6 +91,11 @@
           margin-bottom: 20px;
         }
       }
+      @media only screen and (min-width:1280px){
+        .p2{
+          margin-top:30px;
+        }
+      }
     }
   }
   .borderTB{
@@ -103,11 +108,9 @@
     }
   }
   .white.borderTB{
-    @media only screen and (max-width:1279px){
-      h5{
-        margin-top: 35px;
-        margin-bottom: 20px;
-      }
+    h5{
+      margin-top: 35px;
+      margin-bottom: 20px;
     }
     @media only screen and (max-width:1279px){
       border-top:1px solid #e6e6eb;;
@@ -203,6 +206,11 @@
   .form-inline:last-of-type{
     flex-flow:row;
     flex-wrap:wrap; 
+    label{
+      @media only screen and (min-width:1280px){
+        margin-left:3px;
+      }
+    }
   }
   .content-left:first-of-type{
     justify-content: flex-start;
@@ -316,6 +324,7 @@
     label{
       font-family: 'Proxima Nova Regular', sans-serif!important;
       font-weight: 300;
+      margin-left:0!important;
       @media only screen and (max-width:767px){
         padding-top:3.5px!important;
         padding-bottom: 3.5px!important;
@@ -714,6 +723,13 @@
       margin-right: 40px;
     }
   }
+  @media only screen and (min-width:1280px){
+    .box-btn-yellow{
+      .btn.btn-yellow{
+        bottom:-50px!important;
+      }
+    }
+  }
   @media only screen and (min-width:768px){
     .box-btn-yellow{
       margin:0 auto;
@@ -873,10 +889,11 @@
         border-radius:37.5px;
         float:right;
         padding:6.5px 25.5px;
+        font-weight: 600;
         .input-white-search-icon{
           width:20px;
-          height:20px;
-          top:5px;
+          height:15px;
+          top:10px;
         }
       }
     }
@@ -917,11 +934,11 @@
         }
       }
       @media only screen and (min-width:1280px){
-        top:0px;
+        top:-8px;
         margin-bottom: 0;
         margin-top:17.5px;
         width:180px;
-        padding:2.5px 20px;
+        padding:5.5px 20px;
         .p2{
           font-size: 13px;
         }
@@ -953,6 +970,9 @@
       margin-bottom: 35px;
       &:last-of-type{
         margin-bottom: 25px;
+        @media only screen and (min-width:1280px){
+          margin-bottom: 35px;
+        }
       }
       .white{
         display: flex;
@@ -969,7 +989,7 @@
             padding:0 20px 0 30px;
           }
           @media only screen and (min-width:1280px){
-            padding:0 15px 0 25px;
+            padding:0 20px 0 30px;
           }
         }
         .col-xs-12:nth-of-type(2){
@@ -1118,17 +1138,25 @@
         }
       }
       .filters-closing-button{
-        padding:24px 25px 24px 25px;
+        padding:22px 25px 22px 25px;
         &:after{
-          right:15px;
+          right:13px;
         }
       }
     }
     .search-results_filters-box{
-      padding-top:20px;
+      padding-top:35px;
+      @media only screen and (min-width:1280px){
+        &:nth-of-type(2){
+          padding-top:55px;
+        }
+      }
       h4{
         font-family: 'Proxima Nova Bold';
         margin-bottom: .5rem;
+        @media only screen and (min-width:1280px){
+          margin-bottom: 18px;
+        }
         margin-top:0;
         font-weight: 600;
         letter-spacing: 0.5px;
@@ -1174,6 +1202,9 @@
         flex-wrap: wrap;
         div{
           margin-bottom: 5px;
+        }
+        label{
+          margin-bottom: 0;
         }
         .new-line{
           flex-basis: 100%;
@@ -1386,6 +1417,9 @@
     @media only screen and (min-width:768px){
       margin-right: 40px;
     }
+    @media only screen and (min-width:1280px){
+      margin-top:25px;
+    }
     &:after{
       background:url('../img/icons_svg/like.png') no-repeat;
       background-size: auto;
@@ -1473,6 +1507,10 @@
     .tour-dates-row__date.free{
       background: url(/img/icons_svg/elastic_date_active.svg) no-repeat 100% 0;
       background-size: 18px auto;
+      @media only screen and (min-width:1280px){
+        background-size: 22px auto;
+        background-position: 100% -10%;
+      }
       @media only screen and (max-width:399px){
         padding-right:25px;
       }
@@ -1523,6 +1561,9 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top:20px;
+      }
+      @media only screen and (min-width:1280px){
+        margin-top: 30px;
       }
       @media only screen and (max-width:767px){
         li{
@@ -1595,15 +1636,15 @@
           }
         }
         li:nth-of-type(1){
-          background: url(/img/icons_svg/destynacja.svg) no-repeat 0px 3px;
+          background: url(/img/icons_svg/destynacja.svg) no-repeat 0px -3px;
           background-size: 25px;
         }
         li:nth-of-type(2){
-          background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0px 3px;
+          background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0px -3px;
           background-size: 25px auto;
         }
         li:nth-of-type(3){
-          background: url(/img/icons_svg/transport.svg) no-repeat 0px 3px;
+          background: url(/img/icons_svg/transport.svg) no-repeat 0px -3px;
           background-size: 25px auto;
         }
       }
@@ -1662,6 +1703,10 @@
       margin-top:5px;
       @media only screen and (min-width:768px){
         margin-bottom: 20px;
+      }
+      @media only screen and (min-width:1280px){
+        margin-top:-5px;
+        margin-bottom: 35px;
       }
     }
     .col-sm-4{
@@ -1735,6 +1780,9 @@
       @media only screen and (min-width:768px){
         top:20px;
         right:10px;
+      }
+      @media only screen and (min-width:1280px){
+        right:20px;
       }
       &:hover{
         background:url('/img/icons_svg/like-hover.png') no-repeat;
@@ -1838,6 +1886,10 @@
         margin-top:15px;
         margin-bottom: 25px;
       }
+      @media only screen and (min-width:1280px){
+        margin-top:10px;
+        margin-bottom: 35px;
+      }
     }
   }
   .select{
@@ -1889,9 +1941,9 @@
         }
       }
       .filters-closing-button{
-        padding:24px 25px 24px 25px;
+        padding:23px 23px 23px 23px;
         &:after{
-          right:15px;
+          right:13px;
         }
       }
     }
