@@ -85,6 +85,13 @@ footer{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    @media only screen and (max-width:767px){
+      flex-flow: row;
+      width:100%;
+      input{
+        width:calc(100% - 96px)!important;
+      }
+    }
   }
   input[type="text"]{
     padding: 16px 25px;

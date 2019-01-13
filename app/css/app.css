@@ -4070,6 +4070,16 @@ footer .form-inline {
   align-items: center;
 }
 
+@media only screen and (max-width: 767px) {
+  footer .form-inline {
+    flex-flow: row;
+    width: 100%;
+  }
+  footer .form-inline input {
+    width: calc(100% - 96px) !important;
+  }
+}
+
 footer input[type="text"] {
   padding: 16px 25px;
   border-radius: 28px;
@@ -4301,6 +4311,17 @@ footer input[type="text"] {
   }
 }
 
+.search-form .borderTB .white {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .white.borderTB h5 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 1279px) {
   .search-form .white.borderTB {
     border-top: 1px solid #e6e6eb;
@@ -4327,6 +4348,13 @@ footer input[type="text"] {
   border-radius: 100%;
   margin-left: -10px;
   font-family: 'Proxima Noba Bold';
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .person-list li span {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .search-form .more_second {
@@ -4456,9 +4484,9 @@ footer input[type="text"] {
   display: inline-block;
   position: absolute;
   right: 10px;
-  top: 12px;
+  top: 13px;
   background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
-  width: 15px;
+  width: 12px;
   height: 15px;
 }
 
@@ -4474,10 +4502,29 @@ footer input[type="text"] {
   display: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .search-form .content-left:last-of-type {
+    width: 100%;
+  }
+}
+
 .search-form .autocomplete {
   position: relative;
   display: inline-block;
   max-width: 260px;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .autocomplete {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search-form .autocomplete .autocomplete_input {
+    width: 100%;
+  }
+  .search-form .autocomplete .autocomplete_input input[type="text"] {
+    width: calc(100% - 44px);
+  }
 }
 
 .search-form .autocomplete .autocomplete_input {
@@ -4814,6 +4861,7 @@ footer input[type="text"] {
 @media only screen and (max-width: 767px) {
   .search-form .form-inline .btn.btn-yellow {
     font-size: 16px;
+    margin-bottom: 45px;
     font-family: "Proxima Nova Bold", sans-serif;
     font-weight: 600;
     width: 100%;
@@ -4911,11 +4959,14 @@ footer input[type="text"] {
     border: 0;
     padding: 7px 0;
     background: #fff;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     border-radius: 28px;
     position: relative;
     display: flex;
     border: 2px solid #EFF1F6;
+  }
+  .search-form .input-group:last-of-type {
+    margin-bottom: 20px;
   }
   .search-form .search-form .btn-yellow {
     width: 100%;
@@ -4959,6 +5010,25 @@ footer input[type="text"] {
   }
   .search-form .searchbox-results .white .box-btn-yellow:hover {
     box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .content-right {
+    width: 150px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 345px) and (max-width: 384px) {
+  .search-form .content-left:first-of-type {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 767px) {
+  .search-form .content-left:first-of-type {
+    margin-right: 40px;
   }
 }
 
@@ -5705,6 +5775,7 @@ footer input[type="text"] {
   width: 18px;
   height: 15px;
   position: absolute;
+  cursor: pointer;
   top: 6.5px;
 }
 
@@ -5778,6 +5849,12 @@ footer input[type="text"] {
   background-size: 28px auto;
 }
 
+@media only screen and (max-width: 767px) {
+  .search-form .tour-dates-row .tour-dates-row__date:first-of-type {
+    background-size: 18px auto;
+  }
+}
+
 .search-form .tour-dates-row .tour-dates-row__date {
   max-width: 50%;
 }
@@ -5788,13 +5865,13 @@ footer input[type="text"] {
   }
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 767px) {
   .search-form .tour-dates-row .tour-dates-row__date {
-    padding-right: 32.5px;
+    padding-right: 22.5px;
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 768px) {
   .search-form .tour-dates-row .tour-dates-row__date {
     padding-right: 40px;
   }
@@ -5992,6 +6069,13 @@ footer input[type="text"] {
   margin-left: -10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .search-form .person-list .participer {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .search-form .person-list .participer img {
   width: 100%;
   height: auto;
@@ -6014,11 +6098,24 @@ footer input[type="text"] {
   border: 2px solid #eff1f6;
 }
 
+@media only screen and (max-width: 767px) {
+  .search-form .person-list .join {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 .search-form .person-list .join img {
   width: 20px;
   height: 20px;
   margin: 10px 10px;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-form .person-list .join img {
+    margin: 8px 8px;
+  }
 }
 
 .search-form .call-me {
