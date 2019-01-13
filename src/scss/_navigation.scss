@@ -47,6 +47,9 @@ header{
     }
   }
   .desktop-user-menu{
+    @media only screen and (max-width:767px){
+      display:block;
+    }
     display:none;
     position:relative;
     .desktop-user-menu__inner{
@@ -747,7 +750,7 @@ header{
         .btn.btn-yellow.add-trip.active{
           @media only screen and (min-width:768px){
             margin-right:40px;   
-            margin-left:-10px;
+            margin-left:-15px;
           }
           @media only screen and (min-width:1280px){
             margin-left:-15px;
@@ -805,7 +808,12 @@ header{
   }
 }
 .user-menu_container.active{
-  margin-right:43px;
+  @media only screen and (max-width:1279px){
+    margin-right:0;
+  }
+  @media only screen and (min-width:1280px){
+    margin-right:43px;
+  }
 }
 .logo-top{
   display:flex;
@@ -841,6 +849,7 @@ header{
       width:10px;
       height:10px;
       line-height:0.6;
+      font-size: 20px!important;
     }
     img{
       width:18px;

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Proxima Nova Bold';
-  src: local("Proxima Nova Bold"), url("fonts/Proxima Nova/Mark Simonson - Proxima Nova Bold.otf") format("opentype");
+  src: local("Proxima Nova Bold"), url("./fonts/Proxima Nova/Mark Simonson - Proxima Nova Bold.otf") format("opentype");
 }
 
 @font-face {
@@ -19,16 +19,16 @@ h1, h2, h3, h4, h5, h6, .h7, p, .p1, .p2, .p3, .p4 {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Tiempos Bold';
+  font-family: 'Tiempos Bold', Fallback, sans-serif;
 }
 
 h6, .h7 {
-  font-family: 'Proxima Nova Bold', sans-serif;
+  font-family: 'Proxima Nova Bold', Fallback, sans-serif;
   font-weight: 600;
 }
 
 .p1, .p2, .p3, .p4 {
-  font-family: 'Proxima Nova Regular', sans-serif;
+  font-family: 'Proxima Nova Regular', Fallback, sans-serif;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -1333,6 +1333,7 @@ a {
 
 .find-your-tour .container {
   position: relative;
+  height: 100%;
 }
 
 .find-your-tour .calender {
@@ -1343,7 +1344,7 @@ a {
   padding: 0 11px 11px 11px;
   position: absolute;
   z-index: 5;
-  top: 85px;
+  top: 65px;
   float: left;
   width: max-content;
   color: #333;
@@ -1544,6 +1545,18 @@ a {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .find-your-tour {
+    margin-top: 65px;
+  }
+  .find-your-tour h1:nth-of-type(1) {
+    margin-top: 65px;
+  }
+  .find-your-tour .form-inline {
+    padding-top: 10px;
+  }
+}
+
 .find-your-tour .p1 {
   font-weight: 100;
 }
@@ -1574,7 +1587,6 @@ a {
   align-items: center;
   position: relative;
   color: #fff;
-  padding-top: 30px;
 }
 
 .find-your-tour .form-inline input:focus,
@@ -1582,6 +1594,12 @@ a {
 .find-your-tour .form-inline textarea:focus,
 .find-your-tour .form-inline button:focus {
   outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .find-your-tour .form-inline {
+    padding-top: 30px;
+  }
 }
 
 .find-your-tour .sr-only {
@@ -1819,6 +1837,15 @@ a {
   border-style: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .key-features .col-xs-6:nth-of-type(3) {
+    margin-top: 18px;
+  }
+  .key-features .col-xs-6:nth-of-type(4) {
+    margin-top: 18px;
+  }
+}
+
 .key-features strong {
   font-family: 'Proxima Nova Bold', sans-serif;
   font-weight: 600;
@@ -1893,12 +1920,15 @@ a {
 }
 
 .users-tours h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 
 @media only screen and (max-width: 767px) {
   .users-tours .container-fluid {
     margin-bottom: 30px;
+  }
+  .users-tours .container-fluid:nth-of-type(2) {
+    margin-bottom: 0;
   }
 }
 
@@ -2044,10 +2074,10 @@ a {
 .users-tours .selected {
   background-color: #fff;
   border: 1px solid #e5e7f0;
-  padding: 11px 22px 9px;
-  border-radius: 17px;
+  padding: 16px 22px 14px;
+  border-radius: 24px;
   cursor: pointer;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .users-tours .selected .p2 {
@@ -2060,9 +2090,9 @@ a {
   display: inline-block;
   position: absolute;
   right: 20px;
-  top: 12px;
+  top: 16px;
   background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
-  width: 15px;
+  width: 12px;
   height: 15px;
 }
 
@@ -2071,6 +2101,12 @@ a {
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.05);
   position: relative;
   padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .col-sm-12 {
+    padding: 0 10px 0 20px;
+  }
 }
 
 .users-tours .container-fluid .person {
@@ -2146,10 +2182,8 @@ a {
 
 .users-tours .container-fluid .tour-dates-row {
   text-align: center;
-  text-align: center;
   padding-bottom: 20px;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -2198,9 +2232,28 @@ a {
   background-size: 28px auto;
 }
 
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-dates-row .tour-dates-row__date:first-of-type {
+    background-size: 18px auto;
+  }
+}
+
 .users-tours .container-fluid .tour-dates-row .tour-dates-row__date {
-  width: 50%;
+  max-width: 50%;
+  box-sizing: border-box;
   padding-right: 28px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .users-tours .container-fluid .tour-dates-row .tour-dates-row__date {
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-dates-row .tour-dates-row__date {
+    padding-right: 22.5px;
+  }
 }
 
 .users-tours .container-fluid .tour-dates-row .tour-dates-row__date:last-of-type {
@@ -2209,8 +2262,22 @@ a {
   padding-right: 24px;
 }
 
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-dates-row .tour-dates-row__date:last-of-type {
+    background-size: 18px auto;
+    padding-right: 18px;
+    padding-left: 10px;
+  }
+}
+
 .users-tours .container-fluid .tour-details {
   padding-bottom: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-details .h7 {
+    margin: 0 0 25px 0;
+  }
 }
 
 .users-tours .container-fluid .tour-details .p2 {
@@ -2252,9 +2319,21 @@ a {
   background-size: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-details ul li:nth-of-type(1) {
+    background-position: -3px 50%;
+  }
+}
+
 .users-tours .container-fluid .tour-details ul li:nth-of-type(2) {
   background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0 50%;
   background-size: 22px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .users-tours .container-fluid .tour-details ul li:nth-of-type(2) {
+    background-position: -4px 50%;
+  }
 }
 
 .users-tours .container-fluid .tour-details ul li:nth-of-type(3) {
@@ -2289,8 +2368,8 @@ a {
 
 .users-tours .container-fluid .person-list .participer {
   margin: 0 0 30px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   display: inline-block;
   float: left;
   margin-left: -10px;
@@ -2309,8 +2388,8 @@ a {
 }
 
 .users-tours .container-fluid .person-list .join {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   display: inline-block;
   float: left;
   margin-left: 15px;
@@ -2321,7 +2400,7 @@ a {
 .users-tours .container-fluid .person-list .join img {
   width: 20px;
   height: 20px;
-  margin: 10px 10px;
+  margin: 8px 8px;
   vertical-align: middle;
 }
 
@@ -2330,7 +2409,7 @@ a {
 }
 
 .destination-photos h2:nth-of-type(1) {
-  margin: 15px 0 20px;
+  margin: 15px 0 25px;
 }
 
 .destination-photos .col-sm-4.col-lg-3 {
@@ -2924,6 +3003,12 @@ header .btn.btn-yellow {
 header .desktop-user-menu {
   display: none;
   position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  header .desktop-user-menu {
+    display: block;
+  }
 }
 
 header .desktop-user-menu .desktop-user-menu__inner {
@@ -3734,7 +3819,7 @@ header .more-notification:after {
 @media only screen and (min-width: 768px) and (min-width: 768px) {
   header .user-menu ul .btn.btn-yellow.add-trip.active {
     margin-right: 40px;
-    margin-left: -10px;
+    margin-left: -15px;
   }
 }
 
@@ -3795,8 +3880,16 @@ header .more-notification:after {
   }
 }
 
-.user-menu_container.active {
-  margin-right: 43px;
+@media only screen and (max-width: 1279px) {
+  .user-menu_container.active {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .user-menu_container.active {
+    margin-right: 43px;
+  }
 }
 
 .logo-top {
@@ -3838,6 +3931,7 @@ header .more-notification:after {
     width: 10px;
     height: 10px;
     line-height: 0.6;
+    font-size: 20px !important;
   }
   .mobile-nav--icons img {
     width: 18px;

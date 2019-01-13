@@ -7,6 +7,7 @@
   background-size:auto 100%;
   .container{
     position:relative;
+    height:100%;
   }
   .calender{
     box-sizing: border-box;
@@ -16,7 +17,7 @@
     padding:0 11px 11px 11px;
     position:absolute;
     z-index:5;
-    top:85px;
+    top:65px;
     @media only screen and (max-width:350px){
       th, td{
         min-width:35px!important;
@@ -179,6 +180,15 @@
       width:74%;
     }
   }
+  @media only screen and (max-width:767px){
+    margin-top: 65px;
+    h1:nth-of-type(1){
+      margin-top: 65px;
+    }
+    .form-inline{
+      padding-top: 10px;
+    }
+  }
   .p1{
     font-weight: 100;
     @media only screen and (min-width:1280px){
@@ -207,7 +217,9 @@
     button:focus {
       outline: none;
     }
-    padding-top:30px;
+    @media only screen and (min-width:768px){
+      padding-top:30px;
+    }
   }
   .sr-only{
     position:absolute;
@@ -420,6 +432,14 @@
     vertical-align: middle;
     border-style:none;
   }
+  @media only screen and (max-width:767px){
+    .col-xs-6:nth-of-type(3){
+      margin-top:18px;
+    }
+    .col-xs-6:nth-of-type(4){
+      margin-top:18px;
+    }
+  }
   strong{
     font-family: 'Proxima Nova Bold', sans-serif;
     font-weight: 600;
@@ -476,11 +496,14 @@
   padding-top:50px;
   background-color: #f7f7f7;
   h2{
-    margin:0 0 15px 0;
+    margin:0 0 20px 0;
   }
   @media only screen and (max-width:767px){
     .container-fluid{
       margin-bottom: 30px;
+    }
+    .container-fluid:nth-of-type(2){
+      margin-bottom: 0;
     }
   }
   @media only screen and (min-width:768px){
@@ -613,10 +636,10 @@
   .selected{
     background-color: #fff;
     border:1px solid #e5e7f0;
-    padding:11px 22px 9px;
-    border-radius: 17px;
+    padding:16px 22px 14px;
+    border-radius: 24px;
     cursor:pointer;
-    margin-bottom:25px;
+    margin-bottom:20px;
     .p2{
       font-size: 13px;
       margin:0;
@@ -626,9 +649,9 @@
       display: inline-block;
       position:absolute;
       right:20px;
-      top:12px;
+      top:16px;
       background: url(/img/icons_svg/arrow_rozwin.svg) no-repeat 100%;
-      width:15px;
+      width:12px;
       height:15px;
 
     }
@@ -638,6 +661,11 @@
     box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.05);
     position:relative;
     padding:0;
+    @media only screen and (max-width:767px){
+      .col-sm-12{
+        padding:0 10px 0 20px;
+      }
+    }
     .person{
       margin-top:20px;
       display:flex;
@@ -706,7 +734,6 @@
 
     .tour-dates-row{
       text-align: center;
-      text-align: center;
       .p3{
         margin:0;
         text-align: center;
@@ -735,24 +762,43 @@
       }
       padding-bottom:20px;
       display:flex;
-      justify-content: space-between;
       flex-direction: row;
       .tour-dates-row__date:first-of-type{
         background: url(/img/icons_svg/arrow_right.svg) no-repeat 100% 0;
         background-size: 28px auto;
+        @media only screen and (max-width:767px){
+          background-size: 18px auto;
+        }
       }
       .tour-dates-row__date{
-        width: 50%;
+        max-width: 50%;
+        box-sizing: border-box;
         padding-right: 28px;
+        @media only screen and (min-width:360px) and (max-width:767px){
+          white-space: nowrap;
+        }
+        @media only screen and (max-width:767px){
+          padding-right: 22.5px
+        }
       }
       .tour-dates-row__date:last-of-type{
         background: url(/img/icons_svg/elastic_date_active.svg) no-repeat 100% 0;
         background-size: 24px auto;
         padding-right:24px;
+        @media only screen and (max-width:767px){
+          background-size: 18px auto;
+          padding-right: 18px;
+          padding-left: 10px;
+        }
       }
     }
     .tour-details{
       padding-bottom:18px;
+      .h7{
+        @media only screen and (max-width:767px){
+          margin:0 0 25px 0;
+        }
+      }
       .p2{
         margin:0;
         @media only screen and (max-width:767px){
@@ -777,10 +823,16 @@
           margin-top:25px;          
           background: url(/img/icons_svg/destynacja.svg) no-repeat 0 50%;
           background-size: 20px;
+          @media only screen and (max-width:767px){
+            background-position: -3px 50%;
+          }
         }
         li:nth-of-type(2){
           background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0 50%;
           background-size: 22px auto;
+          @media only screen and (max-width:767px){
+            background-position: -4px 50%;
+          }
         }
         li:nth-of-type(3){
           background: url(/img/icons_svg/transport.svg) no-repeat 0 50%;
@@ -810,8 +862,8 @@
       display:flex;
       .participer{
         margin:0 0 30px;
-        width:40px;
-        height:40px;
+        width:36px;
+        height:36px;
         display:inline-block;
         float:left;
         margin-left:-10px;
@@ -827,8 +879,8 @@
         margin-left:0;
       }
       .join{
-        width:40px;
-        height:40px;
+        width:36px;
+        height:36px;
         display:inline-block;
         float:left;
         margin-left:15px;
@@ -837,7 +889,7 @@
         img{
           width:20px;
           height:20px;
-          margin:10px 10px;
+          margin:8px 8px;
           vertical-align: middle;
         }
       }
@@ -848,7 +900,7 @@
 .destination-photos{
   background-color: #f7f7f7;
   h2:nth-of-type(1){
-    margin:15px 0 20px;
+    margin:15px 0 25px;
   }
   .col-sm-4.col-lg-3{
     padding:0px;
