@@ -54,6 +54,10 @@
             margin-top: 40px;
             margin-bottom: 15px;
           }
+          @media only screen and (min-width:768px){
+            margin-top: 50px;
+            margin-bottom: 25px;
+          }
         }
       }
     }
@@ -81,6 +85,12 @@
           margin-bottom: 10px;
         }
       }
+      @media only screen and (min-width:768px){
+        .p2{
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
   .borderTB{
@@ -93,7 +103,7 @@
     }
   }
   .white.borderTB{
-    @media only screen and (max-width:767px){
+    @media only screen and (max-width:1279px){
       h5{
         margin-top: 35px;
         margin-bottom: 20px;
@@ -314,6 +324,11 @@
         font-size: 13px;
       }
     }
+    @media only screen and (min-width:768px){
+      div{
+        margin:0!important;
+      }
+    }
     div{
       margin:10px 0 10px 0;
     }
@@ -518,6 +533,9 @@
     margin-top:-7px;
     position:relative;
     top:2px;
+    @media only screen and (min-width:768px){
+      padding:7px 2.5px;
+    }
   }
   .form-inline{
     display:flex;
@@ -702,6 +720,9 @@
       text-align: center;
       .btn.btn-yellow{
         bottom:-100px;
+        @media only screen and (min-width:768px){
+          bottom:-82.5px;
+        }
       }
       &:hover{
         box-shadow:none;
@@ -717,10 +738,6 @@
         border-radius: 100%;
         padding:14px 12.5px;
         position:relative;
-        .input-white-search-icon{
-          width:25px;
-          height:29px;
-        }
       }
     }
     .content-left:first-of-type {
@@ -731,10 +748,23 @@
     }
     .content-right{
       max-width: calc(33% - 7.5px);
+      @media only screen and (min-width:768px) and (max-width:1279px){
+        width:180px;
+      }
       margin-bottom: 0;
     }
     .content-left:last-of-type {
       max-width: calc(33% - 7.5px);
+      @media only screen and (min-width:768px) and (max-width:1279px){
+        min-width:330px;
+        .autocomplete{
+          width:100%;
+          max-width: 100%;
+          input{
+            width:calc(100% - 44px);
+          }
+        }
+      }
       .autocomplete{
         .autocomplete_input{
           box-sizing: border-box;
@@ -796,7 +826,6 @@
     .form-inline label{
       display: flex;
       align-items: center;
-      justify-content: center;
       margin-bottom: 0;
     }
   }
@@ -879,7 +908,7 @@
       padding:2.5px 15px;
       box-sizing: border-box;
       @media only screen and (min-width:768px) and (max-width:1279px){
-        top:22.5px;
+        top:40px;
         right:39px;
         margin:0;
         position:absolute;
@@ -922,6 +951,9 @@
       }
       width:100%;
       margin-bottom: 35px;
+      &:last-of-type{
+        margin-bottom: 25px;
+      }
       .white{
         display: flex;
         flex-direction: row;
@@ -933,6 +965,9 @@
           }
         }
         .col-xs-12:nth-of-type(1){
+          @media only screen and (min-width:768px) and (max-width:1279px){
+            padding:0 20px 0 30px;
+          }
           @media only screen and (min-width:1280px){
             padding:0 15px 0 25px;
           }
@@ -950,6 +985,9 @@
                 font-size: 13px;
               }
             }
+          }
+          @media only screen and (min-width:768px) and (max-width:1279px){
+            padding:0 20px;
           }
           @media only screen and (min-width:1280px){
             padding:0 40px;
@@ -1345,6 +1383,9 @@
     @media only screen and (min-width:360px){
       margin-right: 30px;
     }
+    @media only screen and (min-width:768px){
+      margin-right: 40px;
+    }
     &:after{
       background:url('../img/icons_svg/like.png') no-repeat;
       background-size: auto;
@@ -1359,6 +1400,9 @@
       }
       @media only screen and (min-width:360px){
         right:-30px;
+      }
+      @media only screen and (min-width:768px){
+        right:-40px;
       }
       top:6.5px;
     }    
@@ -1377,7 +1421,7 @@
     .p3{
       margin:0;
       text-align: center;
-      margin-bottom:10px;
+      margin-bottom:7.5px;
       @media only screen and (min-width:768px){
         font-size: 15px;
       }
@@ -1459,6 +1503,7 @@
       }
       @media only screen and (min-width:768px){
         font-size: 18px;
+        margin:0;
       }
     }
     ul{
@@ -1477,7 +1522,7 @@
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top:45px;
+        margin-top:20px;
       }
       @media only screen and (max-width:767px){
         li{
@@ -1519,16 +1564,17 @@
           }
         }
         li:nth-of-type(1){
-          background: url(/img/icons_svg/destynacja.svg) no-repeat 0 -7.5%;
+          background: url(/img/icons_svg/destynacja.svg) no-repeat -3px -7.5%;
           background-size: 20px;
         }
         li:nth-of-type(2){
-          background: url(/img/icons_svg/miasto_startowe.svg) no-repeat 0 -7.5%;
+          background: url(/img/icons_svg/miasto_startowe.svg) no-repeat -5px -7.5%;
           background-size: 22px auto;
         }
         li:nth-of-type(3){
           background: url(/img/icons_svg/transport.svg) no-repeat 0 -7.5%;
           background-size: 22px auto;
+          margin-right: 0;
         }
       }
       @media only screen and (min-width:1280px){
@@ -1570,12 +1616,8 @@
     display:flex;
     .participer{
       margin:0 0 30px;
-      width:40px;
-      height:40px;
-      @media only screen and (max-width:767px){
-        width:36px;
-        height:36px;
-      }
+      width:36px;
+      height:36px;
       display:inline-block;
       float:left;
       margin-left:-10px;
@@ -1618,6 +1660,9 @@
     margin:0 auto;
     h4{
       margin-top:5px;
+      @media only screen and (min-width:768px){
+        margin-bottom: 20px;
+      }
     }
     .col-sm-4{
       padding:0;
@@ -1687,6 +1732,10 @@
       position:absolute;
       top:20px;
       right:20px;
+      @media only screen and (min-width:768px){
+        top:20px;
+        right:10px;
+      }
       &:hover{
         background:url('/img/icons_svg/like-hover.png') no-repeat;
       }
@@ -1785,10 +1834,17 @@
     h4{
       margin-top: 31px;
       margin-bottom: 30px;
+      @media only screen and (min-width:768px){
+        margin-top:15px;
+        margin-bottom: 25px;
+      }
     }
   }
   .select{
     margin-bottom: 50px;
+    @media only screen and (min-width:768px){
+      margin-bottom: 5px;
+    }
     @media only screen and (max-width:1279px){
       .search-results_filters-filter-box{
         display:none!important;
