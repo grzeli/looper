@@ -8,18 +8,18 @@ $green: #7abcb7;
 //fonts
 @font-face{
   font-family: 'Proxima Nova Bold';
-  src: local('Proxima Nova Bold'), url("./fonts/Proxima Nova/Mark Simonson - Proxima Nova Bold.otf") format("opentype");
+  src: local('Proxima Nova Bold'), url("../img/fonts/Proxima Nova/Mark Simonson - Proxima Nova Bold.otf") format("opentype");
 }
 @font-face{
   font-family: 'Proxima Nova Regular';
-  src: local('Proxima Nova Regular'), url("/fonts/Mark Simonson - Proxima Nova Regular.otf") format("opentype");
+  src: local('Proxima Nova Regular'), url("../img/fonts/Proxima Nova/Mark Simonson - Proxima Nova Regular.otf") format("opentype");
 }
 @font-face{
   font-family: 'Tiempos Bold';
-  src: local('Tiempos Bold'), url("/fonts/Tiempos/TiemposTextWeb-Bold.woff") format("woff") ;
-  src: local('Tiempos Bold'), url("/fonts/Tiempos/TiemposTextWeb-Bold.eot") format('embedded-opentype'),
-  url('/fonts/TiemposTextWeb-Bold.woff') format('woff'),
-  url('/fonts/TiemposTextWeb-Bold.ttf') format('truetype');
+  src: local('Tiempos Bold'), url("../img/fonts/Tiempos/TiemposTextWeb-Bold.woff") format("woff") ;
+  src: local('Tiempos Bold'), url("../img/fonts/Tiempos/TiemposTextWeb-Bold.eot") format('embedded-opentype'),
+  url('../img/fonts/Tiempos/TiemposTextWeb-Bold.woff') format('woff'),
+  url('../img/fonts/Tiempos/TiemposTextWeb-Bold.ttf') format('truetype');
 
 }
 h1, h2, h3, h4, h5, h6, .h7, p, .p1, .p2, .p3, .p4{
