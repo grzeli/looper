@@ -1,0 +1,153 @@
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: box-shadow 0.3s, -webkit-transform 0.3s;
+  position: relative;
+  padding: 19px 28px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 28px;
+  font-family: $proxima-nova-bold;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &--yellow {
+    background: $saffron;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $white;
+    }
+  }
+
+  &--yellow-border {
+    border: 1px solid $saffron;
+    color: $saffron;
+    background: $white;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $saffron;
+    }
+  }
+
+  &--light-gray {
+    border: 1px solid $athens-gray;
+    color: $storm-gray;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $storm-gray;
+    }
+  }
+
+  &--more {
+    color: $mine-shaft;
+    padding: 19px 48px 19px 28px;
+    font-family: $proxima-nova;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 0;
+      width: 21px;
+      height: 100%;
+      background: url("../img/icons/arrow_more.svg") no-repeat 0 50%;
+      background-size: 21px auto;
+      transition: right 0.3s;
+    }
+
+    &:hover,
+    &:focus,
+    &.focus {
+      box-shadow: none !important;
+      color: $mine-shaft;
+
+      &:after {
+        right: 0;
+      }
+    }
+  }
+
+  &--load-more {
+    color: $mine-shaft;
+    padding: 19px 38px 19px 28px;
+    font-family: $proxima-nova;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 21px;
+      height: 100%;
+      background: url("../img/icons/slider_arrow_right.svg") no-repeat 50% 50%;
+      background-size: 11px auto;
+      transform: rotate(90deg);
+    }
+
+    &:hover,
+    &:focus,
+    &.focus {
+      box-shadow: none !important;
+      color: $mine-shaft;
+    }
+  }
+
+  &--facebook {
+    background: $fb;
+    color: $white;
+
+    img {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin-top: -6px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &--medium {
+    padding: 14px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &-primary {
+    font-size: 16px;
+    @media (min-width: 992px) {
+      padding: 25.5px 45px 25.5px 40px !important;
+    }
+  }
+
+  &--go-top {
+    border-color: $athens-gray-darker;
+    padding: 20px 18px;
+
+    img {
+      display: block;
+    }
+  }
+}

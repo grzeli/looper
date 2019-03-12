@@ -1,0 +1,143 @@
+.bs-prototype-override {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+.nobr {
+  white-space: nowrap !important;
+}
+.wrap {
+  white-space: normal !important;
+}
+.a-left {
+  text-align: left !important;
+}
+.a-center {
+  text-align: center !important;
+}
+.a-right {
+  text-align: right !important;
+}
+.v-top {
+  vertical-align: top;
+}
+.v-middle {
+  vertical-align: middle;
+}
+.f-left,
+.left {
+  float: left !important;
+}
+.f-right,
+.right {
+  float: right !important;
+}
+.f-none {
+  float: none !important;
+}
+.f-fix {
+  float: left;
+  width: 100%;
+}
+.no-display {
+  display: none;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.mt-md-10 {
+  @media (max-width: 991px) {
+    margin-top: 10px;
+  }
+}
+.minus-mt-15 {
+  margin-top: -15px;
+}
+.pt-25-md {
+  @media (max-width: 991px) {
+    padding-top: 25px !important;
+  }
+}
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-lg {
+  @media (min-width: 992px) {
+    padding: 0 !important;
+  }
+}
+.pt-5 {
+  padding-top: 5px !important;
+}
+.pt-10 {
+  padding-top: 10px !important;
+}
+.pt-15 {
+  padding-top: 15px !important;
+}
+.pt-30 {
+  padding-top: 30px !important;
+}
+.pt-50 {
+  padding-top: 50px !important;
+}
+.pb-5 {
+  padding-bottom: 5px !important;
+}
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+.pb-md-20 {
+  @media (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+}
+.pb-35 {
+  padding-bottom: 35px !important;
+}
+.pb-50 {
+  padding-bottom: 50px !important;
+}
+.pb-70 {
+  padding-bottom: 70px !important;
+}
+.no-bg {
+  background: none !important;
+}
+
+.clearer {
+  @include clearfix();
+}
+.bg-xs-white {
+  @media (max-width: 575px) {
+    background: white;
+    .white-part {
+      padding: 0 !important;
+      .messages-list__excerpt {
+        width: calc(100% - 60px);
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    max-height: 90vh !important;
+  }
+}
+
+.w14 {
+  width: 14px;
+}
+.push-xs-1 {
+  @media (max-width: 575px) {
+    left: 8.333333%;
+  }
+}

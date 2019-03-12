@@ -1,0 +1,131 @@
+*:focus {
+  outline: 0;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+}
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $abbey;
+  background-color: #f7f7f7;
+  font-family: $proxima-nova;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: $screen-md) {
+  .md-ml-100 {
+    margin-left: -100px;
+  }
+  .md-mt-27 {
+    margin-top: -27px;
+  }
+  .md-pb27 {
+    padding-bottom: 27px;
+  }
+}
+
+.show {
+  display: block !important;
+}
+.show-tablet{
+  @media (max-width:991px){
+    display:block!important;
+  }
+  @media (min-width:992px){
+    display:none;
+  }
+}
+.modal-backdrop.show-tablet{
+  opacity:0.8;
+}
+.modal-backdrop.show {
+  opacity: .8;
+}
+
+@media (min-width: 320px){
+  .modal-dialog {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 768px){
+  .modal-dialog {
+    max-width: 440px;
+  }
+}
+
+.modal-dialog {
+  margin: 120px auto;
+}
+
+.modal-content {
+  border-radius: 0;
+
+  .modal-header {
+    padding: 0;
+    position: relative;
+
+    .close {
+      position: absolute;
+      left: 100%;
+      bottom: 100%;
+      color: $white;
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+
+      @media (max-width: 768px){
+        left: auto;
+        right: 0;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        display: block;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .modal-body {
+    padding: 50px 60px 60px;
+
+    @media (max-width: 768px){
+      padding: 20px 20px 30px;
+    }
+
+    .p1 {
+      font-family: $proxima-nova-bold;
+      line-height: 1.1em;
+    }
+
+    p:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}

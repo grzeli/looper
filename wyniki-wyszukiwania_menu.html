@@ -1,0 +1,1074 @@
+<!doctype html>
+<!-- Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Looper</title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta http-equiv="cleartype" content="on">
+  </head>
+
+  <body>
+
+    <header id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 hidden-sm-down">
+            <div class="logo">
+              <img src="img/logo.jpg" alt="Looper" />
+            </div>
+          </div>
+          <div class="col-md-4 hidden-sm-down">
+            <div class="menu">
+              <ul>
+                <li><a href="#">Jak to działa?</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="search-form-main">
+                  <a href="#" class="search"><img src="img/icons/search_topmenu.svg" class="w14" /></a>
+                  <div class="search-form">
+                    <form action="#">
+                      <input type="text" placeholder="" value="" />
+                      <button type="submit"><img src="img/icons/search_topmenu.svg" class="w14" /></button>
+                      <a href="#" class="clear-input"><img src="img/icons/close_search_topmenu.svg" alt="remove" class="w14" /></a>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-mobile">
+            <button class="hamburger hamburger--stand is-active" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Jak to działa?</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">O nas</a></li>
+            </ul>
+            <ul class="social-media">
+              <li><a href="#"><img src="img/icons/ms_facebook_1.svg" alt="facebook" /></a></li>
+              <li><a href="#"><img src="img/icons/ms_twitter_1.svg" alt="twitter" /></a></li>
+              <li><a href="#"><img src="img/icons/ms_insta_1.svg" alt="instagram" /></a></li>
+            </ul>
+          </div>
+          <div class="col-12 mobile-top hidden-md-up">
+            <button class="hamburger hamburger--stand" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <div class="logo">
+              <img src="img/logo.jpg" alt="Looper" />
+            </div>
+            <div class="mobile-search">
+              <a href="#" class="search"><img src="img/icons/search_topmenu.svg" class="w14" /></a>
+              <div class="search-form">
+                <form action="#">
+                  <input type="text" placeholder="" value="" />
+                  <button type="submit"><img src="img/icons/search_topmenu.svg" class="w14" /></button>
+                  <a href="#" class="clear-input"><img src="img/icons/close_search_topmenu.svg" alt="remove" class="w14" /></a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="user-menu">
+              <ul>
+                <li><a href="#" class="btn btn--yellow">Dodaj wyjazd</a></li>
+                <li><a href="#" class="btn btn--yellow-border">Zaloguj się</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="search-top">
+        <div class="container">
+          <h5>Dostosuj swój wyjazd</h5>
+          <form class="form-inline">
+            <div class="where-inputs form-inline mr-sm-2">
+              <label class="sr-only" for="inlineFormInput">Kiedy masz wolny czas?</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <input type="hidden" class="form-control" id="inlineFormInput" placeholder="Kiedy masz wolny czas?">
+                <div class="form-control"><span>Wyjazd: 21.04.2018</span><span>Powrót: 28.04.2018</span></div>
+                <div class="input-group-addon"><img src="img/icons/callendar_search.svg" alt="kalendarz" /></div>
+              </div>
+
+              <label class="sr-only" for="inlineFormInputGroup">Gdzie chcesz jechać?</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Gdzie chcesz jechać?">
+                <div class="input-group-addon"><img src="img/icons/place_search.svg" alt="Miejsce" /></div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Szukaj</button>
+          </form>
+          <form class="form-inline">
+            <div class="content-left">
+              <label>Elastyczny termin</label>
+              <div class="add-trip__radio-buttons">
+                <div>
+                  <input type="radio" value="1" name="termin" id="radio1">
+                  <label for="radio1">Nie</label>
+                </div>
+                <div>
+                  <input type="radio" value="1" name="termin" id="radio2">
+                  <label for="radio2">Tak</label>
+                </div>
+              </div>
+            </div>
+            <div class="content-left">
+              <label>Skąd wyjeżdzasz</label>
+              <div class="autocomplete">
+                <div class="autocomplete__input">
+                  <input type="text" />
+                </div>
+                <div class="autocomplete__list">
+                  <ul>
+                    <li>Opcja 1</li>
+                    <li>Opcja 2</li>
+                    <li>Opcja 3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-left">
+              <label>Zwiększ promień</label>
+              <div class="select active">
+                <div class="select__input">
+                  Wybierz
+                  <span>km</span>
+                  <div class="select__input_addon"></div>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li>Opcja 1</li>
+                    <li>Opcja 2</li>
+                    <li>Opcja 3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button type="submit" class="equalizer">Filtruj wyniki</button>
+        </div>
+      </div>
+      <div class="white-and-gray active"><!-- active jak maja byc widoczne-->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 white-and-gray__trip-filters">
+              <div class="white-part">
+                <a href="#" class="close-menu"></a>
+                <div class="input-with-pills">
+                  <h4>Filter by:</h4>
+                  <span class="input-with-pills__pill">Zaawansowany</span>
+                  <span class="input-with-pills__pill">2-4 osoby</span>
+                  <span class="input-with-pills__pill">kobieta</span>
+                  <span class="input-with-pills__pill remove-all"></span>
+                </div>
+                <div class="search-filters">
+                  <div class="add-trip_row active"><!-- active jak mają byc otwarte-->
+                    <label>Preferowany transport</label>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="checkbox1" name="termin">
+                        <label for="checkbox1"><img src="img/icons/samochod_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="checkbox2" name="termin">
+                        <label for="checkbox2"><img src="img/icons/autostop_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="checkbox3" name="termin">
+                        <label for="checkbox3"><img src="img/icons/pociag_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="checkbox4" name="termin">
+                        <label for="checkbox4"><img src="img/icons/pociag_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="checkbox5" name="termin">
+                        <label for="checkbox5"><img src="img/icons/samolot_1.svg" alt="icon"></label>
+                      </div>
+                      <div class="new-line">
+                        <input type="checkbox" value="" id="checkbox6" name="termin">
+                        <label for="checkbox6">Posiadam własny samochód</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Rodzaj aktywności</label>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="activity1" name="termin">
+                        <label for="activity1"><img src="img/icons/rower_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="activity2" name="termin">
+                        <label for="activity2"><img src="img/icons/trekking_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="activity3" name="termin">
+                        <label for="activity3"><img src="img/icons/wspinaczka_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="activity4" name="termin">
+                        <label for="activity4"><img src="img/icons/biegowki_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="activity5" name="termin">
+                        <label for="activity5"><img src="img/icons/snowboard_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="activity6" name="termin">
+                        <label for="activity6"><img src="img/icons/narty_1.svg" alt="icon"></label>
+                      </div>
+                      <div class="new-line">
+                        <input type="checkbox" value="" id="activity7" name="termin">
+                        <label for="activity7">Dowolna</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Wielkość grupy</label>
+                    <div class="select active">
+                      <div class="select__input">
+                        Wybierz
+                        <div class="select__input_addon"></div>
+                      </div>
+                      <div class="select__list">
+                        <ul>
+                          <li>Opcja 1</li>
+                          <li>Opcja 2</li>
+                          <li>Opcja 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="checkbox7" name="termin">
+                        <label for="checkbox7">Tylko zweryfikowani użytkownicy</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Średni dzienny dystans</label>
+                    <div class="input-slider">
+                      <div class="track">
+                        <div class="track__choosen">
+                          <span>35 km</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Twój stopień fit</label>
+                    <div class="select active">
+                      <div class="select__input">
+                        Wybierz
+                        <div class="select__input_addon"></div>
+                      </div>
+                      <div class="select__list">
+                        <ul>
+                          <li>Opcja 1</li>
+                          <li>Opcja 2</li>
+                          <li>Opcja 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Stopień trudności trasy</label>
+                    <div class="input-slider">
+                      <div class="track-labels">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                      </div>
+                      <div class="track">
+                        <div class="track__choosen">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Preferowany nocleg</label>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="acomod1" name="termin">
+                        <label for="acomod1"><img src="img/icons/namiot_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="acomod2" name="termin">
+                        <label for="acomod2"><img src="img/icons/podchmura_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="acomod3" name="termin">
+                        <label for="acomod3"><img src="img/icons/hotel_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="acomod4" name="termin">
+                        <label for="acomod4"><img src="img/icons/agroturystyka_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="acomod5" name="termin">
+                        <label for="acomod5"><img src="img/icons/schronisko_1.svg" alt="icon"></label>
+                      </div>
+                      <div class="new-line">
+                        <input type="checkbox" value="" id="acomod6" name="termin">
+                        <label for="acomod6">Chcę współdzielić pokój</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Maksymalny koszt wyjazdu</label>
+                    <div class="input-price">
+                      <input type="text" placeholder="Wpisz wartość">
+                      <span>PLN</span>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Preferowana płeć</label>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="gender1" name="termin">
+                        <label for="gender1"><img src="img/icons/kobieta_1.svg" alt="icon"></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" value="" id="gender2" name="termin">
+                        <label for="gender2"><img src="img/icons/mezczyzna_1.svg" alt="icon"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Preferowany wiek</label>
+                    <div class="select active">
+                      <div class="select__input">
+                        Wybierz
+                        <div class="select__input_addon"></div>
+                      </div>
+                      <div class="select__list">
+                        <ul>
+                          <li>Opcja 1</li>
+                          <li>Opcja 2</li>
+                          <li>Opcja 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Wyjazdy z dziećmi</label>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="company1" name="dzieci">
+                        <label for="company1"><img src="img/icons/dzieci_1.svg" alt="icon"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-trip_row">
+                    <label>Wyjazdy ze zwierzętami</label>
+                    <div class="add-trip__checkbox-buttons">
+                      <div>
+                        <input type="checkbox" value="" id="company2" name="zwierzeta">
+                        <label for="company2"><img src="img/icons/zwierzeta_1.svg" alt="icon"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn--yellow">Filtruj</a>
+                  <a href="#" class="btn btn--light-gray">Wyczyść wszystkie</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-12 search-results_content">
+              <div class="search-results">
+                <h4>Wyniki wyszukiwania (15)</h4>
+                <div class="search-results__filters">
+                  <div class="input-with-pills">
+                    <span class="input-with-pills__pill">Zaawansowany</span>
+                    <span class="input-with-pills__pill">2-4 osoby</span>
+                    <span class="input-with-pills__pill">kobieta</span>
+                    <span class="input-with-pills__pill remove-all"></span>
+                  </div>
+                  <div class="select active">
+                    <div class="select__input">
+                      Data wyjazdu
+                      <div class="select__input_addon"></div>
+                    </div>
+                    <div class="select__list">
+                      <ul>
+                        <li>Opcja 1</li>
+                        <li>Opcja 2</li>
+                        <li>Opcja 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-results__content">
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#" class="active"></a><!-- klasa active jak czerwone, bez klasy jak szare-->
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#"></a>
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#"></a>
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#"></a>
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn--load-more f-right">Załaduj więcej</a>
+                  <div class="clearfix"></div>
+                  <h4>Podobnie wyszukiwali (15)</h4>
+                  <div class="row contact-persons_box">
+                    <div class="col-md-4">
+                      <div class="contact-person-box">
+                        <div class="added">
+                          <a href="#" class="active"></a>
+                        </div>
+                        <div class="contact-person-box__image">
+                          <img src="img/users/user3.jpg" alt="user">
+                        </div>
+                        <p class="p3"><strong>Wojtek Jagielski</strong></p>
+                        <div class="contact-person-box__rating">
+                          <div class="star-rating">
+                            <span class="star active" data-rating="1"></span>
+                            <span class="star active" data-rating="2"></span>
+                            <span class="star active" data-rating="3"></span>
+                            <span class="star" data-rating="4"></span>
+                            <span class="star" data-rating="5"></span>
+                            <input type="hidden" name="whatever2" class="rating-value" value="2.56">
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn--light-gray"><img src="img/icons/contact.png" alt="umów się"> Umów się</a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="contact-person-box">
+                        <div class="added">
+                          <a href="#"></a>
+                        </div>
+                        <div class="contact-person-box__image">
+                          <img src="img/users/user3.jpg" alt="user">
+                        </div>
+                        <p class="p3"><strong>Wojtek Jagielski</strong></p>
+                        <div class="contact-person-box__rating">
+                          <div class="star-rating">
+                            <span class="star active" data-rating="1"></span>
+                            <span class="star active" data-rating="2"></span>
+                            <span class="star active" data-rating="3"></span>
+                            <span class="star" data-rating="4"></span>
+                            <span class="star" data-rating="5"></span>
+                            <input type="hidden" name="whatever2" class="rating-value" value="2.56">
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn--light-gray"><img src="img/icons/contact.png" alt="umów się"> Umów się</a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="contact-person-box">
+                        <div class="added">
+                          <a href="#"></a>
+                        </div>
+                        <div class="contact-person-box__image">
+                          <img src="img/users/user3.jpg" alt="user">
+                        </div>
+                        <p class="p3"><strong>Wojtek Jagielski</strong></p>
+                        <div class="contact-person-box__rating">
+                          <div class="star-rating">
+                            <span class="star active" data-rating="1"></span>
+                            <span class="star active" data-rating="2"></span>
+                            <span class="star active" data-rating="3"></span>
+                            <span class="star" data-rating="4"></span>
+                            <span class="star" data-rating="5"></span>
+                            <input type="hidden" name="whatever2" class="rating-value" value="2.56">
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn--light-gray"><img src="img/icons/contact.png" alt="umów się"> Umów się</a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="contact-person-box">
+                        <div class="added">
+                          <a href="#"></a>
+                        </div>
+                        <div class="contact-person-box__image">
+                          <img src="img/users/user3.jpg" alt="user">
+                        </div>
+                        <p class="p3"><strong>Wojtek Jagielski</strong></p>
+                        <div class="contact-person-box__rating">
+                          <div class="star-rating">
+                            <span class="star active" data-rating="1"></span>
+                            <span class="star active" data-rating="2"></span>
+                            <span class="star active" data-rating="3"></span>
+                            <span class="star" data-rating="4"></span>
+                            <span class="star" data-rating="5"></span>
+                            <input type="hidden" name="whatever2" class="rating-value" value="2.56">
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn--light-gray"><img src="img/icons/contact.png" alt="umów się"> Umów się</a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="contact-person-box">
+                        <div class="added">
+                          <a href="#"></a>
+                        </div>
+                        <div class="contact-person-box__image">
+                          <img src="img/users/user3.jpg" alt="user">
+                        </div>
+                        <p class="p3"><strong>Wojtek Jagielski</strong></p>
+                        <div class="contact-person-box__rating">
+                          <div class="star-rating">
+                            <span class="star active" data-rating="1"></span>
+                            <span class="star active" data-rating="2"></span>
+                            <span class="star active" data-rating="3"></span>
+                            <span class="star" data-rating="4"></span>
+                            <span class="star" data-rating="5"></span>
+                            <input type="hidden" name="whatever2" class="rating-value" value="2.56">
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn--light-gray"><img src="img/icons/contact.png" alt="umów się"> Umów się</a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="contact-person-box">
+                        <div class="added">
+                          <a href="#" class="active"></a>
+                        </div>
+                        <div class="contact-person-box__image">
+                          <img src="img/users/user3.jpg" alt="user">
+                        </div>
+                        <p class="p3"><strong>Wojtek Jagielski</strong></p>
+                        <div class="contact-person-box__rating">
+                          <div class="star-rating">
+                            <span class="star active" data-rating="1"></span>
+                            <span class="star active" data-rating="2"></span>
+                            <span class="star active" data-rating="3"></span>
+                            <span class="star" data-rating="4"></span>
+                            <span class="star" data-rating="5"></span>
+                            <input type="hidden" name="whatever2" class="rating-value" value="2.56">
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn--light-gray"><img src="img/icons/contact.png" alt="umów się"> Umów się</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn--load-more f-right">Załaduj więcej</a>
+                  <div class="clearfix"></div>
+                  <h4>Podobne wyjazdy (24)</h4>
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#"></a>
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#"></a>
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="white-box in-row">
+                    <div class="white-box__section">
+                      <div class="flex-row">
+                        <div class="person">
+                          <div class="person__image">
+                            <img src="img/users/user1.jpg" alt="foto">
+                          </div>
+                          <div class="person__name">
+                            <p><strong>Wojtek Jagielski</strong></p>
+                            <div class="star-rating">
+                              <span class="star active" data-rating="1"></span>
+                              <span class="star active" data-rating="2"></span>
+                              <span class="star active" data-rating="3"></span>
+                              <span class="star" data-rating="4"></span>
+                              <span class="star" data-rating="5"></span>
+                              <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="added">
+                          <span>14 dni</span>
+                          <a href="#"></a>
+                        </div>
+                      </div>
+                      <div class="flex-row dates-of-trip">
+                        <div class="dates-of-trip__date">
+                          <p>Wyjazd: 21.11.1027<br>
+                            <span>(Pon. godz. 16:00)</span></p>
+                        </div>
+                        <div class="dates-of-trip__date">
+                          <p>Powrót: 21.11.1027<br>
+                            <span>(Niedz. godz. 15:00)</span></p>
+                        </div>
+                      </div>
+                      <div class="trip-details">
+                        <p class="h7">Zimowe przejście głównej grani Tatr Zachodnich.</p>
+                        <ul class="trip-details__list">
+                          <li class="destination-icon"><strong>Destynacja:</strong> Tatry, Słowacja</li>
+                          <li class="city-icon"><strong>Miasto startowe:</strong> Wrocław</li>
+                          <li class="transport-icon"><strong>Preferowany transport:</strong> Własny samochód</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="white-box__section">
+                      <p><strong>Dołączyli już do wyjazdu (3 z 5 osób):</strong></p>
+                      <ul class="person-list">
+                        <li class="person-list__item">
+                          <img src="img/users/user1.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user2.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item">
+                          <img src="img/users/user3.jpg" alt="person">
+                        </li>
+                        <li class="person-list__item join">
+                          <a href="#">
+                            <img src="img/icons/dolacz_btn.svg" alt="join">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a href="#" class="btn btn--yellow">Więcej szczegółów</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn--load-more f-right">Załaduj więcej</a>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-5 push-lg-7 push-md-7 push-xl-0 col-12">
+            <img src="img/icons/logo_footer.svg" alt="Looper" class="logo" />
+            <p class="copyright">&copy; 2018 Looper. All rights reserved</p>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+            <p>Menu</p>
+            <ul class="footer-menu">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Jak to działa?</a></li>
+              <li><a href="#">Polityka prywatności</a></li>
+              <li><a href="#">Regulamin serwisu</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-6">
+            <p>Polub nas</p>
+            <ul class="social-media">
+              <li><a href="#"><img src="img/icons/ms_facebook_1.svg" alt="facebook" /></a></li>
+              <li><a href="#"><img src="img/icons/ms_twitter_1.svg" alt="twitter" /></a></li>
+              <li><a href="#"><img src="img/icons/ms_insta_1.svg" alt="instagram" /></a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <p>Newsletter</p>
+            <form class="form-inline">
+              <input type="text" class="form-control" id="email" placeholder="Twój e-mail">
+
+              <button type="submit" class="btn btn-primary">Ok</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-backdrop fade show-tablet"></div>
+  </body>
+</html>

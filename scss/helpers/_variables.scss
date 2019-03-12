@@ -1,0 +1,160 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default; // #222
+$gray-dark: lighten($gray-base, 20%) !default; // #333
+$gray: lighten($gray-base, 33.5%) !default; // #555
+$gray-light: lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary: #f6af2f !default; // #337ab7
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #ff997a !default;
+
+$black: #000;
+$white: #fff;
+$gallery: #eeeeee;
+$bombay: #b3b6c1;
+$alto: #dddddd;
+$santas-gray: #9ea1ad;
+$french-gray: #bebec9;
+$cloud: #c4c0be;
+$spun-pearl: #a8a9ba;
+$mid-gray: #5d5d6a;
+$shark: #2b2b31;
+$abbey: #474952;
+$mine-shaft: #2f2f2f;
+$storm-gray: #737680;
+$athens-gray: #eff1f6;
+$athens-gray-darker: #e5e7f0;
+$saffron: #f6af2f;
+$vivid-tangerine: #ff997a;
+$neptune: #7abcb7;
+$fb: #395eac;
+
+@font-face {
+  font-family: "proxima_nova_rgbold";
+  src: url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_nova_rgregular";
+  src: url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tiempos-bold";
+  src: url("../fonts/TiemposTextWeb-Bold.eot") format("eot"),
+    url("../fonts/TiemposTextWeb-Bold.woff2") format("woff2"),
+    url("../fonts/TiemposTextWeb-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$tiempos: "Arial";
+$tiempos-bold: "tiempos-bold";
+
+$proxima-nova: "proxima_nova_rgregular";
+$proxima-nova-bold: "proxima_nova_rgbold";
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs: 0px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min: $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone: $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 320px !default;
+$screen-sm-min: $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet: $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 768px !default;
+$screen-md-min: $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop: $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 990px !default;
+$screen-lg-min: $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop: $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns: 12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint: $screen-md-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet: (556px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm: $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop: (748px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md: $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop: (1400px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg: $container-large-desktop !default;
+
+$screen: "only screen";
+$print: "only print";
+
+// breakpoint settings look helpers/bs-variables
+$media-lg: "#{$screen} and (min-width:#{$screen-lg-min})";
+$media-md-up: "#{$screen} and (min-width:#{$screen-md-min})";
+$media-md: "#{$screen} and (min-width:#{$screen-md-min}) and (max-width:#{$screen-md-max})";
+$media-sm-up: "#{$screen} and (min-width:#{$screen-sm-min})";
+$media-sm: "#{$screen} and (min-width:#{$screen-sm-min}) and (max-width:#{$screen-sm-max})";
+$media-xs-up: "#{$screen} and (min-width:#{$screen-xs-min})";
+$media-xs: "#{$screen} and (max-width:#{$screen-xs-max})";

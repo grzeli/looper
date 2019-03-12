@@ -1,0 +1,451 @@
+.input-group-addon {
+  background: transparent;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.where-inputs {
+  background: $white;
+  border-radius: 35px;
+  padding: 0 15px;
+
+  @media (max-width: 767px) {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 0 !important;
+  }
+
+  .input-group-addon,
+  input {
+    border: 0;
+    background: transparent;
+    color: $abbey;
+  }
+
+  .input-group {
+    @media (max-width: 767px) {
+      padding: 7px 0;
+      background: $white;
+      margin-bottom: 6px !important;
+      border-radius: 28px;
+    }
+
+    &:first-of-type {
+      border-right: 1px solid $athens-gray;
+      padding: 9px 0;
+
+      @media (max-width: $screen-lg) {
+        padding: 17px 0;
+      }
+
+      @media (max-width: 767px) {
+        border: 0;
+        padding: 7px 0;
+      }
+    }
+  }
+
+  + button {
+    @media (max-width: $screen-lg) and (min-width: 768px) {
+      font-size: 0;
+      border-radius: 35px;
+      padding: 21.5px 29px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 25.5px 29px;
+      border-radius: 35px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+      width: 100%;
+      padding: 16.5px 28px;
+    }
+
+    @media (max-width: 575px) {
+      padding: 16.5px 28px;
+    }
+
+    img {
+      width: 30px;
+      height: 25px;
+      display: block;
+      @media (max-width: 767px) {
+        width: 20px;
+        height: 20px;
+      }
+
+      @media (max-width: 767px) {
+        display: inline-block;
+        margin-top: -7px;
+      }
+      @media (min-width: 992px) {
+        width: 25px;
+        height: 20px;
+        display: inline-block;
+        margin-top: -5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  min-width: 260px;
+  margin-bottom: 20px;
+
+  &__input {
+    border: 1px solid $athens-gray-darker;
+    border-radius: 20px;
+    padding: 11px 22px 9px;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &_addon {
+      background: url("../img/icons/arrow_select.png") no-repeat;
+      background-position: 50% 50%;
+      height: 20px;
+      width: 20px;
+    }
+
+    span {
+      color: #7c7c85;
+      font-size: 12px;
+      position: absolute;
+      right: 40px;
+      top: calc(50% - 7px);
+    }
+  }
+  &__list {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    border: 1px solid $athens-gray-darker;
+    background: $white;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    display: none;
+  }
+
+  &.current {
+    .select__input {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    .select__list {
+      display: block;
+    }
+  }
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  min-width: 260px;
+
+  &__input {
+    border: 1px solid $athens-gray-darker;
+    border-radius: 20px;
+    padding: 11px 22px 9px;
+    font-size: 13px;
+
+    input[type="text"] {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__list {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    border: 1px solid $athens-gray-darker;
+    background: $white;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    display: none;
+  }
+
+  &.current {
+    .select__input {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    .select__list {
+      display: block;
+    }
+  }
+}
+
+.input-slider {
+  padding: 35px 0;
+
+  .track {
+    background: #e7e9f1;
+    border-radius: 1px;
+    height: 3px;
+    width: 100%;
+    position: relative;
+
+    &__choosen {
+      background: $brand-primary;
+      width: 40%;
+      position: absolute;
+      height: 3px;
+      left: 0;
+      top: 0;
+
+      &:before {
+        content: "";
+        width: 28px;
+        height: 28px;
+        display: block;
+        border-radius: 100%;
+        margin-top: -14px;
+        margin-right: -10px;
+        float: right;
+        background: rgba(246, 175, 47, 0.3);
+      }
+
+      &:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: $brand-primary;
+        border-radius: 100%;
+        margin-top: -4px;
+        float: right;
+        margin-right: -19px;
+        cursor: pointer;
+      }
+
+      span {
+        float: right;
+        margin-top: -33px;
+        margin-right: -32px;
+        display: inline-block;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .track-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -35px;
+    padding-bottom: 15px;
+    font-size: 12px;
+
+    strong {
+      font-weight: 400;
+      font-family: tiempos-bold;
+      font-size: 16px;
+    }
+
+    + .track {
+      .track__choosen {
+        width: 30%;
+      }
+    }
+  }
+
+  &.green {
+    .track {
+      &__choosen {
+        background: $neptune;
+
+        &:after {
+          background: $neptune;
+        }
+
+        &:before {
+          background: rgba(122, 188, 183, 0.3);
+        }
+      }
+    }
+  }
+}
+
+.input-price {
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 360px;
+
+  input[type="text"] {
+    margin-bottom: 0 !important;
+  }
+
+  span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    color: #7c7c85;
+    font-size: 13px;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+
+  + label {
+    font-family: proxima_nova_rgregular;
+    padding-left: 28px;
+    background: url("../img/icons/radio.png") no-repeat 0 50%;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-right: 20px;
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &:checked {
+    + label {
+      background: url("../img/icons/radio-checked.png") no-repeat 0 50%;
+    }
+  }
+}
+
+.add-trip__radio-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="text"] {
+  border: 1px solid $athens-gray-darker;
+  border-radius: 20px;
+  width: 100%;
+  padding: 11px 22px 9px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  font-family: proxima_nova_rgbold;
+
+  span {
+    font-family: proxima_nova_rgregular;
+  }
+}
+
+.add-trip__checkbox-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  > div {
+    margin-bottom: 5px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    + label {
+      padding-left: 29px;
+      font-family: proxima_nova_rgregular;
+      background: url("../img/icons/checkbox.png") no-repeat 0 50%;
+      padding-top: 2px;
+      padding-bottom: 1px;
+      padding-right: 20px;
+      cursor: pointer;
+
+      img {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &:checked {
+      + label {
+        background: url("../img/icons/checkbox-checked.png") no-repeat 0 50%;
+      }
+    }
+  }
+
+  .new-line {
+    flex-basis: 100%;
+    display: flex;
+  }
+}
+
+.input-with-pills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  &__input {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    input[type="text"] {
+      margin-bottom: 0;
+    }
+
+    button {
+      position: absolute;
+      width: 53px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      border: 0;
+      background: url("../img/icons/plus-grey-small.png") no-repeat 50% 50%;
+      cursor: pointer;
+    }
+  }
+
+  &__pill {
+    display: inline-block;
+    border: 1px solid $athens-gray-darker;
+    border-radius: 17px;
+    padding: 9px 40px 9px 20px;
+    background: $athens-gray url("../img/icons/delete-grey-small.png") no-repeat;
+    background-position: calc(100% - 18px) 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 50px;
+
+  .btn {
+    font-family: proxima_nova_rgregular;
+    padding: 15px 28px;
+  }
+}
+
+.where-inputs .input-group .form-control {
+  border: 0 !important;
+}
